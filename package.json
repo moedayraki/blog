@@ -1,10 +1,13 @@
 {
-  "name": "iles-app",
-  "version": "0.0.0",
+  "name": "blog",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
   "scripts": {
     "dev": "iles dev --open",
     "build": "iles build",
     "preview": "iles preview --open --port 5050",
+    "now": "npm run build && npm run preview",
     "test": "iles test",
     "typecheck": "vue-tsc --noEmit"
   },
@@ -12,16 +15,28 @@
     "node": "^14.18 || >= 16.0.0"
   },
   "devDependencies": {
+    "@islands/excerpt": "^0.8.0",
     "@islands/feed": "^0.8.0",
     "@islands/headings": "^0.8.0",
-    "iles": "^0.8.0",
-    "typescript": "^4.5",
-    "vitest": "*",
-    "vue-tsc": "^0.38"
-  },
-  "dependencies": {
     "@islands/icons": "^0.8.0",
     "@islands/images": "^0.8.1",
-    "@islands/pwa": "^0.8.0"
+    "@islands/pwa": "^0.8.0",
+    "iles": "^0.8.0",
+    "rehype-external-links": "^1.0.0",
+    "typescript": "^4.5",
+    "vite-plugin-windicss": "^1.6.3",
+    "vitest": "*",
+    "vue-tsc": "^0.38",
+    "@vueuse/core": "^9.1.0"
+  },
+  "dependencies": {
+    "@docsearch/css": "^3.1.1",
+    "@mussi/docsearch": "^3.1.2-beta.0"  
+  },
+  "globals": {
+    "$ref": "readonly",
+    "$computed": "readonly",
+    "$$": "readonly",
+    "$": "readonly"
   }
 }
