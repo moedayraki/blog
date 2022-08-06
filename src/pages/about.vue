@@ -1,19 +1,25 @@
-<page>
-title: About
-</page>
+---
+layout: home
 
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+actionText: Get Started
+actionLink: /guide/introduction
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+altActionText: Install
+altActionLink: /guide
+
+heroAlt: îles logo
+
+features:
+  - title: 🏝 Partial Hydration
+    details: Ship JS only for the interactive bits, by default that's zero.
+    href: /guide/hydration
+  - title: 🧱 Multi-Framework
+    details: Build islands with Vue, Preact, SolidJS, Svelte, or plain JS.
+    href: /guide/frameworks
+  - title: 📖 Markdown Support
+    details: Use components inside Markdown, with auto-import.
+    href: /guide/markdown
+  - title: ⚡ Batteries Included
+    details: Layouts, routing, frontmatter for pages, plugins, and more.
+    href: /guide/development
+---

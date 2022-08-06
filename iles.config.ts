@@ -36,17 +36,17 @@ export default defineConfig({
           background_color: '#ffffff',
           icons: [
             {
-              src: 'pwa-192x192.png',
+              src: 'https://github.com/moedayraki.png',
               sizes: '192x192',
               type: 'image/png',
             },
             {
-              src: 'pwa-512x512.png',
+              src: 'https://github.com/moedayraki.png',
               sizes: '512x512',
               type: 'image/png',
             },
             {
-              src: 'pwa-192x192.png',
+              src: 'https://github.com/moedayraki.png',
               sizes: '192x192',
               type: 'image/png',
               purpose: 'any maskable',
@@ -87,5 +87,21 @@ export default defineConfig({
           ],
         },
       }),
-    ]
+    ],
+    markdown: {
+      rehypePlugins: [
+        'rehype-external-links',
+      ],
+    },
+    vite: {
+      resolve: {
+        alias: {
+          '~images': resolve(__dirname, 'images'),
+        },
+      },
+      plugins: [
+        windicss(),
+        Boolean(process.env.DEBUG) && inspect(),
+      ],
+    },
 })

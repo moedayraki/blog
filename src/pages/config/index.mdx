@@ -1,0 +1,255 @@
+---
+sidebar: auto
+---
+
+[pages]: /guide/pages
+[plugins]: /guide/plugins
+[vite's plugins]: https://vitejs.dev/plugins/
+[config reference]: https://vitejs.dev/config/
+[site]: /guide/development#site
+[meta tags]: /guide/meta-tags
+[sitemap]: /guide/development#sitemap
+[shortcodes]: /guide/markdown#advanced-provide-components-shortcodes
+[deployment]: /guide/deployment
+[vitepress]: /faqs#vitepress
+[turbo]: /guide/turbo
+[documents]: /guide/documents
+[drafts]: /guide/markdown
+[usedocuments]: /guide/documents
+
+# Configuration
+
+The following section is an overview of basic configuration for <Iles/>.
+
+Most of the options discussed are specific to <Iles/>, for the rest of the available configuration options please check Vite's [config reference].
+
+## Configuring Vite <ViteLogo/>
+
+You can configure Vite.js as [usual](https://vitejs.dev/config/) using `vite.config.ts`, check [Vite's plugins] and [config reference].
+
+Alternatively, you can provide a `vite` option in [`iles.config.ts`](#configuring-îles) with the same options.
+
+```ts
+import { defineConfig } from "iles";
+
+export default defineConfig({
+  vite: {
+    plugins: [],
+  },
+});
+```
+
+> Visit the _[Plugins]_ section for more details about the [pre-configured Vite.js plugins](/guide/plugins#vite-plugins).
+
+## Configuring <span class="hidden" aria-hidden="true">îles</span> <Iles heading/>
+
+You may provide an `iles.config.ts` configuration file to customize settings
+related to markdown, component resolution, and other îles-specific features.
+
+You can leverage your IDE's intellisense with jsdoc type hints or use the `defineConfig` helper:
+
+```ts
+import { defineConfig } from "iles";
+
+export default defineConfig({
+  siteUrl: "https://iles-docs.netlify.app",
+  jsx: "preact",
+});
+```
+
+### `drafts`
+
+- **Type:** `boolean`
+- **Default:** `true` in development, `false` when building
+
+Whether to include [drafts] in pages and [documents].
+
+By default drafts will be displayed during development, but will be excluded when building the site.
+
+> When disabled, drafts will also be excluded from <kbd>[useDocuments]</kbd>.
+
+### `modules`
+
+- **Type:** `IlesModuleOption[]`
+
+<Iles /> modules to apply in the site. [Read the _Plugins and Modules_
+guide][plugins].
+
+### `turbo` (experimental)
+
+- **Type:** `boolean`
+- **Default:** `false`
+
+Whether to enable SPA-like navigation for the site. See the [guide for _Turbo_][turbo].
+
+### `jsx`
+
+- **Type:** `'vue' | 'preact' | 'solid'`
+- **Default:** `'vue'`
+
+Which framework to use to compile `.jsx` and `.tsx` files.
+
+### `prettyUrls`
+
+- **Type:** `boolean`
+- **Default:** `true`
+
+Whether to skip `.html` and trailing slashes in link hrefs and router paths.
+
+<Tip>
+  Set `prettyUrls: false` to simplify the migration of an existing [VitePress]
+  site without having to add redirects, or when deploying on services that don't
+  support pretty urls ([most do][deployment]).
+</Tip>
+
+### `ssg`
+
+Options applied during site generation when running <kbd>iles build</kbd>.
+
+#### `ssg.beforePageRender`
+
+- **Type:** `async (page: RouteToRender, config: AppConfig) => RouteToRender | void`
+
+This hook will be invoked before îles renders a page.
+
+<Tip>Modify `page.rendered` to alter the content of the page as needed.</Tip>
+
+#### `ssg.onSiteRendered`
+
+- **Type:** `async ({ pages: RouteToRender[], config: AppConfig }) => void`
+
+This hook will be invoked once îles has rendered the entire site.
+
+#### `ssg.manualChunks`
+
+Allows to configure how JS chunks for islands should be grouped.
+
+#### `ssg.sitemap`
+
+- **Type:** ` boolean`
+- **Default:**: `true`
+
+Whether to [generate a sitemap][sitemap] and reference it using a meta tag in all pages.
+
+<Tip warn>
+  You must provide <kbd>[siteUrl](#siteurl)</kbd> to enable sitemap generation.
+</Tip>
+
+### `siteUrl`
+
+- **Type:** `string`
+
+URL for the [site] in production, used to generate absolute URLs for the [sitemap]
+and social [meta tags].
+
+<Tip>When set, it is exposed as `site.url` and `site.canonical`.</Tip>
+
+### `debug`
+
+- **Type:** `boolean | 'log'`
+- **Default:** `true`
+
+Whether to output more information about islands and hydration in development.
+
+## Your App
+
+<Iles /> will pre-configure a Vue 3 app that will load any [pages] defined in
+the site.
+
+You may provide additional configuration in `src/app.ts`, and leverage
+intellisense by using the `defineApp` helper.
+
+```ts
+import { defineApp } from "iles";
+
+export default defineApp({
+  head({ frontmatter, site }) {
+    return {
+      meta: [
+        { property: "author", content: site.author },
+        { property: "keywords", content: computed(() => frontmatter.tags) },
+      ],
+    };
+  },
+  enhanceApp({ app, head, router }) {
+    // Configure the app to add plugins.
+  },
+  router: {
+    scrollBehavior(current, previous, savedPosition) {
+      // Configure the scroll behavior
+    },
+  },
+});
+```
+
+### `head`
+
+- **Type:** `HeadObject | (context: AppContext) => HeadObject`
+
+Set the page title, meta tags, additional CSS, or scripts using [`@vueuse/head`][@vueuse/head].
+
+### `enhanceApp`
+
+- **Type:** `(context: AppContext) => Promise<void>`
+
+A hook where you can add plugins to the Vue app, or do anything else prior to
+the app being mounted.
+
+### `mdxComponents`
+
+- **Type:** `MDXComponents | (context: AppContext) => MDXComponents`
+
+Provide an object that [maps tag names in MDX to components][shortcodes] to render.
+
+```ts
+import { defineApp } from "iles";
+import Image from "~/components/Image.vue";
+
+export default defineApp({
+  mdxComponents: {
+    b: "strong",
+    img: Image,
+  },
+});
+```
+
+### `router`
+
+- **Type:** `RouterOptions`
+
+Configure [`vue-router`][vue-router] by providing options such as `scrollBehavior` and `linkActiveClass`.
+
+### `socialTags`
+
+- **Type:** `boolean`
+- **Default:** `true`
+
+Some social tags can be inferred from the <kbd>[site]</kbd>.
+
+Set it to `false` to avoid adding social tags such as `og:title` and `twitter:description`.
+
+## `iles.config.ts` Example
+
+```ts
+import { defineConfig } from "iles";
+
+import windicss from "vite-plugin-windicss";
+
+export default defineConfig({
+  siteUrl: "https://iles-docs.netlify.app",
+  extendFrontmatter(frontmatter, filename) {
+    if (filename.includes("/posts/")) frontmatter.layout = "post";
+  },
+  markdown: {
+    remarkPlugins: ["remark-gemoji"],
+  },
+  modules: ["@islands/icons", "@islands/headings", "@islands/prism"],
+  vite: {
+    plugins: [windicss()],
+  },
+});
+```
+
+[vue-router]: https://next.router.vuejs.org/
+[@vueuse/head]: https://github.com/vueuse/head
+[site]: #the-site
