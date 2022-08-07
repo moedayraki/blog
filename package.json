@@ -15,6 +15,8 @@
     "node": "^14.18 || >= 16.0.0"
   },
   "devDependencies": {
+    "@iconify-json/bx": "^1.1.3",
+    "@iconify-json/carbon": "^1.1.7",
     "@islands/excerpt": "^0.8.0",
     "@islands/feed": "^0.8.0",
     "@islands/headings": "^0.8.0",
@@ -38,6 +40,7 @@
   },
   "dependencies": {
     "@docsearch/css": "^3.1.1",
+    "@iconify-json/heroicons-outline": "^1.1.2",
     "@mussi/docsearch": "^3.1.2-beta.0",
     "cross-spawn": "^7.0.3"
   },
