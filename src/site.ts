@@ -1,31 +1,31 @@
 const twitterHandle = 'MohammedDayraki'
 
 const site = {
-  title: 'îles',
-  description: 'The Joyful Site Generator',
+  title: "moe's blog",
+  description: "Moe Dayraki's Blog",
   year: new Date().getFullYear(),
 
-  url: 'https://iles-docs.netlify.app',
-  canonical: 'iles-docs.netlify.app',
+  url: 'https://www.blog.dayrakiarts.com',
+  canonical: 'www.dayrakiarts.com',
 
-  tags: ['îles', 'iles', 'vuejs', 'vitejs', 'ssg', 'open source', 'partial hydration', 'islands of interactivity'],
+  tags: ['blog', 'blogging', 'development', 'fullstack', 'php', 'javascript', 'design', 'css','laravel','frameworks','tailwindcss'],
 
-  author: 'Máximo Mussini',
-  authorUrl: 'https://maximomussini.com',
-  github: 'https://github.com/ElMassimo/iles',
+  author: 'Moe Dayraki',
+  authorUrl: 'https://www.moe.dayrakiarts.com',
+  github: 'https://github.com/moedayraki',
   twitterHandle,
-  authorHandle: 'MaximoMussini',
+  authorHandle: 'MoeDayraki',
   twitter: `https://twitter.com/${twitterHandle}`,
 
   nav: [
-    { text: 'Guide', link: '/guide' },
-    { text: 'Config', link: '/config' },
-    { text: 'FAQs', link: '/faqs' },
+    { text: 'Home', link: '/guide' },
+    { text: 'Posts', link: '/config' },
+    { text: 'Contact', link: '/faqs' },
   ],
 
   sidebar: [
     {
-      text: 'Guide',
+      text: 'Home',
       link: '/guide',
       children: [
         { text: 'Introduction', link: '/guide/introduction' },
@@ -46,14 +46,14 @@ const site = {
       ],
     },
     { text: 'Config', link: '/config' },
-    {
-      text: 'FAQs',
-      link: '/faqs',
-      children: [
-        { text: 'FAQs', link: '/faqs' },
-        { text: 'Troubleshooting', link: '/faqs/troubleshooting' },
-      ],
-    },
+    // {
+    //   text: 'FAQs',
+    //   link: '/faqs',
+    //   children: [
+    //     { text: 'FAQs', link: '/faqs' },
+    //     { text: 'Troubleshooting', link: '/faqs/troubleshooting' },
+    //   ],
+    // },
   ],
 }
 
