@@ -51,6 +51,7 @@ declare module '@vue/runtime-core' {
     OutboundLink: typeof import('./src/components/OutboundLink.vue')['default']
     PageFooter: typeof import('./src/components/PageFooter.vue')['default']
     PageHooks: typeof import('./src/components/PageHooks.mdx')['default']
+    PostDate: typeof import('./src/components/PostDate.vue')['default']
     ReloadPrompt: typeof import('./src/components/ReloadPrompt.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

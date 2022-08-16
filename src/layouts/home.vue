@@ -3,7 +3,7 @@
     <TheSidebar class="md:hidden" />
     <div class="px-6 md:px-8 viewport">
       <HomeHero />
-      <HomeFeatures />
+      <slot />
     </div>
   </MainContainer>
   <TheFooter />

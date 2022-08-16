@@ -1,8 +1,8 @@
 const twitterHandle = 'MohammedDayraki'
 
 const site = {
-  title: "moe's blog",
-  description: "Moe Dayraki's Blog",
+  title: "The Moe Blog",
+  description: "A blog about programming and technology.",
   year: new Date().getFullYear(),
 
   url: 'https://www.blog.dayrakiarts.com',
@@ -18,8 +18,7 @@ const site = {
   twitter: `https://twitter.com/${twitterHandle}`,
 
   nav: [
-    { text: 'Home', link: '/guide' },
-    { text: 'Posts', link: '/config' },
+    { text: 'Top Ten', link: '/guide' },
     { text: 'Contact', link: '/faqs' },
   ],
 

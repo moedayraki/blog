@@ -1,6 +1,7 @@
 import { resolve } from 'path'
 import { defineConfig } from 'iles'
 
+import excerpt from '@islands/excerpt'
 import headings from '@islands/headings'
 import icons from '@islands/icons'
 import prism from '@islands/prism'
@@ -25,6 +26,7 @@ export default defineConfig({
       icons(),
       prism(),
       lastUpdated(),
+      excerpt(),
       pwa({
         manifestFilename: 'pwa-manifest.json',
         manifest: {

@@ -13,7 +13,7 @@
         <NavBarLinks />
       </div>
       <div class="flex items-center pl-6">
-        <SearchButton />
+        <!-- <SearchButton /> -->
         <DarkModeSwitch client:load />
       </div>
     </div>

@@ -32,9 +32,9 @@
               {{ $frontmatter.actionText }}
               <IconAppArrowRight class="icon" />
             </AppButton>
-            <AppButton class="ml-6" :href="$frontmatter.altActionLink" outline>
+            <!-- <AppButton class="ml-6" :href="$frontmatter.altActionLink" outline>
               {{ $frontmatter.altActionText }}
-            </AppButton>
+            </AppButton> -->
           </div>
         </div>
       </div>
