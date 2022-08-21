@@ -47,6 +47,7 @@ export function onLoad() {
         class="fixed top-0 left-0 w-auto h-full pointer-events-auto transform -translate-x-full md:transform-none lg:min-w-62 md:(h-$full-viewport sticky top-$navbar-height)"
       >
         <div class="w-auto h-full bg-html md:bg-transparent">
+          <BuyMeCoffee />
           <SidebarHeader />
           <div
             class="sticky top-$navbar-height h-$full-viewport overflow-y-auto"

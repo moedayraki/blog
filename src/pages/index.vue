@@ -12,7 +12,7 @@ let posts = $(getPosts());
 <template layout="home">
   <ul class="divide-y divide-gray-200">
     <li v-for="post of posts" :key="post.href" class="py-12">
-      <article class="space-y-2 xl:(grid grid-cols-4 space-y-0 items-baseline)">
+      <article class="space-y-2 xl:(grid grid-cols-4 space-y-0 items-baseline">
         <PostDate :date="post.date" />
         <div class="space-y-5 xl:col-span-3">
           <div class="space-y-6">

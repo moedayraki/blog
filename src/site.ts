@@ -18,41 +18,17 @@ const site = {
   twitter: `https://twitter.com/${twitterHandle}`,
 
   nav: [
-    { text: 'Top Ten', link: '/guide' },
-    { text: 'Contact', link: '/faqs' },
+    { text: 'Subscribe', link: '/subscribe' },
   ],
 
   sidebar: [
     {
-      text: 'Home',
-      link: '/guide',
+      text: 'Top Ten Posts',
+      link: '/',
       children: [
-        { text: 'Introduction', link: '/guide/introduction' },
-        { text: 'Getting Started', link: '/guide' },
-        { text: 'Development', link: '/guide/development' },
-        { text: 'Documents', link: '/guide/documents' },
-        { text: 'Markdown', link: '/guide/markdown' },
-        { text: 'Meta Tags', link: '/guide/meta-tags' },
-        { text: 'Hydration', link: '/guide/hydration' },
-        { text: 'Frameworks', link: '/guide/frameworks' },
-        { text: 'Client Scripts', link: '/guide/client-scripts' },
-        { text: 'Routing', link: '/guide/routing' },
-        { text: 'Turbo', link: '/guide/turbo' },
-        { text: 'RSS Feeds', link: '/guide/rss' },
-        { text: 'Plugins', link: '/guide/plugins' },
-        { text: 'PWA', link: '/guide/pwa' },
-        { text: 'Deployment', link: '/guide/deployment' },
+        { text: 'The Moe Blog', link: '/posts/the-moe-blog' },
       ],
-    },
-    { text: 'Config', link: '/config' },
-    // {
-    //   text: 'FAQs',
-    //   link: '/faqs',
-    //   children: [
-    //     { text: 'FAQs', link: '/faqs' },
-    //     { text: 'Troubleshooting', link: '/faqs/troubleshooting' },
-    //   ],
-    // },
+    },    
   ],
 }
 
