@@ -4,16 +4,16 @@
       <div class="space-y-2 mb-12 md:mb-14">
         <figure class="grid place-items-center">
           <picture class="grid-item mx-auto block select-none">
-            <source type="image/avif" srcset="/images/banner.avif" />
+            <!-- <source type="image/avif" srcset="/images/banner.avif" /> -->
             <img
               class="max-w-full h-auto w-auto max-h-64 md:h-64 rounded-lg"
               height="256"
               width="768"
-              src="/images/banner.jpg"
+              src="/images/banner.png"
               :alt="$frontmatter.heroAlt"
             />
           </picture>
-          <IconAppText class="grid-item banner-text text-white fill-current" />
+          <!-- <IconAppText class="grid-item banner-text text-white fill-current" /> -->
         </figure>
 
         <div class="text-center">
