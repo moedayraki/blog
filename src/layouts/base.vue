@@ -10,5 +10,5 @@ if (import.meta.env.PROD)
   <MetaTags />
   <TheNavBar />
   <slot />
-  <ReloadPrompt />
+  <!-- <ReloadPrompt /> -->
 </template>
