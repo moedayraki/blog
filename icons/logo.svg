@@ -9,7 +9,7 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Group">
             <rect id="Rectangle" x="0" y="0" width="200" height="200"></rect>
-            <text id="MOE" font-family="Herculanum" font-size="29" font-weight="normal" letter-spacing="0.32541567" fill="#000000">
+            <text id="MOE" font-family="Herculanum" font-size="29" font-weight="normal" letter-spacing="0.32541567" class="fill-current">
                 <tspan x="62.4808765" y="113">MOE</tspan>
             </text>
             <path d="M117.507022,79.3095086 C98.4174972,86.7368645 83.0227188,92.9263277 71.3226872,97.8778983 C59.6226556,102.829469 42.0726082,99.115791 18.672545,86.7368645 C-4.72751817,74.357938 -3.49593589,63.8358505 22.3672918,55.170602 C48.2305196,46.5053535 70.0911049,35.3643196 87.9490479,21.7475005 C105.806991,8.13068142 119.970187,12.4633057 130.438636,34.7453733 C140.907086,57.027441 136.596548,71.8821527 117.507022,79.3095086 Z" id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
