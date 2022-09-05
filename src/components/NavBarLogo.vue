@@ -7,7 +7,7 @@ import { isDark } from "~/logic/dark";
     href="/"
     :aria-label="`${$site.title}, back to the main page`"
   >
-    <IconAppLogoDark v-if="isDark" class="inline-flex mr-2 h-7 md:h-8" />
+    <IconAppLogodark v-if="isDark" class="inline-flex mr-2 h-7 md:h-8" />
     <IconAppLogo v-else class="inline-flex mr-2 h-7 md:h-8" />
     <span class="font-mono">The Moe Blog</span>
     <!-- <IconAppText
