@@ -24,6 +24,7 @@ declare module '@vue/runtime-core' {
     HomeHero: typeof import('./src/components/HomeHero.vue')['default']
     IconAppArrowRight: typeof import('~icons/app/arrow-right')['default']
     IconAppLogo: typeof import('~icons/app/logo')['default']
+    IconAppLogodark: typeof import('~icons/app/logodark')['default']
     IconAppLogoDark: typeof import('~icons/app/logo-dark')['default']
     IconAppText: typeof import('~icons/app/text')['default']
     IconAppVite: typeof import('~icons/app/vite')['default']
