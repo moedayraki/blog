@@ -1,3 +1,6 @@
+<script setup lang="ts">
+import { isDark } from "~/logic/dark";
+</script>
 <template>
   <header class="flex items-center justify-center pt-8vh md:px-6">
     <div>
@@ -6,6 +9,15 @@
           <picture class="grid-item mx-auto block select-none">
             <!-- <source type="image/avif" srcset="/images/banner.avif" /> -->
             <img
+              v-if="isDark"
+              class="max-w-full h-auto w-auto max-h-64 md:h-64 rounded-lg"
+              height="256"
+              width="768"
+              src="/images/banner-dark.png"
+              :alt="$frontmatter.heroAlt"
+            />
+            <img
+              v-else
               class="max-w-full h-auto w-auto max-h-64 md:h-64 rounded-lg"
               height="256"
               width="768"

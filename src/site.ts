@@ -26,7 +26,7 @@ const site = {
       text: 'Top Ten Posts',
       link: '/',
       children: [
-        { text: 'The Moe Blog', link: '/posts/the-moe-blog' },
+        { text: 'The Moe Article', link: '/posts/the-moe-article' },
       ],
     },    
   ],

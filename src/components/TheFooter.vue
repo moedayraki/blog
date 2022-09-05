@@ -12,18 +12,6 @@
         >{{ $site.author }}</a
       >
     </p>
-    <a
-      class="block text-sm text-intense hover:text-primary-soft mt-2"
-      :href="$site.github"
-      target="_blank"
-      rel="noreferrer"
-    >
-      Built with
-      <IconAppText
-        class="inline-block fill-current stroke-current stroke-2 -mt-2 h-6"
-      />
-      <IconAppLogo class="inline-block -mt-2" />
-    </a>
   </footer>
 </template>
 

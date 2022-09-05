@@ -26,6 +26,7 @@ declare module '@vue/runtime-core' {
     IconAppArrowRight: typeof import('~icons/app/arrow-right')['default']
     IconAppAstro: typeof import('~icons/app/astro')['default']
     IconAppLogo: typeof import('~icons/app/logo')['default']
+    IconAppLogoDark: typeof import('~icons/app/logo-dark')['default']
     IconAppText: typeof import('~icons/app/text')['default']
     IconAppVite: typeof import('~icons/app/vite')['default']
     IconBxBxMoon: typeof import('~icons/bx/bx-moon')['default']

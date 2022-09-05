@@ -27,7 +27,7 @@ const isProd = import.meta.env.PROD;
     <meta property="twitter:creator" :content="`@${site.authorHandle}`" />
     <meta property="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/svg+xml" :href="logoSrc" />
-    <link rel="shortcut icon" :href="faviconSrc" />
+    <!-- <link rel="shortcut icon" :href="faviconSrc" /> -->
     <link rel="mask-icon" :href="logoSrc" color="#5C7E8F" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
     <link v-if="isProd" rel="manifest" href="/pwa-manifest.json" />
