@@ -15,7 +15,7 @@ export default defineApp({
         htmlAttrs: { lang: 'en-US' },
         script: [
           { children: checkDarkTheme, once: true },
-          ...prodScripts,
+//           ...prodScripts,
         ],
       },
 })
