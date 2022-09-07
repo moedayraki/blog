@@ -5,7 +5,7 @@ import logoSrc from "/icons/logo.svg";
 
 const { frontmatter, site } = usePage();
 
-let imageUrl = $computed(() => `${site.url}${frontmatter.image || bannerSrc}`);
+let imageUrl = $computed(() => `${frontmatter.image || bannerSrc}`);
 
 const isProd = import.meta.env.PROD;
 </script>
