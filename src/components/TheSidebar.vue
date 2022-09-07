@@ -53,6 +53,7 @@ export function onLoad() {
             class="sticky top-$navbar-height h-$full-viewport overflow-y-auto"
           >
             <SidebarNav />
+            <a class="link" href="/">← Back to the blog</a>
           </div>
         </div>
       </div>

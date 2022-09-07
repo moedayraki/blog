@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import bannerSrc from "/images/banner.png";
 import logoSrc from "/icons/logo.svg";
-import faviconSrc from "/images/favicon.ico";
+// import faviconSrc from "/images/favicon.ico";
 
 const { frontmatter, site } = usePage();
 
@@ -22,7 +22,7 @@ const isProd = import.meta.env.PROD;
     <meta property="og:locale" content="en_US" />
     <meta property="og:image" :content="imageUrl" />
     <meta property="twitter:image" :content="imageUrl" />
-    <meta property="twitter:image:alt" content="îles" />
+    <meta property="twitter:image:alt" content="the_moe_blog" />
     <meta property="twitter:site" :content="`@${site.twitterHandle}`" />
     <meta property="twitter:creator" :content="`@${site.authorHandle}`" />
     <meta property="twitter:card" content="summary_large_image" />
