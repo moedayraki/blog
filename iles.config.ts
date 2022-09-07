@@ -44,7 +44,7 @@ export default defineConfig({
       headings(),
       icons(),
       prism(),
-      images(presets),
+      // images(presets),
       lastUpdated(),
       excerpt(),
     ],
@@ -52,10 +52,10 @@ export default defineConfig({
       rehypePlugins: [
         'rehype-external-links',
       ],
-      withImageSrc (src) {
-        if (!src.includes('?'))
-          return `${src}?preset=post`
-      },
+      // withImageSrc (src) {
+      //   if (!src.includes('?'))
+      //     return `${src}?preset=post`
+      // },
     },
     vite: {
       resolve: {
