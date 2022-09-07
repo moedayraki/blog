@@ -30,6 +30,6 @@ const isProd = import.meta.env.PROD;
     <!-- <link rel="shortcut icon" :href="faviconSrc" /> -->
     <link rel="mask-icon" :href="logoSrc" color="#5C7E8F" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
-    <link v-if="isProd" rel="manifest" href="/pwa-manifest.json" />
+    <!-- <link v-if="isProd" rel="manifest" href="/pwa-manifest.json" /> -->
   </Head>
 </template>
