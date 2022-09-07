@@ -7,7 +7,7 @@ actionLink: /guide/introduction
 altActionText: Install
 altActionLink: /guide
 
-heroAlt: îles logo
+heroAlt: the moe blog logo
 
 features:
   - title: 🏝 Partial Hydration
