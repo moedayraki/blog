@@ -27,9 +27,7 @@ declare module '@vue/runtime-core' {
     IconAppArrowRight: typeof import('~icons/app/arrow-right')['default']
     IconAppLogo: typeof import('~icons/app/logo')['default']
     IconAppLogodark: typeof import('~icons/app/logodark')['default']
-    IconAppLogoDark: typeof import('~icons/app/logo-dark')['default']
     IconAppText: typeof import('~icons/app/text')['default']
-    IconAppVite: typeof import('~icons/app/vite')['default']
     IconBxBxMoon: typeof import('~icons/bx/bx-moon')['default']
     IconBxBxSun: typeof import('~icons/bx/bx-sun')['default']
     IconCarbonArrowLeft: typeof import('~icons/carbon/arrow-left')['default']
@@ -74,7 +72,6 @@ declare module '@vue/runtime-core' {
     TimeAgo: typeof import('./src/components/TimeAgo.vue')['default']
     Tip: typeof import('./src/components/Tip.vue')['default']
     VercelLogo: typeof import('./src/components/VercelLogo.vue')['default']
-    ViteLogo: typeof import('./src/components/ViteLogo.vue')['default']
     VueLogo: typeof import('./src/components/VueLogo.vue')['default']
   }
 }
