@@ -1,5 +1,115 @@
 ---
+layout: post
+title: Programming, Binary, and 01011
 date: 2022-09-06
-title: What is a 0 and 1?
-draft: true
 ---
+
+<Head>
+  <meta property="og:image" content="/images/posts/the-binary-system.jpg" />
+  <meta
+    property="twitter:image"
+    content="/images/posts/the-binary-system.jpg"
+  />
+</Head>
+
+<p align="center">
+  <img
+    style="width:100%"
+    src="/images/posts/the-binary-system.jpg"
+    alt="binary system"
+  />
+</p>
+
+There are 10 types of people. Those who know binary and those who don't. When you think about programming, the very first thing that comes to your head is 0s and 1s. What are 0s and 1s and why are they the only language a computer can speak?
+
+## Statement Explanation
+
+In binary, everything in the world is represented by 0 & 1. As an example, 0 means 0 and 1 means 1 but what about 2,3 and everything else?
+If we put the binary system into a list:
+00 -> 0 <br />
+01 -> 1 <br />
+10 -> 2 <br />
+11 -> 3 <br />
+
+To explain the above statement <i> "There are 10 types of people. Those who know binary and those who don't." </i> We meant 2 in binary which is 10.
+
+## Definition
+
+Binary is a numbering system that uses 1 as a true/on and 0 as a false/off. These numbers are then put as a stream and fed into the computer for analysis. When it comes to computer hardware, it's always easier to learn the meaning of 2 things (0 and 1) instead of learning all the complex counting, equations, formulas, and human language.
+
+Morse code is another type of binary system where every letter of the alphabet is represented by a . or a - to make different sounds.
+
+## Usage in Computers
+
+Nowadays, microchips like Apple's M1 or Intel's i9 use logic gates like AND, OR, and NOR to execute binary code. To know more about logic gates, check out the [Logic Gates](https://www.blog.dayrakiarts.com/posts/logic-gates) article.
+
+A single binary digit is a bit that is defined by either a 0 or a 1. And because we can't do so much with a bit other than representing a true or a false, we combine each 8 of them and call the combination a <b>BYTE</b>. With 8 bits in one stream, we can get the following combinations: <br />
+00000000 <br />
+00000001 <br />
+00000010 <br />
+00000011 <br />
+00000100 <br />
+00000101 <br />
+00000110 <br />
+00000111 <br />
+00001000 <br />
+00001001 <br />
+... <br />
+11111111 <br />
+
+The sum of all the possible combinations of 1 BYTE (8 bits) is 256 combinations.
+
+## Modern Programming
+
+Most programmers don't write binary directly as it's so low-level and takes a long time to write. Modern programmers use high-level languages like javascript, PHP, c++, and python.
+
+## Count in Binary
+
+Humans are used to the Base-10 counting system which consists of the numbers 0-9 (10 symbols) and every time we reach the multiple of 10, we add an extra digit.
+As an example, we count from 0 to 9 and then we reach the next number, we add a digit (0 to the right) and restart counting. This means we get a 10 and the same thing happens when we keep incrementing from 10 to 99, we add a new digit to get a 100.
+
+In binary, the counting system consists of only 2 symbols thus we need to add a digit in the multiple of 2 (2,4,8,16,32,64,128,256,512,1024) instead of the multiple of 10 (10,100,1000,10000,100000).
+
+Let's take 01111011 as a binary example and see what it means:
+
+<table>
+  <tr>
+    <th>Binary Number</th>
+    <th>0</th>
+    <th>1</th>
+    <th>1</th>
+    <th>1</th>
+    <th>1</th>
+    <th>0</th>
+    <th>1</th>
+    <th>1</th>
+  </tr>
+  <tr>
+    <th>Binary System</th>
+    <th>128</th>
+    <th>64</th>
+    <th>32</th>
+    <th>16</th>
+    <th>8</th>
+    <th>4</th>
+    <th>2</th>
+    <th>1</th>
+  </tr>
+  <tr>
+    <th>Multiplying</th>
+    <th>0</th>
+    <th>64</th>
+    <th>32</th>
+    <th>16</th>
+    <th>8</th>
+    <th>0</th>
+    <th>2</th>
+    <th>1</th>
+  </tr>
+</table>
+
+This means that 01111011 is 0+64+32+16+8+0+2+1 which is 123. In computers, 123 is then linked to a symbol in an <b>ASCII</b> table.
+
+## Open Source
+
+The whole project is an open source project under the MIT License. If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)
