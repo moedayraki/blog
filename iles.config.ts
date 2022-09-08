@@ -57,6 +57,10 @@ export default defineConfig({
       //     return `${src}?preset=post`
       // },
     },
+    extendFrontmatter (frontmatter, filename) {
+      if (filename.includes('/posts/'))
+        frontmatter.layout ||= 'post'
+    },
     vite: {
       resolve: {
         alias: {
