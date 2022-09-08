@@ -27,6 +27,7 @@ const site = {
       link: '/',
       children: [
         { text: 'The Moe Article', link: '/posts/the-moe-article' },
+        { text: 'The Binary System', link: '/posts/the-binary-system' },
       ],
     },    
   ],
