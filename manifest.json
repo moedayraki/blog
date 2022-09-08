@@ -93,7 +93,7 @@
     ]
   },
   "virtual_ile_about_ile-3": {
-    "file": "assets/virtual_ile_about_ile-3.6d461005.js",
+    "file": "assets/virtual_ile_about_ile-3.088fd57c.js",
     "src": "virtual_ile_about_ile-3",
     "isEntry": true,
     "imports": [
@@ -142,7 +142,7 @@
     ]
   },
   "virtual_ile_config_ile-3": {
-    "file": "assets/virtual_ile_config_ile-3.91db72ad.js",
+    "file": "assets/virtual_ile_config_ile-3.0e1a1715.js",
     "src": "virtual_ile_config_ile-3",
     "isEntry": true,
     "imports": [
@@ -191,7 +191,7 @@
     ]
   },
   "virtual_ile_dynamic_one_ile-3": {
-    "file": "assets/virtual_ile_dynamic_one_ile-3.8014bd87.js",
+    "file": "assets/virtual_ile_dynamic_one_ile-3.11bf45c0.js",
     "src": "virtual_ile_dynamic_one_ile-3",
     "isEntry": true,
     "imports": [
@@ -240,7 +240,7 @@
     ]
   },
   "virtual_ile_dynamic_two_ile-3": {
-    "file": "assets/virtual_ile_dynamic_two_ile-3.5b469c2a.js",
+    "file": "assets/virtual_ile_dynamic_two_ile-3.3087355f.js",
     "src": "virtual_ile_dynamic_two_ile-3",
     "isEntry": true,
     "imports": [
@@ -324,7 +324,7 @@
     ]
   },
   "virtual_ile_posts_1_ile-3": {
-    "file": "assets/virtual_ile_posts_1_ile-3.ccc4a899.js",
+    "file": "assets/virtual_ile_posts_1_ile-3.e372fb03.js",
     "src": "virtual_ile_posts_1_ile-3",
     "isEntry": true,
     "imports": [
@@ -340,6 +340,104 @@
   "virtual_ile_posts_1_ile-4": {
     "file": "assets/virtual_ile_posts_1_ile-4.58148c85.js",
     "src": "virtual_ile_posts_1_ile-4",
+    "isEntry": true,
+    "imports": [
+      "_iles.52331de7.js",
+      "src/layouts/base.vue?vue&index=0&clientScript=true&lang.ts",
+      "_vendor-vue.7eb02d63.js"
+    ]
+  },
+  "virtual_ile_posts_2_ile-1": {
+    "file": "assets/virtual_ile_posts_2_ile-1.9f3503b9.js",
+    "src": "virtual_ile_posts_2_ile-1",
+    "isEntry": true,
+    "imports": [
+      "_iles.52331de7.js",
+      "_DarkModeSwitch.8c1f5827.js",
+      "_vendor-vue.7eb02d63.js",
+      "_vite.c2be9ca1.js"
+    ]
+  },
+  "virtual_ile_posts_2_ile-2": {
+    "file": "assets/virtual_ile_posts_2_ile-2.bf892f4c.js",
+    "src": "virtual_ile_posts_2_ile-2",
+    "isEntry": true,
+    "imports": [
+      "_vite.c2be9ca1.js",
+      "_iles.52331de7.js",
+      "_vendor-vue.7eb02d63.js"
+    ],
+    "dynamicImports": [
+      "_iles.52331de7.js",
+      "src/components/TheSidebar.vue?vue&index=0&clientScript=true&lang.ts"
+    ]
+  },
+  "virtual_ile_posts_2_ile-3": {
+    "file": "assets/virtual_ile_posts_2_ile-3.be92862c.js",
+    "src": "virtual_ile_posts_2_ile-3",
+    "isEntry": true,
+    "imports": [
+      "_vite.c2be9ca1.js",
+      "_iles.52331de7.js",
+      "_vendor-vue.7eb02d63.js"
+    ],
+    "dynamicImports": [
+      "_iles.52331de7.js",
+      "src/components/TimeAgo.vue"
+    ]
+  },
+  "virtual_ile_posts_2_ile-4": {
+    "file": "assets/virtual_ile_posts_2_ile-4.a1667e74.js",
+    "src": "virtual_ile_posts_2_ile-4",
+    "isEntry": true,
+    "imports": [
+      "_iles.52331de7.js",
+      "src/layouts/base.vue?vue&index=0&clientScript=true&lang.ts",
+      "_vendor-vue.7eb02d63.js"
+    ]
+  },
+  "virtual_ile_posts_apple-sept-2022_ile-1": {
+    "file": "assets/virtual_ile_posts_apple-sept-2022_ile-1.84fd92af.js",
+    "src": "virtual_ile_posts_apple-sept-2022_ile-1",
+    "isEntry": true,
+    "imports": [
+      "_iles.52331de7.js",
+      "_DarkModeSwitch.8c1f5827.js",
+      "_vendor-vue.7eb02d63.js",
+      "_vite.c2be9ca1.js"
+    ]
+  },
+  "virtual_ile_posts_apple-sept-2022_ile-2": {
+    "file": "assets/virtual_ile_posts_apple-sept-2022_ile-2.045101dc.js",
+    "src": "virtual_ile_posts_apple-sept-2022_ile-2",
+    "isEntry": true,
+    "imports": [
+      "_vite.c2be9ca1.js",
+      "_iles.52331de7.js",
+      "_vendor-vue.7eb02d63.js"
+    ],
+    "dynamicImports": [
+      "_iles.52331de7.js",
+      "src/components/TheSidebar.vue?vue&index=0&clientScript=true&lang.ts"
+    ]
+  },
+  "virtual_ile_posts_apple-sept-2022_ile-3": {
+    "file": "assets/virtual_ile_posts_apple-sept-2022_ile-3.97f3bcb6.js",
+    "src": "virtual_ile_posts_apple-sept-2022_ile-3",
+    "isEntry": true,
+    "imports": [
+      "_vite.c2be9ca1.js",
+      "_iles.52331de7.js",
+      "_vendor-vue.7eb02d63.js"
+    ],
+    "dynamicImports": [
+      "_iles.52331de7.js",
+      "src/components/TimeAgo.vue"
+    ]
+  },
+  "virtual_ile_posts_apple-sept-2022_ile-4": {
+    "file": "assets/virtual_ile_posts_apple-sept-2022_ile-4.469bc7c0.js",
+    "src": "virtual_ile_posts_apple-sept-2022_ile-4",
     "isEntry": true,
     "imports": [
       "_iles.52331de7.js",
@@ -373,7 +471,7 @@
     ]
   },
   "virtual_ile_posts_binary-system_ile-3": {
-    "file": "assets/virtual_ile_posts_binary-system_ile-3.31b0ee10.js",
+    "file": "assets/virtual_ile_posts_binary-system_ile-3.68135d6b.js",
     "src": "virtual_ile_posts_binary-system_ile-3",
     "isEntry": true,
     "imports": [
@@ -422,7 +520,7 @@
     ]
   },
   "virtual_ile_posts_the-moe-article_ile-3": {
-    "file": "assets/virtual_ile_posts_the-moe-article_ile-3.49b73e6e.js",
+    "file": "assets/virtual_ile_posts_the-moe-article_ile-3.76174bc9.js",
     "src": "virtual_ile_posts_the-moe-article_ile-3",
     "isEntry": true,
     "imports": [
@@ -471,7 +569,7 @@
     ]
   },
   "virtual_ile_subscribe_ile-3": {
-    "file": "assets/virtual_ile_subscribe_ile-3.1c80dbab.js",
+    "file": "assets/virtual_ile_subscribe_ile-3.11cd9bf0.js",
     "src": "virtual_ile_subscribe_ile-3",
     "isEntry": true,
     "imports": [
