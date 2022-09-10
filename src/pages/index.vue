@@ -1,5 +1,5 @@
 <page>
-actionText: Who's Moe
+actionText: Subscribe
 actionLink: /guide/introduction
 heroAlt: blog logo
 </page>
@@ -7,6 +7,10 @@ heroAlt: blog logo
 <script setup lang="ts">
 import { getPosts } from "~/logic/posts";
 let posts = $(getPosts());
+let pageclip = document.createElement("script");
+pageclip.setAttribute("src", "https://s.pageclip.co/v1/pageclip.js");
+pageclip.setAttribute("charset", "utf-8");
+document.head.appendChild(pageclip);
 </script>
 
 <template layout="home">

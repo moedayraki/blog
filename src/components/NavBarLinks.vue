@@ -1,4 +1,5 @@
 <template>
+  <NavBarLink href="https://www.moe.dayrakiarts.com" text="Who's Moe" />
   <div v-for="(item, index) in $site.nav" :key="item.text" class="item">
     <NavBarLink
       :class="{ '<md:hidden': index > 1 }"

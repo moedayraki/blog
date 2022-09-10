@@ -18,7 +18,7 @@ const site = {
   twitter: `https://twitter.com/${twitterHandle}`,
 
   nav: [
-    { text: 'Subscribe', link: '/subscribe' },
+    { text: 'Subscribe', link: '/#subscribe' },
   ],
 
   sidebar: [

@@ -40,13 +40,7 @@ import { isDark } from "~/logic/dark";
           </p>
 
           <div class="flex mt-8 justify-center">
-            <AppButton :href="$frontmatter.actionLink">
-              {{ $frontmatter.actionText }}
-              <IconAppArrowRight class="icon" />
-            </AppButton>
-            <!-- <AppButton class="ml-6" :href="$frontmatter.altActionLink" outline>
-              {{ $frontmatter.altActionText }}
-            </AppButton> -->
+            <SubscribeForm />
           </div>
         </div>
       </div>
