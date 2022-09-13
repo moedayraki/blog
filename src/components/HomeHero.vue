@@ -7,7 +7,6 @@ import { isDark } from "~/logic/dark";
       <div class="space-y-2 mb-12 md:mb-14">
         <figure class="grid place-items-center">
           <picture class="grid-item mx-auto block select-none">
-            <!-- <source type="image/avif" srcset="/images/banner.avif" /> -->
             <img
               v-if="isDark"
               class="max-w-full h-auto w-auto max-h-64 md:h-64 rounded-lg"
@@ -25,7 +24,6 @@ import { isDark } from "~/logic/dark";
               :alt="$frontmatter.heroAlt"
             />
           </picture>
-          <!-- <IconAppText class="grid-item banner-text text-white fill-current" /> -->
         </figure>
 
         <div class="text-center">

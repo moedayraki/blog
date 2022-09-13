@@ -5,12 +5,15 @@ heroAlt: blog logo
 </page>
 
 <script setup lang="ts">
+import { onMounted } from "vue";
 import { getPosts } from "~/logic/posts";
 let posts = $(getPosts());
-let pageclip = document.createElement("script");
-pageclip.setAttribute("src", "https://s.pageclip.co/v1/pageclip.js");
-pageclip.setAttribute("charset", "utf-8");
-document.head.appendChild(pageclip);
+onMounted(() => {
+  let pageclip = document.createElement("script");
+  pageclip.setAttribute("src", "https://s.pageclip.co/v1/pageclip.js");
+  pageclip.setAttribute("charset", "utf-8");
+  document.head.appendChild(pageclip);
+});
 </script>
 
 <template layout="home">

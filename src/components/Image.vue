@@ -8,6 +8,5 @@ defineProps({
 </script>
 
 <template>
-  <img class="img mx-auto" :class="{ narrow, wide }" :src="src" :alt="alt" />
-  <Caption>{{ alt }}</Caption>
+  <img :class="{ narrow, wide }" :src="src" :alt="alt" />
 </template>
