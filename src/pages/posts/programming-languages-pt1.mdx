@@ -1,0 +1,217 @@
+---
+title: A Scan Through Programming Languages
+description: A list and description of the most common and used programming languages
+date: 2022-09-13
+image: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Prog-languages.png"
+categories:
+  - development
+tags:
+  - list
+---
+
+<p align="center">
+  <img
+    style="width:100%"
+    src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Prog-languages.png"
+    alt="Programming Languages - Moe Dayraki"
+  />
+</p>
+
+Instead of talking about the best programming language to learn so, you can be rich, we're going to dive into the real deal and talk about the roadmap of the programming languages, the good ones, bad ones, loved and hated ones, famous and unknown ones.
+
+## Easy to Learn Languages
+
+### Scratch
+
+Scratch is one of the programming languages you want to try if you know nothing about programming and want an easy start. It's a high-level visual language based on blocks developed in 2003 at MIT. block-based programming languages use drag and drop methods to represent bricks of code including variables, control flow, and operators.
+
+<p align="center">
+  <img
+    style="width:70%"
+    src="https://cdn-media-1.freecodecamp.org/images/0*oDbEFNhoM75KOnvF."
+    alt="Scratch - Moe Dayraki"
+  />
+</p>
+
+### Basic
+
+Basic stands for Beginners' All-Purpose Symbolic Instruction Code. Basic had some basic commands including PRINT, GOTO and FOR
+
+```basic
+05 HOME : TEXT : REM Fibonacci numbers
+10 LET MAX = 5000
+20 LET X = 1 : LET Y = 1
+30 IF (X > MAX) GOTO 100
+.
+.
+.
+100 END
+```
+
+## Popular Languages
+
+### Python
+
+Python is a minimal syntax language that doesn't require curly braces or semicolons.
+
+```python
+print('hello there')
+n = int(input('Type a number'))
+```
+
+Python uses indentation to represent different blocks of code.
+
+### Javascript
+
+Javascript is the most common language used nowadays. The syntax is not that beautiful as it includes all types of colons, braces, brackets, etc. This language is a requirement if you want to dive into web development and almost every developer will have to work with this language at one point in their life.
+
+```javascript
+let name = "Moe";
+
+console.log({ name: name });
+
+document.onload(() => {
+  alert("document loaded");
+});
+```
+
+## Dynamic Languages
+
+### Bash
+
+Bash is a terminal language that allows the user to interact with the computer programmatically instead of typing out the same commands everytime.
+
+```bash
+#!/bin/bash
+echo "Enter directory name"
+read ndir
+if [ -d "$ndir" ]
+then
+echo "Directory exist"
+else
+`mkdir $ndir`
+echo "Directory created"
+```
+
+### HTML
+
+HTML is the language of the web. It's more of the skeleton of any website you see online. The HTML is not a traditional language and doesn't include syntax like loops and conditions.
+
+```html
+<div>
+  <h1>The Moe Blog</h1>
+</div>
+```
+
+The example above will render a header that includes 'The Moe Blog'. To learn more about HTML, visit my article about [The Basics of HTML](/html-basics)
+
+### CSS
+
+If HTML is the skeleton of every website then CSS is the DNA. CSS will give all the websites on the web the colors, transitions, animations, layouts and style.
+
+```css
+root{
+  margin: 0
+  padding: 0
+  font-size: 1rem
+}
+```
+
+### SQL
+
+The most used database language; SQL or structured query language; is not a regular programming language but more of a read/write data language.
+
+```sql
+SELECT employee.id, employee.first_name, employee.last_name
+FROM call
+INNER JOIN employee ON call.employee_id = employee.id
+```
+
+### PHP
+
+PHP is the father of all web servers and most of the most famous platforms are written using PHP like WordPress and Joomla. Laravel is the best PHP's framework where it creates a MVC workflow around any web application.
+
+```php
+<?php echo 'Hello there!'; ?>
+```
+
+### Lua
+
+Lua is an easier and faster language than python and engines like Roblox and world of warcraft embed it.
+
+### Ruby
+
+Ruby 'merged with the Rails framework' is an OOL that is good for web applications.
+
+### R
+
+R is a data science programming language used for statistics and data visualization.
+
+### Julia
+
+Julia is a modern scientific computing language.
+
+## Static Languages
+
+### Java
+
+Java changed the programming concept with the jvm (java virtual machine) that allows developers to target any computer architecture from a single codebase and compile to bytecode.
+
+```java
+class HelloMoe {
+
+  public static void main(String args[]){
+
+    System.out.println(x:"Hello Moe");
+
+  }
+
+}
+```
+
+The syntax is complicated for beginners but having types in the code can make it much easier to understand what's happening when another developer tries to read and edit the code.
+
+### C#
+
+Microsoft's C# works the same as Java does but it gained a lot of love from its developers, especially when working with games using Unity or web applications using the .NET framework.
+
+```cs
+int num1 = 0; int num2 = 0;
+
+Console.WriteLine("Console Calculator in C#\r");
+Console.WriteLine("------------------------\n");
+```
+
+### Typescript
+
+It's a "developed at Microsoft" language as well where it takes javascript and adds a type system on top to make it easier to maintain in the future when it comes to complex projects.
+
+```typescript
+let greeting: String;
+```
+
+### Kotlin, Swift and Dart
+
+All these 3 languages are static types languages where Kotlin is used for Android (Successor of Java), Swift of iOS (Successor of Objective C) and Dart for flutter.
+
+### GO
+
+Go is a high-performance language developed at Google to build low-level systems and was designed to replace C.
+
+```go
+import "fmt"
+
+func plus (a int, b int) int {
+  return a + b
+}
+```
+
+The syntax is nice and concise making it approachable to beginners and it has a garbage collector which means unlike c, developers don't need to worry about manual memory management.
+
+## Deeper Languages
+
+We've mentioned above most of the common and relatively easy for developers languages. To know more about deeper languages where most programmers sense a faint smell of danger, please read []
+
+## Open Source
+
+The whole project is an open source project under the MIT License. If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)

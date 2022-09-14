@@ -1,20 +1,20 @@
 ---
-title: Programming Languages Roadmap
+title: A Dive In Programming Languages
 description: A roadmap that covers all the programming languages through levels and history
 date: 2022-09-08
-image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/the-moe-article.jpg"
+image: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Prog-languages.png"
 categories:
   - development
 tags:
-  - roadmap
+  - list
 draft: true
 ---
 
 <p align="center">
   <img
     style="width:100%"
-    src="~/assets/the-moe-article.jpg"
-    alt="Moe Dayraki"
+    src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Prog-languages.png"
+    alt="Programming Langauges - Moe Dayraki"
   />
 </p>
 
@@ -76,7 +76,7 @@ document.onload(() => {
 });
 ```
 
-## Specialized Languages
+## Dynamic Languages
 
 ### Bash
 
@@ -120,11 +120,98 @@ root{
 
 ### SQL
 
+The most used database language; SQL or structured query language; is not a regular programming language but more of a read/write data language.
+
+```sql
+SELECT employee.id, employee.first_name, employee.last_name
+FROM call
+INNER JOIN employee ON call.employee_id = employee.id
+```
+
 ### PHP
+
+PHP is the father of all web servers and most of the most famous platforms are written using PHP like WordPress and Joomla. Laravel is the best PHP's framework where it creates a MVC workflow around any web application.
+
+```php
+<?php echo 'Hello there!'; ?>
+```
 
 ### Lua
 
+Lua is an easier and faster language than python and engines like Roblox and world of warcraft embed it.
+
 ### Ruby
+
+Ruby 'merged with the Rails framework' is an OOL that is good for web applications.
+
+### R
+
+R is a data science programming language used for statistics and data visualization.
+
+### Julia
+
+Julia is a modern scientific computing language.
+
+## Static Languages
+
+### Java
+
+Java changed the programming concept with the jvm (java virtual machine) that allows developers to target any computer architecture from a single codebase and compile to bytecode.
+
+```java
+class HelloMoe {
+
+  public static void main(String args[]){
+
+    System.out.println(x:"Hello Moe");
+
+  }
+
+}
+```
+
+The syntax is complicated for beginners but having types in the code can make it much easier to understand what's happening when another developer tries to read and edit the code.
+
+### C#
+
+Microsoft's C# works the same as Java does but it gained a lot of love from its developers, especially when working with games using Unity or web applications using the .NET framework.
+
+```cs
+int num1 = 0; int num2 = 0;
+
+Console.WriteLine("Console Calculator in C#\r");
+Console.WriteLine("------------------------\n");
+```
+
+### Typescript
+
+It's a "developed at Microsoft" language as well where it takes javascript and adds a type system on top to make it easier to maintain in the future when it comes to complex projects.
+
+```typescript
+let greeting: String;
+```
+
+### Kotlin, Swift and Dart
+
+All these 3 languages are static types languages where Kotlin is used for Android (Successor of Java), Swift of iOS (Successor of Objective C) and Dart for flutter.
+
+### GO
+
+Go is a high-performance language developed at Google to build low-level systems and was designed to replace C.
+
+```go
+import "fmt"
+
+func plus (a int, b int) int {
+  return a + b
+}
+```
+
+The syntax is nice and concise making it approachable to beginners and it has a garbage collector which means unlike c, developers don't need to worry about manual memory management.
+
+## Deeper Languages
+
+We've mentioned above most of the common and relatively easy for developers languages. To know more about deeper languages where most programmers sense a faint smell of danger, please read []
 
 ## Open Source
 
