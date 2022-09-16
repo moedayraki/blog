@@ -28,7 +28,8 @@ const site = {
       children: [
         { text: 'The Moe Article', link: '/posts/the-moe-article' },
         { text: 'The Binary System', link: '/posts/binary-system' },
-        { text: 'Languages Scan', link: '/posts/programming-languages-pt1' },
+        { text: 'Languages Scim', link: '/posts/programming-languages-pt1' },
+        { text: 'Languages Dive', link: '/posts/programming-languages-pt2' },
       ],
     },    
   ],

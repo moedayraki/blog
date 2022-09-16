@@ -1,8 +1,8 @@
 ---
 title: A Dive In Programming Languages
-description: A roadmap that covers all the programming languages through levels and history
-date: 2022-09-08
-image: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Prog-languages.png"
+description: Complicated and less commonly used programming languages throughout the history
+date: 2022-09-15
+image: "https://www.fscj.edu/images/default-source/workforce-education/progweb_1920x720.jpg?sfvrsn=f74686d5_0"
 categories:
   - development
 tags:
@@ -13,205 +13,238 @@ draft: true
 <p align="center">
   <img
     style="width:100%"
-    src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Prog-languages.png"
-    alt="Programming Langauges - Moe Dayraki"
+    src="https://www.fscj.edu/images/default-source/workforce-education/progweb_1920x720.jpg?sfvrsn=f74686d5_0"
+    alt="Programming Languages - Moe Dayraki"
   />
 </p>
 
-Instead of talking about the best programming language to learn so, you can be rich, we're going to dive into the real deal and talk about the roadmap of the programming languages, the good ones, bad ones, loved and hated ones, famous and unknown ones.
+Have you heard of Miranda, Haskell and C? Let's then take a deep dive into programming languages that are more complicated and/or less used than others.
 
-## Easy to Learn Languages
+## Functional Languages
 
-### Scratch
+### Haskell
 
-Scratch is one of the programming languages you want to try if you know nothing about programming and want an easy start. It's a high-level visual language based on blocks developed in 2003 at MIT. block-based programming languages use drag and drop methods to represent bricks of code including variables, control flow, and operators.
+With Haskell, programmers don't use classes, objects or types. The only abstraction needed is the function itself.
+
+```haskell
+primes = filterPrime [2..]
+  where filterPrime (p:xs) =
+      p : filterPrime [x | x <- xs, x `mod` p /= 0]
+```
+
+The language was inspired by the Miranda Language and it carries immutable variables and no side effects functions. With these features, developers can build anything.
+
+### F Sharp
+
+Developed by Microsoft, F sharp; C Sharp's sister; is also a functional language which is imperative and object-oriented which means that it's more approachable to programmers that are new to this level.
+
+```fsharp
+// define the square function
+let square x = x * x
+
+// define the sumOfSquares function
+let sumOfSquares n =
+   [1..n] |> List.map square |> List.sum
+
+// try it
+sumOfSquares 100
+```
+
+### Scala
+
+Scala is Java functional programming language alternative. It also runs on the JVM and has an extension to make it dynamic so you can finish things faster but without the type-checking feature
+
+### Ocamel
+
+Ocamel is a popular functional language that Facebook uses.
+
+### Elixir
+
+Elixir is a very Ruby-like syntax programming language that can build high-performance real-time web applications.
+
+### Elm
+
+Elm is another functional language that compiles to javascript with zero runtime errors.
+
+## Systems Languages
+
+### C
+
+The C programming language was developed in 1969 and it was used to build the Windows, Mac, and Linux operating system kernels. C was the first programming language that uses curly braces and all other curly braces languages got their inspiration from it.
+
+```c
+#include <stdio.h>
+int main() {
+   // printf() displays the string inside quotation
+   printf("Hello, Moe!");
+   return 0;
+}
+```
+
+The syntax is not hard to write with and not a lot of keywords are used inside it so it's a pretty easy language to write. The issue occurs when a programmer tries to use the language effectively as it required extensive knowledge of algorithms and computer architecture.
+
+### C++
+
+C++ was designed as a superset/extension for C with the ability to add object-oriented programming including classes and inheritance. C++ has these features but being a low-level system language, the hard part was referencing the manual memory management with pointers which is still a challenge nowadays.
+
+This language is highly optimized and was the root of designing game engines, and compilers.
+
+### Rust
+
+Rust came in with modern programming as a low-level language. It doesn't have a garbage collector but uses a technique called borrow checking. This will make it much easier to write memory-safe programs.
 
 <p align="center">
   <img
-    style="width:70%"
-    src="https://cdn-media-1.freecodecamp.org/images/0*oDbEFNhoM75KOnvF."
-    alt="Scratch - Moe Dayraki"
+    style="width:100%"
+    src="https://www.rust-lang.org/static/images/rust-social-wide.jpg"
+    alt="Programming Languages - Moe Dayraki"
   />
 </p>
 
-### Basic
+Rust ranks as the most loved language in the world.
 
-Basic stands for Beginners' All-Purpose Symbolic Instruction Code. Basic had some basic commands including PRINT, GOTO and FOR
+## Hidden Modern Languages
 
-```basic
-05 HOME : TEXT : REM Fibonacci numbers
-10 LET MAX = 5000
-20 LET X = 1 : LET Y = 1
-30 IF (X > MAX) GOTO 100
-.
-.
-.
-100 END
+### V
+
+V is similar to the Go programming language that doesn't use a garbage collector or borrow check but still creates memory-safe applications with --autofree. Its compiler cleans everything up and does all the work.
+
+### Zig
+
+Zig is a modern replacement for C that eliminates features like macros and metaprogramming and it comes with memory management. The great feature of using Zig is that it cross-compiles C & C++.
+
+### Carbon
+
+Developed at Google, Carbon was designed to be a successor to C++ and it fully understands C++ code.
+
+### Hack
+
+Hack was developed at Facebook to replace PHP which was slow at that time. They also needed a type system; which PHP didn't provide then; to scale Facebook up.
+
+## Historical Programming
+
+### Fortan
+
+Fortuna was the first high-level programming language and was by far the most popular language for many years until C came around.
+
+### Lisp
+
+Lisp was invented in 1958 and it created the idea of dynamic typing and higher order function recursion
+
+### Algorithmic Language
+
+This hidden and historical language was the major influence on the development of both C and C++ languages.
+
+### Cobalt
+
+Cobalt is the banking programming language. 40% of the banking systems still use this language with over 200 billion lines of code in production.
+
+### Pascal
+
+Pascal took the programming world by storm because of its procedural language and very fast compile time.
+
+### Erlang
+
+Erlang is the telecom industry's favorite programming language and it's still in use today.
+
+## Crazy Languages
+
+### Intercal
+
+Intercal was designed to make fun of the languages of the day like algol and fortan. It has an interesting choice of keywords like `please` and `mingle`. Please doesn't actually do anything but it makes you a more polite programmer.
+
+### BrainF\*\*K
+
+This language is well known for being extermely minimal urban lueller created breakback in college and it works by initializing an array then gives you a pointer and eight different characters to manipulate memory in that array. By reading the syntax, your brain will **\*\*** up.
+
+```brainfuck
+//print "Hello, World!"
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]
+++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.
 ```
 
-## Popular Languages
+### Malbulgia
 
-### Python
+The name of this programming language came after the eighth circle of hell in the divine comedy. To be honest, I can't even summarize or explain how it works but here's a sample of the code.
 
-Python is a minimal syntax language that doesn't require curly braces or semicolons.
-
-```python
-print('hello there')
-n = int(input('Type a number'))
+```
+//print "Hello, World."
+(=<`#9]~6ZY327Uv4-QsqpMn&+Ij"'E%e{Ab~w=_:]Kw%o44Uqp0/Q?
+xNvL:`H%c#DD2^WV>gY;dts76qKJImZkj
 ```
 
-Python uses indentation to represent different blocks of code.
+### Chef
 
-### Javascript
+This language makes code look like a cooking recipe. It uses ingredients and a mixing bowl instead of keywords to write code.
 
-Javascript is the most common language used nowadays. The syntax is not that beautiful as it includes all types of colons, braces, brackets, etc. This language is a requirement if you want to dive into web development and almost every developer will have to work with this language at one point in their life.
-
-```javascript
-let name = "Moe";
-
-console.log({ name: name });
-
-document.onload(() => {
-  alert("document loaded");
-});
 ```
+//print "Hello, World"
+Hello World Cake with Chocolate sauce.
 
-## Dynamic Languages
+This prints hello world, while being tastier than Hello World Souffle. The main
+chef makes a " world!" cake, which he puts in the baking dish. When he gets the
+sous chef to make the "Hello" chocolate sauce, it gets put into the baking dish
+and then the whole thing is printed when he refrigerates the sauce. When
+actually cooking, I'm interpreting the chocolate sauce baking dish to be
+separate from the cake one and Liquify to mean either melt or blend depending on
+context.
 
-### Bash
+Ingredients.
+33 g chocolate chips
+100 g butter
+54 ml double cream
+2 pinches baking powder
+114 g sugar
+111 ml beaten eggs
+119 g flour
+32 g cocoa powder
+0 g cake mixture
 
-Bash is a terminal language that allows the user to interact with the computer programmatically instead of typing out the same commands everytime.
+Cooking time: 25 minutes.
 
-```bash
-#!/bin/bash
-echo "Enter directory name"
-read ndir
-if [ -d "$ndir" ]
-then
-echo "Directory exist"
-else
-`mkdir $ndir`
-echo "Directory created"
+Pre-heat oven to 180 degrees Celsius.
+
+Method.
+Put chocolate chips into the mixing bowl.
+Put butter into the mixing bowl.
+Put sugar into the mixing bowl.
+Put beaten eggs into the mixing bowl.
+Put flour into the mixing bowl.
+Put baking powder into the mixing bowl.
+Put cocoa  powder into the mixing bowl.
+Stir the mixing bowl for 1 minute.
+Combine double cream into the mixing bowl.
+Stir the mixing bowl for 4 minutes.
+Liquefy the contents of the mixing bowl.
+Pour contents of the mixing bowl into the baking dish.
+bake the cake mixture.
+Wait until baked.
+Serve with chocolate sauce.
+
+chocolate sauce.
+
+Ingredients.
+111 g sugar
+108 ml hot water
+108 ml heated double cream
+101 g dark chocolate
+72 g milk chocolate
+
+Method.
+Clean the mixing bowl.
+Put sugar into the mixing bowl.
+Put hot water into the mixing bowl.
+Put heated double cream into the mixing bowl.
+dissolve the sugar.
+agitate the sugar until dissolved.
+Liquefy the dark chocolate.
+Put dark chocolate into the mixing bowl.
+Liquefy the milk chocolate.
+Put milk chocolate into the mixing bowl.
+Liquefy contents of the mixing bowl.
+Pour contents of the mixing bowl into the baking dish.
+Refrigerate for 1 hour.
 ```
-
-### HTML
-
-HTML is the language of the web. It's more of the skeleton of any website you see online. The HTML is not a traditional language and doesn't include syntax like loops and conditions.
-
-```html
-<div>
-  <h1>The Moe Blog</h1>
-</div>
-```
-
-The example above will render a header that includes 'The Moe Blog'. To learn more about HTML, visit my article about [The Basics of HTML](/html-basics)
-
-### CSS
-
-If HTML is the skeleton of every website then CSS is the DNA. CSS will give all the websites on the web the colors, transitions, animations, layouts and style.
-
-```css
-root{
-  margin: 0
-  padding: 0
-  font-size: 1rem
-}
-```
-
-### SQL
-
-The most used database language; SQL or structured query language; is not a regular programming language but more of a read/write data language.
-
-```sql
-SELECT employee.id, employee.first_name, employee.last_name
-FROM call
-INNER JOIN employee ON call.employee_id = employee.id
-```
-
-### PHP
-
-PHP is the father of all web servers and most of the most famous platforms are written using PHP like WordPress and Joomla. Laravel is the best PHP's framework where it creates a MVC workflow around any web application.
-
-```php
-<?php echo 'Hello there!'; ?>
-```
-
-### Lua
-
-Lua is an easier and faster language than python and engines like Roblox and world of warcraft embed it.
-
-### Ruby
-
-Ruby 'merged with the Rails framework' is an OOL that is good for web applications.
-
-### R
-
-R is a data science programming language used for statistics and data visualization.
-
-### Julia
-
-Julia is a modern scientific computing language.
-
-## Static Languages
-
-### Java
-
-Java changed the programming concept with the jvm (java virtual machine) that allows developers to target any computer architecture from a single codebase and compile to bytecode.
-
-```java
-class HelloMoe {
-
-  public static void main(String args[]){
-
-    System.out.println(x:"Hello Moe");
-
-  }
-
-}
-```
-
-The syntax is complicated for beginners but having types in the code can make it much easier to understand what's happening when another developer tries to read and edit the code.
-
-### C#
-
-Microsoft's C# works the same as Java does but it gained a lot of love from its developers, especially when working with games using Unity or web applications using the .NET framework.
-
-```cs
-int num1 = 0; int num2 = 0;
-
-Console.WriteLine("Console Calculator in C#\r");
-Console.WriteLine("------------------------\n");
-```
-
-### Typescript
-
-It's a "developed at Microsoft" language as well where it takes javascript and adds a type system on top to make it easier to maintain in the future when it comes to complex projects.
-
-```typescript
-let greeting: String;
-```
-
-### Kotlin, Swift and Dart
-
-All these 3 languages are static types languages where Kotlin is used for Android (Successor of Java), Swift of iOS (Successor of Objective C) and Dart for flutter.
-
-### GO
-
-Go is a high-performance language developed at Google to build low-level systems and was designed to replace C.
-
-```go
-import "fmt"
-
-func plus (a int, b int) int {
-  return a + b
-}
-```
-
-The syntax is nice and concise making it approachable to beginners and it has a garbage collector which means unlike c, developers don't need to worry about manual memory management.
-
-## Deeper Languages
-
-We've mentioned above most of the common and relatively easy for developers languages. To know more about deeper languages where most programmers sense a faint smell of danger, please read []
 
 ## Open Source
 
