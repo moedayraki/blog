@@ -28,7 +28,7 @@
     "@vueuse/core": "^9.3.0",
     "autoprefixer": "^10.4.12",
     "iles": "^0.8.0",
-    "postcss": "^8.4.14",
+    "postcss": "^8.4.16",
     "postcss-nesting": "^10.1.10",
     "rehype-external-links": "^1.0.0",
     "typescript": "^4.5",
