@@ -19,7 +19,7 @@
     "@iconify-json/carbon": "^1.1.7",
     "@islands/excerpt": "^0.8.0",
     "@islands/feed": "^0.8.0",
-    "@islands/headings": "^0.8.0",
+    "@islands/headings": "^0.8.1",
     "@islands/icons": "^0.8.0",
     "@islands/images": "^0.8.1",
     "@islands/prism": "^0.8.0",
