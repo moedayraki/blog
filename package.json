@@ -26,7 +26,7 @@
     "@islands/pwa": "^0.8.0",
     "@types/cross-spawn": "^6.0.2",
     "@vueuse/core": "^9.3.0",
-    "autoprefixer": "^10.4.8",
+    "autoprefixer": "^10.4.12",
     "iles": "^0.8.0",
     "postcss": "^8.4.14",
     "postcss-nesting": "^10.1.10",
