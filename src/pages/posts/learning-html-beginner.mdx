@@ -18,7 +18,53 @@ draft: true
   />
 </p>
 
-Have you heard of Miranda, Haskell and C? Let's then take a deep dive into programming languages that are more complicated and/or less used than others.
+HTML _the skeleton of every web page you've looked at_ refers to HyperText Markup Language and it's the base of what we call <b>frontend development</b>. Today, we'll learn together about elements, tags, attributes, values and content so we can use them while building our websites.
+
+## Definitions
+
+To start with, HTML consists of <b>elements</b> and these elements can be placed on top of each other and/or inside each other. The elements themselves are created using <b>tags</b> that have <b>attributes</b> and these attributes have <b>values</b>. Some elements have <b>content</b> depending on the element type.
+
+### Elements
+
+The most important element in HTML is the root element and it's also known as html. Now we're lost...but let's wait so we can understand what's going on. To write html, the file's extension should be .html and the very first element after the document declaration `<!DOCTYPE html>` is
+
+```html
+<!DOCTYPE html>
+<html>
+  ...
+</html>
+```
+
+The `<!DOCTYPE html>` represents the document type and it helps browsers understand and display web pages correctly.
+As we notice, the `html` element is opening with `<html>` and closing with `</html>` and these are what we call opening and closing <b>tags</b>.
+
+### Tags
+
+Opening tags are represented by `< >` and closing tags are represented by `</ >`. We'll find out later that some tags can be `< />` and these tags don't have content and thus can't have tags inside of them.
+As an example, the `html` element has an opening tag `<html>` and closing tag `</html>`.
+
+Tags can have siblings and children _(this means children will have parents)_ as we can see here.
+
+```html
+<!DOCTYPE html>
+<html>
+  <!-- The html tag is root element -->
+  <!-- It's the parent of the head and body elements -->
+  <head>
+    ...
+  </head>
+  <!-- The head element & body element are siblings -->
+  <body>
+    ...
+  </body>
+</html>
+```
+
+### Attributes
+
+### Values
+
+### Content
 
 ## Open Source
 
