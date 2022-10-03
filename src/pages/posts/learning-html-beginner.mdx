@@ -7,7 +7,6 @@ categories:
   - development
 tags:
   - list
-draft: true
 ---
 
 <p align="center">
@@ -18,7 +17,7 @@ draft: true
   />
 </p>
 
-HTML _the skeleton of every web page you've looked at_ refers to HyperText Markup Language and it's the base of what we call <b>frontend development</b>. Today, we'll learn together about elements, tags, attributes, values and content so we can use them while building our websites.
+HTML; _the skeleton of every web page you've looked at_; refers to HyperText Markup Language and it's the base of what we call <b>frontend development</b>. Today, we'll learn together about elements, tags, attributes, values and content so we can use them while building our websites.
 
 ## Definitions
 
@@ -41,14 +40,14 @@ As we notice, the `html` element is opening with `<html>` and closing with `</ht
 ### Tags
 
 Opening tags are represented by `< >` and closing tags are represented by `</ >`. We'll find out later that some tags can be `< />` and these tags don't have content and thus can't have tags inside of them.
-As an example, the `html` element has an opening tag `<html>` and closing tag `</html>`.
+As an example for normal tags, the `html` element has an opening tag `<html>` and closing tag `</html>`.
 
-Tags can have siblings and children _(this means children will have parents)_ as we can see here.
+Tags can have siblings and children _(this means children will have parents)_ as we can see below.
 
 ```html
 <!DOCTYPE html>
 <html>
-  <!-- The html tag is root element -->
+  <!-- The html tag is the root element -->
   <!-- It's the parent of the head and body elements -->
   <head>
     ...
@@ -60,12 +59,171 @@ Tags can have siblings and children _(this means children will have parents)_ as
 </html>
 ```
 
-### Attributes
+Another famous element is the `div` where most of what we will see on websites will be made of divs. `div` comes from the 'division' and it defines a section/container for other HTML elements.
 
-### Values
+```html
+...
+<body>
+  <div>The Moe You Know</div>
+</body>
+...
+```
 
-### Content
+This `div` includes a basic text but to customize the font color, we'll do the following:
 
+```html
+<div id="introduction">The Moe You Know</div>
+```
+
+### Attributes, Values and Content
+
+Here, the `id` is an attribute and it has a value of `introduction`. Attributes are assigned in opening tags and each element has its attributes. Some attributes are global such as style, class and id.
+We use the `style` attribute to style our element. As an example, we can add a color to the div by adding
+
+```html
+<div id="introduction" style="color:red">The Moe You Know</div>
+```
+
+To check how this div will look or to play around with styles and other attributes, please visit [my simple codepen](https://codepen.io/moedayraki/pen/qBYYLbr).
+The phrase `The Moe You Know` is the content of the div with #id introduction.
+
+<hr />
+## Simple HTML page
+
+Now, we know the basics of HTML so we'll try to build a simple web page. Open any text editor or IDE and create a new file with .html extension.
+Write the code below and run it in your browser.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
+```
+
+The `head` element contains metadata (data about data) and should be placed after the opening `<html>` tag. Here, we're including the `title` element inside the `<head>` to define the title of the document and show it on the browser's toolbar as well as search engines when searching for it.
+Page titles are usually small, with 2-3 words, and unique enough to be considered keywords.
+
+The `body` tag contains all the contents of the documents starting from headings and ending with images or videos. Each HTML document should have only 1 `body` element. In the example, the `body` element contains an `h1` which is a header 1 element. We have 5 header tags in html and the most important 1 is h1 because it defines headings and search engine crawlers will look at them as main points. The `p` element represents a paragraph and it's mostly used to write descriptions and paragraphs for websites.
+
+<hr />
+## Famous Elements
+
+- ### The anchor
+
+  - definition: Creates a link inside/outside a web page
+  - tags: `<a>` and `</a>`
+  - commonly used attributes:
+    - href: defines a hyperlink to the same webpage, other webpages, emails, phones or locations.
+    - target: specifies where to open the linked document
+  - example:
+    `<a href="https://www.blog.dayrakiarts.com target="_blank">Click here</a>`
+
+    Output: <a href="https://www.blog.dayrakiarts.com" target="_blank">Click here</a>
+
+- ### The Bold
+
+  - definition: creates a bold text
+  - tags: `<b>` and `</b>`
+  - commonly used attributes:
+    - class: define the classes used in the tag
+    - id: gives an identification to the element to reach it in CSS or javascript or mark it as a hyperlink.
+  - example:
+    `<b> The Moe You Know </b>`
+
+    Output: <b> The Moe You Know </b>
+
+- ### The Break
+
+  - definition: creates a break (new line)
+  - tags: `<br />`
+  - commonly used attributes:
+    - N/A
+  - example:
+    `Line One <br /> Line Two`
+
+    Output: Line One <br /> Line Two
+
+- ### The Main Header
+
+  - definition: Creates a title block
+  - tags: `<h1>` and `</h1>`
+  - commonly used attributes:
+    - style: adds styles to the header like color, underline and font type
+    - onclick: adds a click listener to do something when clicking on the header.
+  - example:
+    `<h1 style="color:green;padding:10px" onclick="alert('You clicked a header!')">I am the header. Who are you? </h1>`
+
+    Output: <h1 style="color:green;padding:10px;cursor:pointer" onclick="alert('You clicked a header!')">I am the header. Who are you? </h1>
+
+- ### The Italics
+
+  - definition: changes the text to be _italics_
+  - tags: `<i>` and `</i>`
+  - commonly used attributes:
+    - The as **The Bold**
+  - example:
+    `<i>I am just a definition</i>`
+
+    Output: <i>I am just a definition</i>
+
+- ### The Image
+
+  - definition: adds images to the document
+  - tags: `<img / >`
+  - commonly used attributes:
+    - src: accepts the source of the image.
+    - height: defines the default height of the image
+    - width: defines the default width of the image
+  - example:
+    `<img src="https://avatars.githubusercontent.com/u/54773679?v=4" height="100" width:"100"/>`
+
+    Output: <img src="https://avatars.githubusercontent.com/u/54773679?v=4" height="100" width="100"/>
+
+- ### The Lists
+
+  - definition: List ordered or unordered items
+  - tags: `<ol></ol>` or `<ul></ul>` and `<li></li>` for the items themselves
+  - commonly used attributes:
+    - style
+    - class
+  - example:
+
+    ```html
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+    </ul>
+    ```
+
+    Output:
+
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+    </ul>
+
+- ### The Span
+
+  - definition: gives a unique condition to part of a paragraph or title
+  - tags: `<span>` and `</span>`
+  - commonly used attributes:
+    - style
+  - example:
+    `<h5>I am a <span style="color:magenta">span</span></h5>`
+
+    Output: <h5>I am a <span style="color:magenta">span</span></h5>
+
+## Keep Learning
+
+HTML is a big language to cover in one article. There are a ton of elements that we haven't mentioned. Keep learning and the only way to learn new stuff is by researching. I'm more than happy to collaborate on any project you're working on small/big/easy/complex.
+
+<hr />
 ## Open Source
 
 The whole project is an open source project under the MIT License. If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)
