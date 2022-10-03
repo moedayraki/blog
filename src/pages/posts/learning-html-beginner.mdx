@@ -11,7 +11,7 @@ tags:
 
 <p align="center">
   <img
-    style="width:100%"
+    style="width:80%"
     src="https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/learning-html-beginner.jpg"
     alt="Let's Learn HTML - Moe Dayraki"
   />
@@ -59,15 +59,24 @@ Tags can have siblings and children _(this means children will have parents)_ as
 </html>
 ```
 
-Another famous element is the `div` where most of what we will see on websites will be made of divs. `div` comes from the 'division' and it defines a section/container for other HTML elements.
+Between the opening and the closing `html` tags, we'll find the `head` and `body` elements which are two of the main HTML elements needed to layout a web page. What we have in code now makes us realize why we call HTML as "The skeleton of the web".
+
+`div` is another element that you've mostly heard about if you know a little bit about web development. The `div` starts with `<div>` and ends with `</div>` as we see below:
 
 ```html
-...
-<body>
-  <div>The Moe You Know</div>
-</body>
-...
+<html>
+  <head>
+    ...
+  </head>
+  <body>
+    ...
+    <div>The Moe You Know</div>
+    ...
+  </body>
+</html>
 ```
+
+'The Moe You Know' in the `div` element is the content of the div. Text inside an element is called content "innerText" while other elements are called children "innerHTML".
 
 This `div` includes a basic text but to customize the font color, we'll do the following:
 
