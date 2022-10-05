@@ -16,4 +16,25 @@ draft: true
   />
 </p>
 
-LocatorJS is a browser extension that lets users click on any component in the browers and view in their editor. This will speed up the development and make it easier to 
+LocatorJS is a browser extension that lets users click on any component in the browser and view it in their editor. This will speed up the development and make it easier to debug and develop.
+
+## Setup
+LocatorJS supports React (data-id and devtools approaches) as well as SolidJS, Preact and they're working on Svelte and Vue which you can experiement now.
+
+## VueJs Installation
+  Install the [browser extension](https://chrome.google.com/webstore/detail/locatorjs/npbfdllefekhdplbkdigpncggmojpefi) (Chrome, Edge, Brave, Opera, Firefox)
+  OR
+  Install Locator as a package to your project.
+  ```bash
+  pnpm add -D @locator/runtime
+  ```
+  Add this to main.js:
+  ```js
+  import setupLocatorUI from "@locator/runtime";
+
+  if (process.env.NODE_ENV === "development") {
+    setupLocatorUI({
+      adapter: "vue"
+    });
+  }
+  ```
