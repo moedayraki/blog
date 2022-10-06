@@ -19,22 +19,36 @@ draft: true
 LocatorJS is a browser extension that lets users click on any component in the browser and view it in their editor. This will speed up the development and make it easier to debug and develop.
 
 ## Setup
+
 LocatorJS supports React (data-id and devtools approaches) as well as SolidJS, Preact and they're working on Svelte and Vue which you can experiement now.
 
 ## VueJs Installation
-  Install the [browser extension](https://chrome.google.com/webstore/detail/locatorjs/npbfdllefekhdplbkdigpncggmojpefi) (Chrome, Edge, Brave, Opera, Firefox)
-  OR
-  Install Locator as a package to your project.
-  ```bash
-  pnpm add -D @locator/runtime
-  ```
-  Add this to main.js:
-  ```js
-  import setupLocatorUI from "@locator/runtime";
 
-  if (process.env.NODE_ENV === "development") {
-    setupLocatorUI({
-      adapter: "vue"
-    });
-  }
-  ```
+Install the [browser extension](https://chrome.google.com/webstore/detail/locatorjs/npbfdllefekhdplbkdigpncggmojpefi) (Chrome, Edge, Brave, Opera, Firefox)
+OR
+Install Locator as a package to your project.
+
+```bash
+pnpm add -D @locator/runtime
+```
+
+Add this to main.js:
+
+```js
+import setupLocatorUI from "@locator/runtime";
+
+if (process.env.NODE_ENV === "development") {
+  setupLocatorUI({
+    adapter: "vue",
+  });
+}
+```
+
+## Usage
+
+Now, all what we need to do is open our browser and hold `Alt` or `Option` while moving the cursor to check all the components and elements. Click on the component you want to take you to the editor!
+Happy Coding!
+
+## Open Source
+
+The whole project is an open source project under the MIT License. If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)
