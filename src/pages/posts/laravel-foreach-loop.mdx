@@ -14,9 +14,23 @@ draft: true
   />
 </p>
 
-The Laravel $loop variable is a powerful variable found inside @foreach. I've been using it a lot lately as I've been working on a lot of data iterations, tables and reports. Let's see how it works and how to use it!😊
+The Laravel `$loop` variable is a powerful variable found inside @foreach. I've been using it a lot lately as I've been working on a lot of data iterations, tables and reports. Let's see how it works and how to use it!😊
 
 ## The @foreach
+The `@foreach` blade directive works just like `foreach` in PHP. We just need to add `@endforeach` when we want to close the loop. The syntax is written like:
+```php
+@foreach ($collection as $object)
+    <p>This is object {{ $object->id }}</p>
+@endforeach
+```
+or
+```php
+@foreach ($collection as $key => $object)
+    <p>This is object {{ $object->id }}</p>
+    <p>Its key is {{ $key }}</p>
+@endforeach
+```
+Check out the [Laravel Documentation for loops](https://laravel.com/docs/9.x/blade#loops) for more information.
 
 ## The $loop
 
