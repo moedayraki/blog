@@ -23,7 +23,7 @@
     "@islands/icons": "^0.8.0",
     "@islands/images": "^0.8.1",
     "@islands/prism": "^0.8.0",
-    "@islands/pwa": "^0.8.0",
+    "@islands/pwa": "^0.8.1",
     "@types/cross-spawn": "^6.0.2",
     "@vueuse/core": "^9.3.0",
     "autoprefixer": "^10.4.12",
