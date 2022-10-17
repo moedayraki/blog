@@ -33,6 +33,20 @@ or
 Check out the [Laravel Documentation for loops](https://laravel.com/docs/9.x/blade#loops) for more information.
 
 ## The $loop
+Laravel has made it easier for developers to track their information inside the loop by providing the `$loop` variable.
+Useful properties to use:
+|Property        |Description                                             |
+|----------------|--------------------------------------------------------|
+|$loop->index    |	The index of the current loop iteration (starts at 0).|
+|$loop->iteration|	The current loop iteration (starts at 1).             |
+|$loop->remaining|	The iterations remaining in the loop.                 |
+|$loop->count    |	The total number of items in the array being iterated.|
+|$loop->first    |	Whether this is the first iteration through the loop. |
+|$loop->last     |	Whether this is the last iteration through the loop.  |
+|$loop->even     |	Whether this is an even iteration through the loop.   |
+|$loop->odd      |	Whether this is an odd iteration through the loop.    |
+|$loop->depth    |	The nesting level of the current loop.                |
+|$loop->parent   |	When in a nested loop, the parent's loop variable.    |
 
 ## Open Source
 
