@@ -16,76 +16,83 @@ image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/larave
 The Laravel `$loop` variable is a powerful variable found inside @foreach. I've been using it a lot lately as I've been working on a lot of data iterations, tables and reports. Let's see how it works and how to use it!😊
 
 ## The @foreach
+
 The `@foreach` blade directive works just like `foreach` in PHP. We just need to add `@endforeach` when we want to close the loop. The syntax is written like:
+
 ```php
 @foreach ($collection as $object)
     <p>This is object {{ $object->id }}</p>
 @endforeach
 ```
+
 or
+
 ```php
 @foreach ($collection as $key => $object)
     <p>This is object {{ $object->id }}</p>
     <p>Its key is {{ $key }}</p>
 @endforeach
 ```
+
 Check out the [Laravel Documentation for loops](https://laravel.com/docs/9.x/blade#loops) for more information.
 
 ## The $loop
+
 Laravel has made it easier for developers to track their information inside the loop by providing the `$loop` variable.
 Useful properties to use:
-<br/>
-`$loop->index`
-<br/>
-The index of the current loop iteration (starts at 0).
-<br/>
-<br/>
-`$loop->iteration`
-<br/>
-The current loop iteration (starts at 1).
-<br/> 
-<br/> 
-`$loop->remaining`
-<br/>
-The iterations remaining in the loop.
-<br/>  
-<br/>  
-`$loop->count`
-<br/>
-The total number of items in the array being iterated.
-<br/>    
-<br/>    
-`$loop->first`
-<br/>
-Whether this is the first iteration through the loop.
-<br/>    
-<br/>    
-`$loop->last`
-<br/>
-Whether this is the last iteration through the loop.
-<br/>    
-<br/>    
-`$loop->even`
-<br/>
-Whether this is an even iteration through the loop.
-<br/>    
-<br/>    
-`$loop->odd`
-<br/>
-Whether this is an odd iteration through the loop.
-<br/>    
-<br/>    
-`$loop->depth`
-<br/>
-The nesting level of the current loop.
-<br/>    
-<br/>    
-`$loop->parent`
-<br/>
-When in a nested loop, the parent's loop variable.
-<br/>      
-<br/>      
-The `$loop->parent` property have access to all the properties for the loop but for the parent.
+
+<table>
+  <thead>
+    <th>Property</th>
+    <th>Definition</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>`$loop->index`</td>
+      <td>The index of the current loop iteration (starts at 0).</td>
+    </tr>
+    <tr>
+      <td>`$loop->iteration`</td>
+      <td>The current loop iteration (starts at 1).</td>
+    </tr>
+    <tr>
+      <td>`$loop->remaining`</td>
+      <td>The iterations remain in the loop.</td>
+    </tr>
+    <tr>
+      <td>`$loop->count`</td>
+      <td>The total number of items in the array being iterated.</td>
+    </tr>
+    <tr>
+      <td>`$loop->first`</td>
+      <td>Whether this is the first iteration through the loop.</td>
+    </tr>
+    <tr>
+      <td>`$loop->last`</td>
+      <td>Whether this is the last iteration through the loop.</td>
+    </tr>
+    <tr>
+      <td>`$loop->even`</td>
+      <td>Whether this is an even iteration through the loop.</td>
+    </tr>
+    <tr>
+      <td>`$loop->odd`</td>
+      <td>Whether this is an odd iteration through the loop.</td>
+    </tr>
+    <tr>
+      <td>`$loop->depth`</td>
+      <td>The nesting level of the current loop.</td>
+    </tr>
+    <tr>
+      <td>`$loop->parent`</td>
+      <td>When in a nested loop, the parent's loop variable.</td>
+    </tr>
+  </tbody>
+</table>
+The `$loop->parent` property has access to all the properties for the loop but for
+the parent.
+
+Try using the `$loop` variable and let me know how you used it! For more details about Laravel, visit [Laravel's Documentation](https://laravel.com/docs/9.x)
 
 ## Open Source
 
