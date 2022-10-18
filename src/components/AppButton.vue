@@ -23,7 +23,9 @@ defineProps({
   color: white;
 
   &:hover {
-    background: var(--fc-primary-soft);
+    background: white;
+    color: var(--fc-primary);
+    border: 1px var(--fc-primary) solid;
   }
 }
 
