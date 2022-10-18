@@ -26,10 +26,12 @@ const site = {
       text: 'Top Ten Posts',
       link: '/',
       children: [
-        { text: 'The Moe Article', link: '/posts/the-moe-article' },
         { text: 'The Binary System', link: '/posts/binary-system' },
         { text: 'Languages Scim', link: '/posts/programming-languages-pt1' },
         { text: 'Languages Dive', link: '/posts/programming-languages-pt2' },
+        { text: 'Learn HTML', link: '/posts/learning-html-beginner' },
+        { text: 'Livewire Ping Component', link: '/posts/livewire-ping' },
+        { text: 'Laravel $loop Variable', link: '/posts/laravel-foreach-loop' },        
       ],
     },    
   ],
