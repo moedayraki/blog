@@ -16,4 +16,129 @@ draft: true
 
 I've always wanted to have a Laravel VueJS project without the need to use Inertia. I'm not saying that Inertia is not good 😟. It's just me being more comfortable with having only Laravel & Vue to work with.
 
-## The @foreach
+## DEV STACK
+- [ ] **IDE:** VsCode || Atom
+- [ ] **Browser:** chrome
+- [ ] **Server:** valet || wamp
+- [ ] **Backend Framework:** PHP Laravel 9.X
+- [ ] **Frontend Framework:** JavaScript VueJS 3.X 		
+- [ ] **CSS Framework:** Bootstrap || TailwindCSS
+
+## DEV ENV
+Requirements:
+- [Wamp](https://www.wampserver.com/en/)
+- [Laravel 9.x Requirements](https://laravel.com/docs/9.x/deployment#server-requirements)
+- [Composer](https://getcomposer.org/)
+- [NodeJs](https://nodejs.org/en/download/)
+
+## STEPS TO SET UP PROJECT
+### 1. Install Laravel Project
+`composer create-project laravel/laravel="9.*" <app-name> `
+*or any version needed instead of 9.**
+
+### 2. Install VueJs framework using npm
+`npm install vue --save-d`
+
+### 3. Install Vite's Vuejs Plugin
+`npm install @vitejs/plugin-vue`
+*Vite is the new development tool and packager for VueJs and Laravel*
+
+
+### 4. Edit welcome.blade.php
+```
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>The Moe You Know</title>
+        @vite('resources/js/app.js')
+    </head>
+    <body class="antialiased">
+        <div id="app">
+            <button @click="count++">@{{ count }}</button>
+        </div>
+    </body>
+</html>
+```
+
+### 5. Add a Folder 'components' under 'resources/js/' and create an App.vue file inside 'components' that has the following
+```
+<script>
+export default {
+    setup: () => ({
+        title: "How To Install Vue 3 in Laravel 9.X From Scratch",
+    }),
+    template: `<h1>{{ title }}</h1>`,
+};
+</script>
+```
+
+### 6. Edit vite.config.js to be
+```
+import { defineConfig } from "vite";
+import laravel from "laravel-vite-plugin";
+import vue from "@vitejs/plugin-vue";
+
+export default defineConfig({
+    plugins: [
+        laravel(["resources/js/app.js"]),
+        vue({
+            template: {
+                transformAssetUrls: {
+                    // The Vue plugin will re-write asset URLs, when referenced
+                    // in Single File Components, to point to the Laravel web
+                    // server. Setting this to `null` allows the Laravel plugin
+                    // to instead re-write asset URLs to point to the Vite
+                    // server instead.
+                    base: null,
+
+                    // The Vue plugin will parse absolute URLs and treat them
+                    // as absolute paths to files on disk. Setting this to
+                    // `false` will leave absolute URLs un-touched so they can
+                    // reference assets in the public directly as expected.
+                    includeAbsolute: false,
+                },
+            },
+        }),
+    ],
+});
+```
+
+### 7. Edit app.js inside 'resources/js/' to be
+```
+import "./bootstrap";
+
+import { createApp } from "vue/dist/vue.esm-bundler";
+
+const app = createApp({
+    data() {
+        return {
+            count: 0,
+        };
+    },
+});
+
+app.mount("#app");
+```
+
+### 8. Install the npm packages and then run the development script
+`npm install`
+`npm run dev`
+
+### 9. Add any CSS Framework
+*I personally recommend TailwindCSS*
+<br>[Steps to Add TailwindCSS](https://tailwindcss.com/docs/guides/laravel)
+<br>[Steps to Add Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/download/)
+
+### 10. Moe & Moe Packages
+Never forget! NPM and COMPOSER are our friends! Use them to install packages for VUEJS and LARAVEL<br>
+Never forget! We're not alone in the software development industry! Give open source and take open source for better source code!
+
+---
+[I'm Working On](https://www.moe.dayrakiarts.com/)
+
+[Moe Awesome Things](https://github.com/moedayraki/moe-awesome-things)
+
+# 🤍 Happy Coding
