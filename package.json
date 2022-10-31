@@ -27,7 +27,7 @@
     "@types/cross-spawn": "^6.0.2",
     "@vueuse/core": "^9.3.1",
     "autoprefixer": "^10.4.12",
-    "iles": "^0.8.6",
+    "iles": "^0.8.7",
     "postcss": "^8.4.18",
     "postcss-nesting": "^10.2.0",
     "rehype-external-links": "^1.0.0",
