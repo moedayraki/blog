@@ -32,6 +32,7 @@ const site = {
         { text: 'Learn HTML', link: '/posts/learning-html-beginner' },
         { text: 'Livewire Ping Component', link: '/posts/livewire-ping' },
         { text: 'Laravel $loop Variable', link: '/posts/laravel-foreach-loop' },        
+        { text: 'Install Laravel+VueJs', link: '/posts/install-laravel-vuejs' },
       ],
     },    
   ],
