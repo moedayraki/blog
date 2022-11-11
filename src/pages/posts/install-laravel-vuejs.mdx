@@ -1,15 +1,14 @@
 ---
-title: Install a Fresh Laravel ^9.* Vuejs ^3.* Project
+title: Install a Fresh Laravel 9 & Vuejs 3 Project
 description: the steps on how to install a fresh laravel vuejs project
-date: 2022-10-19
-image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_loop.jpg"
-draft: true
+date: 2022-11-10
+image: "https://laravelnews.s3.amazonaws.com/images/vue-spa-with-laravel.png"
 ---
 
 <p align="center">
   <img
     style="width:100%"
-    src="~/assets/laravel_loop.jpg"
+    src="https://laravelnews.s3.amazonaws.com/images/vue-spa-with-laravel.png"
     alt="Laravel Loop - Moe Dayraki"
   />
 </p>
@@ -17,34 +16,41 @@ draft: true
 I've always wanted to have a Laravel VueJS project without the need to use Inertia. I'm not saying that Inertia is not good 😟. It's just me being more comfortable with having only Laravel & Vue to work with.
 
 ## DEV STACK
-- [ ] **IDE:** VsCode || Atom
-- [ ] **Browser:** chrome
-- [ ] **Server:** valet || wamp
-- [ ] **Backend Framework:** PHP Laravel 9.X
-- [ ] **Frontend Framework:** JavaScript VueJS 3.X 		
-- [ ] **CSS Framework:** Bootstrap || TailwindCSS
+
+- **IDE:** VsCode || Atom
+- **Browser:** chrome
+- **Server:** valet || wamp
+- **Backend Framework:** PHP Laravel 9.X
+- **Frontend Framework:** JavaScript VueJS 3.X
+- **CSS Framework:** Bootstrap || TailwindCSS
 
 ## DEV ENV
+
 Requirements:
+
 - [Wamp](https://www.wampserver.com/en/)
 - [Laravel 9.x Requirements](https://laravel.com/docs/9.x/deployment#server-requirements)
 - [Composer](https://getcomposer.org/)
 - [NodeJs](https://nodejs.org/en/download/)
 
 ## STEPS TO SET UP PROJECT
+
 ### 1. Install Laravel Project
+
 `composer create-project laravel/laravel="9.*" <app-name> `
-*or any version needed instead of 9.**
+\*or any version needed instead of 9.\*\*
 
 ### 2. Install VueJs framework using npm
+
 `npm install vue --save-d`
 
 ### 3. Install Vite's Vuejs Plugin
-`npm install @vitejs/plugin-vue`
-*Vite is the new development tool and packager for VueJs and Laravel*
 
+`npm install @vitejs/plugin-vue`
+_Vite is the new development tool and packager for VueJs and Laravel_
 
 ### 4. Edit welcome.blade.php
+
 ```
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -64,6 +70,7 @@ Requirements:
 ```
 
 ### 5. Add a Folder 'components' under 'resources/js/' and create an App.vue file inside 'components' that has the following
+
 ```
 <script>
 export default {
@@ -76,6 +83,7 @@ export default {
 ```
 
 ### 6. Edit vite.config.js to be
+
 ```
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
@@ -107,6 +115,7 @@ export default defineConfig({
 ```
 
 ### 7. Edit app.js inside 'resources/js/' to be
+
 ```
 import "./bootstrap";
 
@@ -124,19 +133,24 @@ app.mount("#app");
 ```
 
 ### 8. Install the npm packages and then run the development script
+
 `npm install`
 `npm run dev`
 
 ### 9. Add any CSS Framework
-*I personally recommend TailwindCSS*
-<br>[Steps to Add TailwindCSS](https://tailwindcss.com/docs/guides/laravel)
-<br>[Steps to Add Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/download/)
+
+_I personally recommend TailwindCSS_
+
+[Steps to Add TailwindCSS](https://tailwindcss.com/docs/guides/laravel)
+[Steps to Add Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/download/)
 
 ### 10. Moe & Moe Packages
-Never forget! NPM and COMPOSER are our friends! Use them to install packages for VUEJS and LARAVEL<br>
+
+Never forget! NPM and COMPOSER are our friends! Use them to install packages for VUEJS and LARAVEL
 Never forget! We're not alone in the software development industry! Give open source and take open source for better source code!
 
 ---
+
 [I'm Working On](https://www.moe.dayrakiarts.com/)
 
 [Moe Awesome Things](https://github.com/moedayraki/moe-awesome-things)
