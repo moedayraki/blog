@@ -15,7 +15,7 @@
     "node": "^14.18 || >= 16.0.0"
   },
   "devDependencies": {
-    "@iconify-json/bx": "^1.1.4",
+    "@iconify-json/bx": "^1.1.5",
     "@iconify-json/carbon": "^1.1.11",
     "@islands/excerpt": "^0.8.0",
     "@islands/feed": "^0.8.0",
