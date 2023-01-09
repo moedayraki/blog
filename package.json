@@ -25,7 +25,7 @@
     "@islands/prism": "^0.8.0",
     "@islands/pwa": "^0.9.1",
     "@types/cross-spawn": "^6.0.2",
-    "@vueuse/core": "^9.7.0",
+    "@vueuse/core": "^9.10.0",
     "autoprefixer": "^10.4.13",
     "iles": "^0.8.7",
     "postcss": "^8.4.20",
