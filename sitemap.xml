@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.blog.dayrakiarts.com/</loc></url>
-  <url><loc>https://www.blog.dayrakiarts.com/about</loc></url>
-  <url><loc>https://www.blog.dayrakiarts.com/posts/1</loc></url>
-  <url><loc>https://www.blog.dayrakiarts.com/posts/2</loc></url>
-  <url><loc>https://www.blog.dayrakiarts.com/posts/3</loc></url>
-  <url><loc>https://www.blog.dayrakiarts.com/posts/4</loc></url>
-  <url><loc>https://www.blog.dayrakiarts.com/posts/5</loc></url>
-  <url><loc>https://www.blog.dayrakiarts.com/posts/apple-sept-2022</loc></url>
-  <url><loc>https://www.blog.dayrakiarts.com/posts/binary-system</loc></url>
-  <url><loc>https://www.blog.dayrakiarts.com/posts/install-laravel-vuejs</loc></url>
-  <url><loc>https://www.blog.dayrakiarts.com/posts/laravel-foreach-loop</loc></url>
-  <url><loc>https://www.blog.dayrakiarts.com/posts/learning-html-beginner</loc></url>
-  <url><loc>https://www.blog.dayrakiarts.com/posts/livewire-ping</loc></url>
-  <url><loc>https://www.blog.dayrakiarts.com/posts/locatorjs-devtool-plugin</loc></url>
-  <url><loc>https://www.blog.dayrakiarts.com/posts/programming-languages-pt1</loc></url>
-  <url><loc>https://www.blog.dayrakiarts.com/posts/programming-languages-pt2</loc></url>
-  <url><loc>https://www.blog.dayrakiarts.com/posts/the-moe-article</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/about</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/posts/1</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/posts/2</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/posts/3</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/posts/4</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/posts/5</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/posts/apple-sept-2022</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/posts/binary-system</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/posts/install-laravel-vuejs</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/posts/laravel-foreach-loop</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/posts/learning-html-beginner</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/posts/livewire-ping</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/posts/locatorjs-devtool-plugin</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/posts/programming-languages-pt1</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/posts/programming-languages-pt2</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/posts/the-moe-article</loc></url>
 
 </urlset>
