@@ -35,7 +35,7 @@ const presets = {
 }
 
 export default defineConfig({
-    siteUrl: 'https://www.blog.dayrakiarts.com',
+    siteUrl: 'https://moedayraki.github.io/blog',
     turbo: true,
     vue: {
         reactivityTransform: true,
