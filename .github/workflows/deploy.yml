@@ -15,11 +15,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16.x
-          
-      - uses: actions/checkout@v3      
 
-      - name: Install all dependencies
-        run: npm install
+      - uses: pnpm/action-setup@v1.2.1
+        with:
+          version: 6.10.3
+          run_install: |
+            - recursive: false
 
       - name: Build Site
         run: npm run build
