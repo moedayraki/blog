@@ -62,6 +62,7 @@ export default defineConfig({
         frontmatter.layout ||= 'post'
     },
     vite: {
+      base: 'https://moedayraki.github.io/blog',
       resolve: {
         alias: {
           '~images': resolve(__dirname, 'images'),
