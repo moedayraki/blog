@@ -1,0 +1,40 @@
+---
+title: Laravel OpenAI database queries
+description: Translating natural english to queries and give reponses
+date: 2023-02-28
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_openai_database.jpg"
+draft: true
+---
+
+<p align="center">
+  <img
+    style="width:100%"
+    src="~/assets/laravel_openai_database.jpg"
+    alt="Laravel OpenAI - Moe Dayraki"
+  />
+</p>
+
+Thanks to [BeyondCode](https://beyondco.de/blog/query-your-laravel-database-using-natural-language), we're now able to query our Laravel database using natural english!
+
+## OpenAI Part
+### OpenAI Account
+Sign up with [OpenAi](https://auth0.openai.com/u/signup/identifier?state=hKFo2SBmUjBUR0VWbk9CTFFkU3pPNVVXYlkyUzAwQWNlMUl5dqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFdJdG1VbUszRnM2T1lYZkVjelFqTHloZWxQQkx4OEFyo2NpZNkgRFJpdnNubTJNdTQyVDNLT3BxZHR3QjNOWXZpSFl6d0Q) or [Login](https://auth0.openai.com/u/login/identifier?state=hKFo2SBOVW1WYXFjMmdrakdoaUYzTW9mMmNQREh0QTRpV2xmVaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdpODZIaXZNU0xfNy1XaEgxTFphcG80SzhMcnE2b0dTo2NpZNkgRFJpdnNubTJNdTQyVDNLT3BxZHR3QjNOWXZpSFl6d0Q) if you already have an account.
+
+### Create a new API key
+After creating or logging in into your account, you can now click on your profile name (Named Personal by default) and it should be found in the bottom left corner of the website.
+Then navigate to "View API keys" and click on "+ Create new secret key". Don't forget to copy the key when you create it because you can only see it one time.
+
+## Laravel Part
+Ofcourse, we'll have to install a laravel project or use an exsisting one. Please check my article about (Installing Laravel with VueJS)[/posts/install-laravel-vuejs].
+
+We will use beyondcode's package to make everything smooth!
+```shell
+composer require beyondcode/laravel-ask-database
+```
+
+After that, we can publish the configuration
+```shell
+php artisan vendor:publish --tag="ask-databse-config"
+```
+
+In our env
