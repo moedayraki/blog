@@ -24,7 +24,24 @@ Sign up with [OpenAi](https://auth0.openai.com/u/signup/identifier?state=hKFo2SB
 After creating or logging in into your account, you can now click on your profile name (Named Personal by default) and it should be found in the bottom left corner of the website.
 Then navigate to "View API keys" and click on "+ Create new secret key". Don't forget to copy the key when you create it because you can only see it one time.
 
+<p align="center">
+  <img
+    style="width:100%"
+    src="~/assets/laravel_openai_database-1.png"
+    alt="Laravel OpenAI - Moe Dayraki"
+  />
+</p>
+
+<p align="center">
+  <img
+    style="width:100%"
+    src="~/assets/laravel_openai_database-2.png"
+    alt="Laravel OpenAI - Moe Dayraki"
+  />
+</p>
+
 ## Laravel Part
+### Setting Up the Package
 Ofcourse, we'll have to install a laravel project or use an exsisting one. Please check my article about (Installing Laravel with VueJS)[/posts/install-laravel-vuejs].
 
 We will use beyondcode's package to make everything smooth!
@@ -37,4 +54,32 @@ After that, we can publish the configuration
 php artisan vendor:publish --tag="ask-databse-config"
 ```
 
-In our env
+In our env file, we should add 
+```
+OPENAI_API_KEY=sk-...
+```
+
+### PHP `curl` Certificate
+PHP 5.6^ needs a certificate to use cURL. To download the certificate, visit [curl.se](https://curl.se/docs/caextract.html) and get the bundle.
+Move cacert.pem to your PHP directory (e.g: usr/local/etc/php/8.1) and change the php.ini `curl.cainfo` and `openssl.cafile` to have your certificate file path.
+
+For more information, please check this [stackoverflow Q/A](https://stackoverflow.com/questions/28858351/php-ssl-certificate-error-unable-to-get-local-issuer-certificate).
+
+### Using Natural Language
+Now, we're ready to query the database using natural language!
+```php
+DB::ask('What is the name of my our first user?');
+```
+To make it more fancy, we just add an input tag to our front-end and ask the user to prompt any question! then move that question and query it!.
+```html
+<input name='question' type='text' class='bla-bla' />
+```
+
+```php
+DB::ask($request->question);
+```
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)
