@@ -4,7 +4,7 @@ import { isDark } from "~/logic/dark";
 <template>
   <a
     class="inline-flex items-center text-xl"
-    href="/"
+    href="https://moedayraki.github.io/blog/"
     :aria-label="`${$site.title}, back to the main page`"
   >
     <IconAppLogodark v-if="isDark" class="inline-flex mr-2 h-7 md:h-8" />
