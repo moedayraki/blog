@@ -31,7 +31,7 @@
     "postcss": "^8.4.21",
     "postcss-nesting": "^11.3.0",
     "rehype-external-links": "^1.0.0",
-    "typescript": "^5.0",
+    "typescript": "^5.1",
     "vite-plugin-inspect": "^0.7.17",
     "vite-plugin-windicss": "^1.8.10",
     "vitest": "*",
