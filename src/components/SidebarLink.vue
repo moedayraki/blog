@@ -16,7 +16,7 @@ let children = $computed(() => (props.item as SideBarGroup).children);
   <li>
     <SidebarLinkItem :item="item" :header="true" />
     <ul v-if="children" class="mb-2">
-      <li v-for="child in children" :key="child.text">
+      <li v-for="child in children" :key="child.id">
         <SidebarLinkItem :item="child" />
       </li>
     </ul>

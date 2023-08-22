@@ -6,10 +6,10 @@
       class="text-xl hover:text-primary-soft ml-1 cursor-pointer"
       aria-label="Close Sidebar"
     >
-      <IconCarbonArrowLeft />
+      Related Articles
     </NavBarLink>
     <div class="flex items-center">
-      <NavBarLinks />
+      Related Articles
     </div>
   </div>
 </template>

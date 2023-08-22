@@ -15,7 +15,7 @@ const { item, header, table } = $(props);
 const { base } = useAppConfig();
 
 const active = $(useActive(toRef(props, "item")));
-const link = $computed(() => item.link && joinUrl(base, item.link));
+const link = $computed(() => item.href );
 
 const style = $computed(() => [
   header ? "font-bold py-2" : table ? "toc-link" : "sidebar-link",
@@ -24,11 +24,11 @@ const style = $computed(() => [
 </script>
 
 <template>
-  <a v-if="link" class="link transition" :href="link" :class="style">
-    {{ item.text }}
+  <a v-if="link" class="link transition text-xs" :href="link" :class="style">
+    {{ item.linkTitle }}
   </a>
   <h5 v-else class="link transition" :class="style">
-    {{ item.text }}
+    {{ item.linkTitle }}
   </h5>
 </template>
 

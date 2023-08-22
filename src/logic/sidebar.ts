@@ -2,6 +2,7 @@ import { Ref, computed } from 'vue'
 
 import type { Heading } from '@islands/headings'
 import type { SideBarItem, SideBarGroup } from '~/logic/config'
+import { getPosts } from "~/logic/posts";
 
 import { normalize } from '~/logic/utils'
 
@@ -18,22 +19,29 @@ export function useSideBarLinks () {
   }
 }
 
-export function useSideBar () {
-  const { frontmatter, meta, site, route } = usePage()
+// export function useSideBar () {
+//   const { frontmatter, meta, site, route } = usePage()
 
+//   return computed(() => {
+//     const path = normalize(route.path)
+
+//     return site.sidebar.map(({ children, link, ...group }) => {
+//       link = normalize(link)
+
+//       if (!path.includes(link))
+//         children = []
+//       else if (frontmatter.sidebar === 'auto')
+//         children = linksFromHeadings(meta.headings, 2, 1)
+
+//       return { ...group, link, children } as SideBarGroup
+//     })
+//   })
+// }
+
+export function useSideBar(){
+  const posts = $(getPosts())
   return computed(() => {
-    const path = normalize(route.path)
-
-    return site.sidebar.map(({ children, link, ...group }) => {
-      link = normalize(link)
-
-      if (!path.includes(link))
-        children = []
-      else if (frontmatter.sidebar === 'auto')
-        children = linksFromHeadings(meta.headings, 2, 1)
-
-      return { ...group, link, children } as SideBarGroup
-    })
+    return posts
   })
 }
 

@@ -1,0 +1,82 @@
+---
+title: Counting a Model Relations in Laravel
+linkTitle: Model Relation Counts
+description: Sometimes, we need to count our model's relationships without needing to query the relations themselves. This will speed out the query from the database but how can we do that? Well, let's dive in!
+date: 2023-08-21
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_relation_count.png"
+---
+
+<p align="center">
+  <img
+    style="width:70%"
+    src="~/assets/laravel_relation_count.png"
+    alt="Laravel Relations Count - Moe Dayraki"
+  />
+</p>
+
+Everywhere I go in Laravel, I find treasures in the Docs! Ofcourse it's not a treasure if it's easily findable but I don't know what to call something precious and usefull other than treasure, lol.
+One treasure I found is "models' relations count"! Let's jump into it.
+
+## Study Case
+Let's pretend we have a model and what's better than using `User.php` as our example model! The User is usually tied to many other models in an app and they all can be related in different ways. Some of them are one-to-many while others are one-to-one.
+Sometimes we might have morph relations like a `Post`. Posts can be written be Users or Teams.
+
+### Scenario
+In our Scenario, the users are really rich and they have multiple cars and houses. They also have stocks to many companies and tags for the types of companies they have stocks.
+
+### Issue
+We need to create a report for all the users and how `relations` do they have such as cars, houses, tags, stocks, etc.
+
+## Normal Solution
+As a typical solution, we'll query all the users and all their relations eagrly.
+```
+$users = User::with(['cars','boats','houses',tags','stocks'])->get();
+
+foreach($users as $user){
+  echo $user->cars->count();
+  echo $user->boats->count();
+  ...
+}
+```
+But if we're only querying the relations to get their counts only. Why do we even need to query the relations?!
+Actually, Laravel provides a way to only query the count of the relations which is more convient and effecient. How can we do that?
+
+## Better Solution
+We can do it by using the `withCount()` method on the model itself.
+```
+$users = User::withCount(['cars','boats','houses',tags','stocks'])->get();
+
+// Notice that laravel will automatically add *_count to the relation
+// and put it as a property
+
+foreach($users as $user){
+  echo $user->cars_count;
+  echo $user->boats_count;
+  ...
+}
+```
+
+## More Details
+Let's say we already have the model queried but we need to add the count to a relation at one point.
+Here, we use the `loadCount()` function.
+```
+public function addUserStuff(User $user){
+  $user = $user->loadCount('stocks');
+
+  echo $user->stocks_count;
+}
+```
+
+### Other Agregate Functions
+Other than `withCount`, Laravel provides `withMin`,`withMax`,`withAvg`,`withSum`,and `withExists` methods. The method will add a relation_function_column attribte to the current model.
+```
+$candidates = User::withSum('region','votes')->get();
+foreach($candidates as $candidate){
+  echo $candidate->region_sum_votes;
+}
+```
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)

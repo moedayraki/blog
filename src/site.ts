@@ -23,7 +23,7 @@ const site = {
 
   sidebar: [
     {
-      text: 'Top Ten Posts',
+      text: 'Related Posts',
       link: '/',
       children: [
         { text: 'The Binary System', link: '/posts/binary-system' },
