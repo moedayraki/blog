@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://moedayraki.github.io/blog/</loc></url>
-  <url><loc>https://moedayraki.github.io/blog/about</loc></url>
   <url><loc>https://moedayraki.github.io/blog/posts/1</loc></url>
   <url><loc>https://moedayraki.github.io/blog/posts/2</loc></url>
   <url><loc>https://moedayraki.github.io/blog/posts/3</loc></url>
@@ -13,6 +12,7 @@
   <url><loc>https://moedayraki.github.io/blog/posts/install-laravel-vuejs</loc></url>
   <url><loc>https://moedayraki.github.io/blog/posts/laravel-foreach-loop</loc></url>
   <url><loc>https://moedayraki.github.io/blog/posts/laravel-openai-database-queries</loc></url>
+  <url><loc>https://moedayraki.github.io/blog/posts/laravel-relation-count</loc></url>
   <url><loc>https://moedayraki.github.io/blog/posts/learning-html-beginner</loc></url>
   <url><loc>https://moedayraki.github.io/blog/posts/livewire-ping</loc></url>
   <url><loc>https://moedayraki.github.io/blog/posts/locatorjs-devtool-plugin</loc></url>
