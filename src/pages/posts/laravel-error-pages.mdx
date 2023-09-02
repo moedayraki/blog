@@ -1,0 +1,80 @@
+---
+title: Crafting Custom HTTP Error Pages in Laravel
+linkTitle: Laravel Errors
+description: Laravel custom error pages are important for improving user experience, branding, and error details.
+date: 2023-09-02
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_error_pages.png"
+---
+
+<p align="center">
+  <img
+    style="width:70%"
+    src="~/assets/laravel_error_pages.png"
+    alt="Laravel Request Lifecycle - Moe Dayraki"
+  />
+</p>
+
+Laravel, a popular PHP framework, provides an elegant and flexible way to build web applications. Part of creating a user-friendly application involves handling HTTP errors gracefully. 
+By default, Laravel offers a set of predefined error pages, but customizing these pages can enhance user experience and align them with your application's design and branding. 
+In this article, we'll explore how to craft custom HTTP error pages in Laravel.
+
+## Why Custom Error Pages?
+
+Custom error pages are essential for several reasons:
+
+<b>Improved User Experience:</b> Generic error pages can confuse users. Customized error pages can provide clear instructions or redirect users to relevant sections of your site.
+
+<b>Branding:</b> Tailoring error pages with your site's design and branding elements helps maintain a consistent look and feel.
+
+<b>Error Details:</b> Custom error pages can include additional error details for debugging, while keeping sensitive information hidden from users.
+Creating Custom Error Pages
+
+Let's dive into the steps to create and implement custom error pages in Laravel:
+
+## 1. Generate the Error Views
+First, you need to generate the error views that Laravel will use. You can generate views for specific HTTP error codes, such as 404 (Not Found) or 500 (Internal Server Error), using the artisan command:
+
+Copy code
+```bash
+php artisan vendor:publish --tag=laravel-errors
+```
+This command will create a `404.blade.php` file in the `resources/views/errors` directory. You can repeat this step for other error codes as needed.
+
+## 2. Customize Error Views
+Edit the generated error views `resources/views/errors/{error-code}.blade.php` to include your desired content, styles, and branding. You can use Blade templating to make these views dynamic and responsive to error details.
+
+## 3. Handling Exceptions
+To ensure that Laravel uses your custom error pages when errors occur, you need to define the appropriate exception handlers. Laravel has an `App\Exceptions\Handler` class for this purpose.
+
+In the `Handler.php` file, you can customize the render method to return your custom error views for specific exceptions. For example, to customize the 404 error page:
+
+Copy code
+```php
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+
+// Inside the render method
+public function render($request, Throwable $exception)
+{
+    if ($exception instanceof NotFoundHttpException) {
+        return response()->view('errors.404', [], 404);
+    }
+
+    return parent::render($request, $exception);
+}
+```
+Repeat this process for other error codes and exceptions as needed.
+
+## 4. Error Page Testing
+Testing your custom error pages is crucial to ensure they function correctly. Simulate different error scenarios and confirm that the corresponding custom error pages are displayed as expected.
+
+## 5. Error Logging
+While custom error pages enhance user experience, it's equally important to log errors for debugging and monitoring purposes. Laravel's logging mechanisms, such as writing to log files or integrating with services like Loggly or Papertrail, can help you keep track of errors.
+
+## Conclusion
+
+Crafting custom HTTP error pages in Laravel is a valuable practice for enhancing user experience and maintaining brand consistency. By generating and customizing error views, handling exceptions, and thoroughly testing your error pages, you can ensure that your application gracefully handles errors while providing users with informative and visually appealing error messages.
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)
