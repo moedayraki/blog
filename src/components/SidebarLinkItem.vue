@@ -28,7 +28,7 @@ const style = $computed(() => [
     {{ item.linkTitle }}
   </a>
   <h5 v-else class="link transition" :class="style">
-    {{ item.linkTitle }}
+    <a :href="item.link">{{ item.text }}</a>
   </h5>
 </template>
 

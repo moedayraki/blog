@@ -2,6 +2,10 @@
     --c-brand: #3eaf7c;
     --c-brand-light: #4abf8a;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   
   nav img {
     vertical-align: middle;

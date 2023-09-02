@@ -1,0 +1,66 @@
+---
+title: Demystifying the Request Lifecycle in Laravel
+linkTitle: Laravel Lifecycle
+description: A step by step on how a request will move in Larave, the PHP framework for web artisans
+date: 2023-09-01
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_request_lifecycle.png"
+---
+
+<p align="center">
+  <img
+    style="width:70%"
+    src="~/assets/laravel_request_lifecycle.png"
+    alt="Laravel Request Lifecycle - Moe Dayraki"
+  />
+</p>
+
+Laravel, a popular PHP web application framework, has gained immense popularity due to its elegant syntax and powerful features. Understanding the request lifecycle in Laravel is essential for every developer looking to harness the framework's capabilities effectively. 
+
+In this article, we will demystify the request lifecycle in Laravel, breaking it down step by step.
+
+## Step 1: Web Server
+The request lifecycle in Laravel starts at the web server, where the user sends an HTTP request. This request is received by the web server, which then forwards it to the PHP interpreter for processing. 
+
+It is crucial to have your web server (e.g., Apache, Nginx) correctly configured to point to the Laravel application's public directory.
+
+## Step 2: Index.php
+Once the request reaches the PHP interpreter, it all begins with the public/index.php file. This file serves as the entry point for your Laravel application. 
+
+It does some essential setup tasks, like loading Composer's autoloader and creating a new instance of Laravel's application.
+
+## Step 3: Kernel
+After the initial setup in index.php, Laravel's HTTP kernel takes over. The HTTP kernel is responsible for managing the request and response objects, as well as handling middleware. Middleware are filters that can perform tasks such as authentication, logging, and more, before or after the request reaches your application's core logic.
+
+## Step 4: Service Providers
+Before reaching the actual route handling, Laravel's service providers come into play. Service providers are responsible for binding services into the service container, which is essentially Laravel's way of managing class instances. Service providers are a crucial part of Laravel's dependency injection and service binding system.
+
+## Step 5: Routing
+Now, the request enters the routing phase. Laravel's router examines the incoming request's URI and determines which route matches it. Routes in Laravel are defined in the routes/web.php or routes/api.php files. Once a matching route is found, Laravel executes the associated controller method or closure.
+
+## Step 6: Controller
+The controller handles the request by processing the data, interacting with models, and preparing the response. It acts as the intermediary between the route and the core logic of your application.
+
+## Step 7: Model
+Laravel encourages the use of models to interact with the database. Models represent database tables and provide an elegant way to query and manipulate data. If the controller needs to fetch or modify data, it typically delegates these tasks to a relevant model.
+
+## Step 8: Response
+After processing the request, the controller prepares a response. This response can be an HTML view, JSON data, or any other type of HTTP response. 
+
+Laravel makes it easy to return responses with various HTTP status codes and content types.
+
+## Step 9: Middleware Again
+After the controller has prepared the response, Laravel's middleware comes back into play. Middleware can modify the response before it's sent to the user, allowing for tasks like adding headers, modifying content, or performing final authentication checks.
+
+## Step 10: Sending the Response
+Finally, Laravel sends the response back to the user through the web server. The web server then delivers the response to the client's browser, completing the request lifecycle.
+
+## Conclusion
+
+Understanding the request lifecycle in Laravel is essential for any developer working with this powerful PHP framework. By breaking down the process into these steps, you can gain a deeper understanding of how Laravel handles incoming requests and processes them to generate meaningful responses.
+
+ Whether you're building a small web application or a large-scale project, knowing the request lifecycle will help you make the most of Laravel's capabilities.
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)
