@@ -1,0 +1,115 @@
+---
+title: Mastering Rate Limiting in Laravel; Controlling Access with Ease
+linkTitle: Rate Limiting
+description: Laravel, a popular PHP framework, provides robust tools for implementing rate limiting effortlessly. 
+date: 2023-09-03
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_rate_limit.png"
+---
+
+<p align="center">
+  <img
+    style="width:70%"
+    src="~/assets/laravel_rate_limit.png"
+    alt="Laravel Rate Limiting - Moe Dayraki"
+  />
+</p>
+
+Rate limiting is a crucial technique in web application development to ensure that your resources are used efficiently and fairly. Laravel, a popular PHP framework, offers a straightforward and robust rate limiting abstraction that, when combined with your application's caching system, can help you limit actions within specific time intervals.
+
+In this article, we'll explore how to leverage Laravel's rate limiting features to control access and prevent abuse.
+
+## Cache Configuration
+By default, Laravel's rate limiter utilizes your application's default cache driver, as defined in your cache configuration file. However, you have the flexibility to choose a different cache driver specifically for the rate limiter by configuring the 'limiter' key in your cache configuration:
+
+```php
+'default' => 'memcached',
+'limiter' => 'redis',
+```
+This allows you to fine-tune the caching system to suit your rate limiting needs.
+
+## Basic Usage: The Attempt Method
+The heart of Laravel's rate limiting mechanism lies in its attempt method, accessible through the Illuminate\Support\Facades\RateLimiter facade. This method is remarkably easy to use and provides a powerful way to control access to specific actions.
+
+Let's dive into a practical example. Imagine you want to limit users to sending only five messages per minute. Here's how you can achieve that using the attempt method:
+
+```php
+use Illuminate\Support\Facades\RateLimiter;
+
+$executed = RateLimiter::attempt(
+    'send-message:'.$user->id,
+    $perMinute = 5,
+    function() {
+        // Send message...
+    }
+);
+
+if (! $executed) {
+  return 'Too many messages sent!';
+}
+```
+In this example, we define a rate limiter "key" `'send-message:'.$user->id` and set a limit of five attempts per minute. If a user exceeds this limit, the attempt method returns false, allowing you to handle the situation accordingly.
+
+You can also specify a fourth argument, the "decay rate," which determines the number of seconds until the available attempts are reset. For instance, you can modify the example to allow five attempts every two minutes:
+
+```php
+$executed = RateLimiter::attempt(
+    'send-message:'.$user->id,
+    $perTwoMinutes = 5,
+    function() {
+        // Send message...
+    },
+    $decayRate = 120,
+);
+```
+## Manually Incrementing Attempts
+Laravel's rate limiter offers more than just automatic rate limiting. You can also manually interact with it using various methods. For instance, you can use the tooManyAttempts method to check if a given rate limiter key has exceeded its maximum allowed attempts per minute:
+
+```php
+use Illuminate\Support\Facades\RateLimiter;
+
+if (RateLimiter::tooManyAttempts('send-message:'.$user->id, $perMinute = 5)) {
+    return 'Too many attempts!';
+}
+
+RateLimiter::hit('send-message:'.$user->id);
+// Send message...
+```
+In this case, if the rate limit is exceeded, you can handle it gracefully. Additionally, you can use the remaining method to find out how many attempts are left for a given key. If attempts are available, you can increment them using the hit method.
+
+## Determining Limiter Availability
+Sometimes, it's crucial to let users know how long they need to wait before attempting an action again. The availableIn method in Laravel's rate limiter can help with this:
+
+```php
+use Illuminate\Support\Facades\RateLimiter;
+
+if (RateLimiter::tooManyAttempts('send-message:'.$user->id, $perMinute = 5)) {
+    $seconds = RateLimiter::availableIn('send-message:'.$user->id);
+    return 'You may try again in '.$seconds.' seconds.';
+}
+
+RateLimiter::hit('send-message:'.$user->id);
+// Send message...
+```
+With this information, you can provide clear feedback to users, improving their experience.
+
+## Clearing Attempts
+Lastly, you can reset the number of attempts for a specific rate limiter key using the clear method. This can be handy when you want to reset attempts after a certain event, such as when a message is read by the receiver:
+
+```php
+use App\Models\Message;
+use Illuminate\Support\Facades\RateLimiter;
+
+public function read(Message $message): Message
+{
+    $message->markAsRead();
+    RateLimiter::clear('send-message:'.$message->user_id);
+    return $message;
+}
+```
+## Conclusion
+Laravel's rate limiting features, combined with the flexibility of its caching system, provide a powerful tool for controlling access to your application's resources. Whether you need to limit API requests, prevent spammy actions, or manage user interactions, Laravel's rate limiter can help you maintain a fair and efficient system. With the knowledge gained from this article, you're well-equipped to master rate limiting in Laravel and ensure a smoother, more controlled user experience.
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)
