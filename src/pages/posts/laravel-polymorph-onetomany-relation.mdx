@@ -1,0 +1,103 @@
+---
+title: "Implementing Polymorphic Relationships"
+linkTitle: Polymorphic Relationships
+description: In this article, we will explore how to set up and use one-to-many polymorphic relationships.
+date: 2023-09-05
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/polymorph_relations.png"
+---
+
+<p align="center">
+  <img
+    style="width:70%"
+    src="~/assets/polymorph_relations.png"
+    alt="Laravel Rate Limiting - Moe Dayraki"
+  />
+</p>
+
+In Laravel, polymorphic relationships offer a powerful way to create flexible database associations, particularly when dealing with multiple models that can be linked to a common model.
+In this article, we will explore how to set up and use one-to-many polymorphic relationships by drawing inspiration from an illustrative example involving posts, videos, and comments. By the end of this guide, you will have a solid understanding of how to implement polymorphism in your Laravel projects.
+
+## Understanding the Table Structure
+Before diving into the code, it's essential to comprehend the database table structure that underlies polymorphic relationships. In our scenario, we have three main tables: `posts`, `videos`, and `comments`. Each of these tables has its own unique attributes.
+
+The `posts` table contains attributes like `id`, `title`, and `body`.
+Similarly, the `videos` table comprises fields such as `id`, `title`, and `url`.
+The `comments` table, which is central to our polymorphic relationship, contains `id`, `body`, `commentable_id`, and `commentable_type`. The last two columns, `commentable_id` and `commentable_type`, are pivotal for linking comments to either posts or videos. `commentable_id` stores the ID of the associated post or video, while `commentable_type` signifies the type of the associated model, either "Post" or "Video."
+Model Structure for Polymorphic Relationships
+With the database structure in place, let's explore how to define the models required to establish polymorphic relationships effectively.
+
+## Comment Model
+The Comment model serves as the cornerstone of our polymorphic relationship. It utilizes Laravel's MorphTo relationship to allow a comment to belong to either a post or a video.
+
+```php
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
+
+class Comment extends Model
+{
+    public function commentable(): MorphTo
+    {
+        return $this->morphTo();
+    }
+}
+```
+## Post Model
+In the Post model, we define the comments relationship using Laravel's MorphMany relationship, indicating that a post can have many comments associated with it.
+
+```php
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+
+class Post extends Model
+{
+    public function comments(): MorphMany
+    {
+        return $this->morphMany(Comment::class, 'commentable');
+    }
+}
+```
+## Video Model
+Similarly, the Video model employs the MorphMany relationship to specify that a video can have multiple comments associated with it.
+
+```php
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+
+class Video extends Model
+{
+    public function comments(): MorphMany
+    {
+        return $this->morphMany(Comment::class, 'commentable');
+    }
+}
+```
+## Retrieving the Polymorphic Relationship
+Now that we have established the database tables and models, let's explore how to retrieve and work with the polymorphic relationships.
+
+## Retrieving Comments for a Post or Video
+To retrieve all comments for a specific post or video, you can leverage the dynamic comments property on the corresponding model. For instance, to fetch all comments for a post:
+
+```php
+$post = Post::find(1);
+
+foreach ($post->comments as $comment) {
+    // Perform operations with each comment
+}
+```
+## Retrieving the Parent Model of a Comment
+Suppose you have a comment and need to determine whether it belongs to a post or a video. In that case, you can use the commentable relationship on the Comment model. This relationship will return either a Post or a Video instance, depending on the associated model type:
+
+```php
+$comment = Comment::find(1);
+$commentable = $comment->commentable;
+// Now, $commentable can be either a Post or a Video instance
+```
+
+By utilizing these strategies, you can efficiently manage comments for multiple content types within your Laravel application, all while maintaining a clean and flexible database structure. Polymorphic relationships empower you to create dynamic and versatile associations between your models, enhancing the scalability and usability of your projects.
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)
