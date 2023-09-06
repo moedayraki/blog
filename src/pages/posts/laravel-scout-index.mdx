@@ -1,0 +1,154 @@
+---
+title: Unlocking the Power of Full-Text Search with Laravel Scout
+linkTitle: Laravel Scout
+description: Laravel Scout is a powerful tool that seamlessly integrates full-text search capabilities into your Laravel applications.
+date: 2023-09-06
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_scout_index.png"
+---
+
+<p align="center">
+  <img
+    style="width:70%"
+    src="~/assets/laravel_scout_index.png"
+    alt="Laravel Request Lifecycle - Moe Dayraki"
+  />
+</p>
+
+Laravel Scout is a powerful tool that seamlessly integrates full-text search capabilities into your Laravel applications. It simplifies the process of indexing, importing, updating, and removing records from your search indexes.
+In this comprehensive guide, we'll walk you through the key aspects of working with Laravel Scout, with practical examples to illustrate each concept.
+
+## Batch Importing and Flushing Records
+One of the essential features of Scout is batch importing. If you have an existing project with database records that you want to make searchable, Scout has you covered. You can use the scout:import Artisan command to effortlessly import all your existing records into your search indexes. For instance:
+
+```php
+php artisan scout:import "App\Models\Post"
+```
+Conversely, the scout:flush command helps you remove all records of a specific model from your search indexes, if needed.
+
+## Customizing the Import Query
+Sometimes, you may want to customize the query used for batch importing, perhaps to include eager loading of relationships. To achieve this, define a makeAllSearchableUsing method on your model. Here's an example:
+
+```php
+use Illuminate\Database\Eloquent\Builder;
+
+protected function makeAllSearchableUsing(Builder $query): Builder
+{
+    return $query->with('author');
+}
+```
+However, it's important to note that this method may not be applicable when using a queue for batch imports, as relationships are not restored when processing model collections via jobs.
+
+## Adding Records to the Search Index
+Once you've added the Laravel\Scout\Searchable trait to a model, adding records to the search index is effortless. Simply save or create a model instance, and Scout will automatically add it to the search index. If you've configured Scout to use queues, this operation will be handled in the background by your queue workers. For instance:
+
+```php
+use App\Models\Order;
+
+$order = new Order;
+
+// ...
+
+$order->save();
+```
+You can also add records via an Eloquent query like this:
+
+```php
+use App\Models\Order;
+
+Order::where('price', '>', 100)->searchable();
+```
+Or, add records via a relationship instance:
+```php
+$user->orders()->searchable();
+```
+The searchable method can be thought of as an "upsert" operation. If the model record is already in the index, it will be updated; if not, it will be added.
+
+## Updating Records in the Search Index
+Updating a searchable model is straightforward. Update the model instance's properties and save it to the database, and Scout will automatically persist the changes to the search index:
+
+```php
+use App\Models\Order;
+
+$order = Order::find(1);
+
+// Update the order...
+
+$order->save();
+```
+You can also use the searchable method on an Eloquent query to update a collection of models:
+```php
+Order::where('price', '>', 100)->searchable();
+```
+Updating the search index records for all models in a relationship is as simple as invoking the searchable method on the relationship instance:
+
+```php
+$user->orders()->searchable();
+```
+If you already have a collection of Eloquent models in memory, you can use the searchable method on the collection instance to update the model instances in their corresponding index:
+```php
+$orders->searchable();
+```
+## Modifying Records Before Importing
+There are instances where you might need to prepare a collection of models before making them searchable. For example, you may want to eager load a relationship for efficient indexing. To achieve this, define a makeSearchableUsing method on your model:
+
+```php
+use Illuminate\Database\Eloquent\Collection;
+
+public function makeSearchableUsing(Collection $models): Collection
+{
+    return $models->load('author');
+}
+```
+## Removing Records from the Search Index
+To remove a record from your search index, simply delete the model from the database, even if you're using soft deleted models:
+
+```php
+use App\Models\Order;
+
+$order = Order::find(1);
+
+$order->delete();
+```
+Alternatively, you can use the unsearchable method on an Eloquent query to remove records from the search index:
+
+```php
+Order::where('price', '>', 100)->unsearchable();
+```
+Removing search index records for all models in a relationship is accomplished by invoking the unsearchable method on the relationship instance:
+
+```php
+$user->orders()->unsearchable();
+```
+If you already have a collection of Eloquent models in memory, you can call the unsearchable method on the collection instance to remove the model instances from their corresponding index:
+
+```php
+$orders->unsearchable();
+```
+## Pausing Indexing
+At times, you may need to perform a batch of Eloquent operations on a model without syncing the changes to your search index. The withoutSyncingToSearch method allows you to achieve this. It accepts a closure in which any model operations will not be synced to the model's index:
+
+```php
+use App\Models\Order;
+
+Order::withoutSyncingToSearch(function () {
+    // Perform model actions...
+});
+```
+## Conditionally Searchable Model Instances
+Sometimes, you might want to make a model searchable only under certain conditions. For instance, you may want to index only "published" posts. To do this, define a shouldBeSearchable method on your model:
+
+```php
+public function shouldBeSearchable(): bool
+{
+    return $this->isPublished();
+}
+```
+This method is applied when manipulating models through the save, create, queries, or relationships. However, when directly using the searchable method, it will override the result of the shouldBeSearchable method.
+
+## Conclusion
+In conclusion, Laravel Scout simplifies the process of implementing full-text search in your Laravel applications. With the ability to batch import, customize queries, and manipulate records seamlessly, you can provide efficient search functionality to your users. Whether you need to index, update, or remove records, Scout has you covered, making it an essential tool for enhancing your Laravel applications with powerful search capabilities.
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)
