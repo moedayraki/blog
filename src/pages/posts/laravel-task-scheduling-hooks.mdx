@@ -1,0 +1,76 @@
+---
+title: Leveraging Task Hooks and HTTP Pinging in Laravel Scheduler
+linkTitle: Laravel Scheduler Hooks
+description:  Laravel, a popular PHP framework, offers a powerful scheduler that allows you to automate tasks like sending emails, processing data, and more
+date: 2023-09-07
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_scheduler_hooks.png"
+---
+
+<p align="center">
+  <img
+    style="width:70%"
+    src="~/assets/laravel_scheduler_hooks.png"
+    alt="Laravel Task Scheduler - Moe Dayraki"
+  />
+</p>
+
+In the world of web applications, automated task scheduling is a critical component for keeping your application running smoothly. Laravel, a popular PHP framework, offers a powerful scheduler that allows you to automate tasks like sending emails, processing data, and more. In this article, we'll explore Laravel's task hooks and HTTP pinging features, which provide enhanced control and monitoring of scheduled tasks.
+
+## Task Hooks for Precise Control
+Laravel's task scheduler provides four task hooks that enable you to run code before and after a scheduled task executes, as well as when a task succeeds or fails.
+
+### Before and After Hooks
+The before and after hooks are used to execute code before and after a task runs. These hooks are useful for setting up and tearing down resources, performing logging, or any other pre- or post-task actions.
+```php
+$schedule->command('emails:send')
+         ->daily()
+         ->before(function () {
+             // Code to execute before the task starts...
+         })
+         ->after(function () {
+             // Code to execute after the task completes...
+         });
+```
+### onSuccess and onFailure Hooks
+The onSuccess and onFailure hooks allow you to define actions to be taken when a task succeeds or fails. These hooks are particularly handy for handling different scenarios based on the task's outcome.
+```php
+$schedule->command('emails:send')
+         ->daily()
+         ->onSuccess(function () {
+             // Code to execute when the task succeeds...
+         })
+         ->onFailure(function () {
+             // Code to execute when the task fails...
+         });
+```
+## HTTP Pinging for External Integration
+Laravel's scheduler also provides methods for automatically pinging HTTP URLs before or after task execution. This feature is beneficial for notifying external services, such as deployment tools like Envoyer, about the task's progress.
+### Ping Before and Then Ping
+The pingBefore and thenPing methods allow you to ping a URL before and after a task runs. This is ideal for informing external services that a task is about to start or has completed.
+```php
+$schedule->command('emails:send')
+         ->daily()
+         ->pingBefore($url) // Ping this URL before the task.
+         ->thenPing($url);  // Ping this URL after the task.
+```         
+### Conditional Pinging
+Laravel also supports conditional pinging using pingBeforeIf and thenPingIf methods. These methods allow you to ping a URL only if a specified condition is met, giving you finer control over external notifications.
+```php
+$schedule->command('emails:send')
+         ->daily()
+         ->pingBeforeIf($condition, $url) // Ping if $condition is true.
+         ->thenPingIf($condition, $url);  // Ping if $condition is true after the task.
+```
+### Pinging on Success or Failure
+You can ping a URL specifically when a task succeeds or fails using the pingOnSuccess and pingOnFailure methods. This is useful for updating external systems based on task outcomes.
+```php
+$schedule->command('emails:send')
+         ->daily()
+         ->pingOnSuccess($successUrl) // Ping on task success.
+         ->pingOnFailure($failureUrl); // Ping on task failure.
+```
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)
