@@ -1,0 +1,74 @@
+---
+title: Integrating Apple Sign In with Laravel Socialite
+linkTitle: Laravel Socialite
+description:  In this guide, we'll walk you through the process of integrating Apple Sign In with Laravel Socialite.
+date: 2023-09-09
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_socialite.png"
+---
+
+<p align="center">
+  <img
+    style="width:70%"
+    src="~/assets/laravel_socialite.png"
+    alt="Laravel Socialite - Moe Dayraki"
+  />
+</p>
+
+In today's digital landscape, providing users with the convenience of social sign-in options can significantly enhance their experience on your web application. Apple's "Sign In with Apple" is becoming increasingly popular due to its security and privacy features. In this guide, we'll walk you through the process of integrating Apple Sign In with Laravel Socialite.
+
+## Installation and Configuration
+Before you start, make sure you have a Laravel project set up. Once that's ready, you can follow these steps:
+
+### Install the SocialiteProviders/Apple Package
+To begin, you need to install the SocialiteProviders/Apple package using Composer:
+```bash
+composer require socialiteproviders/apple
+```
+### Add Configuration
+Next, you'll need to add the Apple provider configuration to your config/services.php file. Replace the placeholders with your actual Apple client ID, client secret, and redirect URI.
+```php
+'apple' => [
+    'client_id' => env('APPLE_CLIENT_ID'),
+    'client_secret' => env('APPLE_CLIENT_SECRET'),
+    'redirect' => env('APPLE_REDIRECT_URI'),
+],
+```
+Ensure you have these values set in your .env file as well.
+
+### Configure Apple ID Authentication
+Configuring Apple ID Authentication involves generating a client secret token, which has a maximum lifetime of 6 months. Apple provides instructions on how to generate this token in their documentation. It's important to note that you'll need to update this token every 6 months.
+
+For more information on generating a client secret for Sign In with Apple, refer to Generating A Client Secret For Sign In With Apple On Each Request.
+
+### Add Provider Event Listener
+You'll need to configure the package's event listener to listen for SocialiteWasCalled events. To do this, open your app/Providers/EventServiceProvider.php file and add the following code to the listen array:
+
+```php
+protected $listen = [
+    \SocialiteProviders\Manager\SocialiteWasCalled::class => [
+        // ... other providers
+        \SocialiteProviders\Apple\AppleExtendSocialite::class.'@handle',
+    ],
+];
+```
+### Usage
+Now that you have everything set up, you can use the Apple provider in your Laravel application just like any other Socialite provider. Here's an example of how to initiate the Apple Sign In flow and redirect users:
+
+```php
+return Socialite::driver('apple')->redirect();
+```
+
+## Returned User Fields
+When a user successfully signs in with Apple, you can expect to receive the following user fields:
+
+`id`: User's unique identifier
+`name`: User's name
+`email`: User's email address
+B`y ollowing these steps, you can seamlessly integrate Apple Sign In with Laravel Socialite, providing your users with a secure and convenient way to access your application while respecting their privacy.
+
+Please note that Apple Sign In requires careful attention to security and privacy standards, so make sure to follow Apple's guidelines and best practices throughout the integration process.
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)
