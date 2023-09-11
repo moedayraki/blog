@@ -24,7 +24,7 @@
     "@islands/images": "^0.8.2",
     "@islands/prism": "^0.8.0",
     "@islands/pwa": "^0.9.1",
-    "@types/cross-spawn": "^6.0.2",
+    "@types/cross-spawn": "^6.0.3",
     "@vueuse/core": "^10.2.0",
     "autoprefixer": "^10.4.14",
     "iles": "^0.8.7",
