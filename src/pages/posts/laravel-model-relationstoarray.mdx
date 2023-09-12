@@ -1,0 +1,49 @@
+---
+title: Laravel relationsToArray(); Get All the Model's Relations
+linkTitle: Laravel relationsToArray()
+description: relationsToArray allows you to retrieve the model's relationships in an array format
+date: 2022-10-12
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_model_relationstoarray.png"
+---
+
+<p align="center">
+  <img
+    style="width:100%"
+    src="~/assets/laravel_model_relationstoarray.png"
+    alt="Moe Dayraki-Laravel relationsToArray"
+  />
+</p>
+
+In Laravel's Eloquent ORM, the `Illuminate\Database\Eloquent\Model` class provides a powerful set of methods to interact with the database. One such method is `relationsToArray()`, which allows you to retrieve the model's relationships in an array format. In this article, we will explore the `relationsToArray()` method and its usage.
+
+## Usage
+Let's say we have a User model with a `hasMany` relationship to Post. We can use the `relationsToArray()` method to retrieve an array representation of the model's relationships.
+
+```php
+$user = User::find(1);
+$relationships = $user->relationsToArray();
+
+// Example output:
+// [
+//     'posts' => [
+//         'type' => 'hasMany',
+//         'model' => 'App\Post',
+//         'foreign_key' => 'user_id',
+//     ],
+// ]
+```
+
+## Explaination
+The `relationsToArray()` method returns an array where each key represents a relationship defined in the model. The value for each key is another array that contains information about the relationship, including its type, the related model, and the foreign key used.
+
+In the example above, the array returned by `relationsToArray()` shows that the User model has a `hasMany` relationship with the Post model. The type key indicates the type of relationship, the model key specifies the related model class, and the foreign_key key represents the foreign key used for the relationship.
+
+## To Remember
+The `relationsToArray()` method in Laravel's Eloquent ORM provides a convenient way to retrieve the model's relationships in an array format. This can be useful when you need to access and manipulate the relationships programmatically. By understanding how to use this method, you can enhance your Laravel applications with more flexibility and control over the database relationships.
+
+Remember to import the `Illuminate\Database\Eloquent\Model` class and define your relationships in the model before using the `relationsToArray()` method.
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)
