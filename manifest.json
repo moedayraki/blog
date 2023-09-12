@@ -128,7 +128,7 @@
     ]
   },
   "virtual_ile_posts_10_ile-3": {
-    "file": "assets/virtual_ile_posts_10_ile-3.63c9a0db.js",
+    "file": "assets/virtual_ile_posts_10_ile-3.3013feed.js",
     "src": "virtual_ile_posts_10_ile-3",
     "isEntry": true,
     "imports": [
@@ -144,6 +144,55 @@
   "virtual_ile_posts_10_ile-4": {
     "file": "assets/virtual_ile_posts_10_ile-4.45306c85.js",
     "src": "virtual_ile_posts_10_ile-4",
+    "isEntry": true,
+    "imports": [
+      "_iles.8787c33a.js",
+      "src/layouts/base.vue?vue&index=0&clientScript=true&lang.ts",
+      "_vendor-vue.5ac6f390.js"
+    ]
+  },
+  "virtual_ile_posts_11_ile-1": {
+    "file": "assets/virtual_ile_posts_11_ile-1.a503ee30.js",
+    "src": "virtual_ile_posts_11_ile-1",
+    "isEntry": true,
+    "imports": [
+      "_iles.8787c33a.js",
+      "_DarkModeSwitch.1d3877b3.js",
+      "_vendor-vue.5ac6f390.js",
+      "_vite.c01fc5e5.js"
+    ]
+  },
+  "virtual_ile_posts_11_ile-2": {
+    "file": "assets/virtual_ile_posts_11_ile-2.2bcd9922.js",
+    "src": "virtual_ile_posts_11_ile-2",
+    "isEntry": true,
+    "imports": [
+      "_vite.c01fc5e5.js",
+      "_iles.8787c33a.js",
+      "_vendor-vue.5ac6f390.js"
+    ],
+    "dynamicImports": [
+      "_iles.8787c33a.js",
+      "src/components/TheSidebar.vue?vue&index=0&clientScript=true&lang.ts"
+    ]
+  },
+  "virtual_ile_posts_11_ile-3": {
+    "file": "assets/virtual_ile_posts_11_ile-3.74ee6064.js",
+    "src": "virtual_ile_posts_11_ile-3",
+    "isEntry": true,
+    "imports": [
+      "_vite.c01fc5e5.js",
+      "_iles.8787c33a.js",
+      "_vendor-vue.5ac6f390.js"
+    ],
+    "dynamicImports": [
+      "_iles.8787c33a.js",
+      "src/components/TimeAgo.vue"
+    ]
+  },
+  "virtual_ile_posts_11_ile-4": {
+    "file": "assets/virtual_ile_posts_11_ile-4.daa40787.js",
+    "src": "virtual_ile_posts_11_ile-4",
     "isEntry": true,
     "imports": [
       "_iles.8787c33a.js",
@@ -177,7 +226,7 @@
     ]
   },
   "virtual_ile_posts_1_ile-3": {
-    "file": "assets/virtual_ile_posts_1_ile-3.18ede66c.js",
+    "file": "assets/virtual_ile_posts_1_ile-3.3aa6f7d8.js",
     "src": "virtual_ile_posts_1_ile-3",
     "isEntry": true,
     "imports": [
@@ -226,7 +275,7 @@
     ]
   },
   "virtual_ile_posts_2_ile-3": {
-    "file": "assets/virtual_ile_posts_2_ile-3.054c82fe.js",
+    "file": "assets/virtual_ile_posts_2_ile-3.5d09eaa1.js",
     "src": "virtual_ile_posts_2_ile-3",
     "isEntry": true,
     "imports": [
@@ -275,7 +324,7 @@
     ]
   },
   "virtual_ile_posts_3_ile-3": {
-    "file": "assets/virtual_ile_posts_3_ile-3.9a4cfd81.js",
+    "file": "assets/virtual_ile_posts_3_ile-3.9b2c2d91.js",
     "src": "virtual_ile_posts_3_ile-3",
     "isEntry": true,
     "imports": [
@@ -324,7 +373,7 @@
     ]
   },
   "virtual_ile_posts_4_ile-3": {
-    "file": "assets/virtual_ile_posts_4_ile-3.ac20df7c.js",
+    "file": "assets/virtual_ile_posts_4_ile-3.d66457b3.js",
     "src": "virtual_ile_posts_4_ile-3",
     "isEntry": true,
     "imports": [
@@ -373,7 +422,7 @@
     ]
   },
   "virtual_ile_posts_5_ile-3": {
-    "file": "assets/virtual_ile_posts_5_ile-3.cf5a8dbf.js",
+    "file": "assets/virtual_ile_posts_5_ile-3.1d51663a.js",
     "src": "virtual_ile_posts_5_ile-3",
     "isEntry": true,
     "imports": [
@@ -422,7 +471,7 @@
     ]
   },
   "virtual_ile_posts_6_ile-3": {
-    "file": "assets/virtual_ile_posts_6_ile-3.3109640e.js",
+    "file": "assets/virtual_ile_posts_6_ile-3.54fb970b.js",
     "src": "virtual_ile_posts_6_ile-3",
     "isEntry": true,
     "imports": [
@@ -471,7 +520,7 @@
     ]
   },
   "virtual_ile_posts_7_ile-3": {
-    "file": "assets/virtual_ile_posts_7_ile-3.b7011214.js",
+    "file": "assets/virtual_ile_posts_7_ile-3.bb9f45b3.js",
     "src": "virtual_ile_posts_7_ile-3",
     "isEntry": true,
     "imports": [
@@ -520,7 +569,7 @@
     ]
   },
   "virtual_ile_posts_8_ile-3": {
-    "file": "assets/virtual_ile_posts_8_ile-3.0d0811ba.js",
+    "file": "assets/virtual_ile_posts_8_ile-3.1320753b.js",
     "src": "virtual_ile_posts_8_ile-3",
     "isEntry": true,
     "imports": [
@@ -569,7 +618,7 @@
     ]
   },
   "virtual_ile_posts_9_ile-3": {
-    "file": "assets/virtual_ile_posts_9_ile-3.e3ec76dd.js",
+    "file": "assets/virtual_ile_posts_9_ile-3.11995fc2.js",
     "src": "virtual_ile_posts_9_ile-3",
     "isEntry": true,
     "imports": [
@@ -618,7 +667,7 @@
     ]
   },
   "virtual_ile_posts_apple-sept-2022_ile-3": {
-    "file": "assets/virtual_ile_posts_apple-sept-2022_ile-3.6c73a29a.js",
+    "file": "assets/virtual_ile_posts_apple-sept-2022_ile-3.cfb1b0ed.js",
     "src": "virtual_ile_posts_apple-sept-2022_ile-3",
     "isEntry": true,
     "imports": [
@@ -667,7 +716,7 @@
     ]
   },
   "virtual_ile_posts_binary-system_ile-3": {
-    "file": "assets/virtual_ile_posts_binary-system_ile-3.a546bbf3.js",
+    "file": "assets/virtual_ile_posts_binary-system_ile-3.685409e5.js",
     "src": "virtual_ile_posts_binary-system_ile-3",
     "isEntry": true,
     "imports": [
@@ -716,7 +765,7 @@
     ]
   },
   "virtual_ile_posts_install-laravel-vuejs_ile-3": {
-    "file": "assets/virtual_ile_posts_install-laravel-vuejs_ile-3.92ea9fb1.js",
+    "file": "assets/virtual_ile_posts_install-laravel-vuejs_ile-3.15d1a48a.js",
     "src": "virtual_ile_posts_install-laravel-vuejs_ile-3",
     "isEntry": true,
     "imports": [
@@ -765,7 +814,7 @@
     ]
   },
   "virtual_ile_posts_laravel-error-pages_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-error-pages_ile-3.70cf7337.js",
+    "file": "assets/virtual_ile_posts_laravel-error-pages_ile-3.3e348e39.js",
     "src": "virtual_ile_posts_laravel-error-pages_ile-3",
     "isEntry": true,
     "imports": [
@@ -814,7 +863,7 @@
     ]
   },
   "virtual_ile_posts_laravel-foreach-loop_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-foreach-loop_ile-3.82f14323.js",
+    "file": "assets/virtual_ile_posts_laravel-foreach-loop_ile-3.c0fcb9b0.js",
     "src": "virtual_ile_posts_laravel-foreach-loop_ile-3",
     "isEntry": true,
     "imports": [
@@ -863,7 +912,7 @@
     ]
   },
   "virtual_ile_posts_laravel-model-getdirty_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-model-getdirty_ile-3.82b02b45.js",
+    "file": "assets/virtual_ile_posts_laravel-model-getdirty_ile-3.a7d9f615.js",
     "src": "virtual_ile_posts_laravel-model-getdirty_ile-3",
     "isEntry": true,
     "imports": [
@@ -879,6 +928,55 @@
   "virtual_ile_posts_laravel-model-getdirty_ile-4": {
     "file": "assets/virtual_ile_posts_laravel-model-getdirty_ile-4.fa5bc4fa.js",
     "src": "virtual_ile_posts_laravel-model-getdirty_ile-4",
+    "isEntry": true,
+    "imports": [
+      "_iles.8787c33a.js",
+      "src/layouts/base.vue?vue&index=0&clientScript=true&lang.ts",
+      "_vendor-vue.5ac6f390.js"
+    ]
+  },
+  "virtual_ile_posts_laravel-model-relationstoarray_ile-1": {
+    "file": "assets/virtual_ile_posts_laravel-model-relationstoarray_ile-1.2f8b0d4c.js",
+    "src": "virtual_ile_posts_laravel-model-relationstoarray_ile-1",
+    "isEntry": true,
+    "imports": [
+      "_iles.8787c33a.js",
+      "_DarkModeSwitch.1d3877b3.js",
+      "_vendor-vue.5ac6f390.js",
+      "_vite.c01fc5e5.js"
+    ]
+  },
+  "virtual_ile_posts_laravel-model-relationstoarray_ile-2": {
+    "file": "assets/virtual_ile_posts_laravel-model-relationstoarray_ile-2.c22c2134.js",
+    "src": "virtual_ile_posts_laravel-model-relationstoarray_ile-2",
+    "isEntry": true,
+    "imports": [
+      "_vite.c01fc5e5.js",
+      "_iles.8787c33a.js",
+      "_vendor-vue.5ac6f390.js"
+    ],
+    "dynamicImports": [
+      "_iles.8787c33a.js",
+      "src/components/TheSidebar.vue?vue&index=0&clientScript=true&lang.ts"
+    ]
+  },
+  "virtual_ile_posts_laravel-model-relationstoarray_ile-3": {
+    "file": "assets/virtual_ile_posts_laravel-model-relationstoarray_ile-3.b4e08fca.js",
+    "src": "virtual_ile_posts_laravel-model-relationstoarray_ile-3",
+    "isEntry": true,
+    "imports": [
+      "_vite.c01fc5e5.js",
+      "_iles.8787c33a.js",
+      "_vendor-vue.5ac6f390.js"
+    ],
+    "dynamicImports": [
+      "_iles.8787c33a.js",
+      "src/components/TimeAgo.vue"
+    ]
+  },
+  "virtual_ile_posts_laravel-model-relationstoarray_ile-4": {
+    "file": "assets/virtual_ile_posts_laravel-model-relationstoarray_ile-4.1e3e7fce.js",
+    "src": "virtual_ile_posts_laravel-model-relationstoarray_ile-4",
     "isEntry": true,
     "imports": [
       "_iles.8787c33a.js",
@@ -912,7 +1010,7 @@
     ]
   },
   "virtual_ile_posts_laravel-openai-database-queries_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-openai-database-queries_ile-3.d3dcf9f5.js",
+    "file": "assets/virtual_ile_posts_laravel-openai-database-queries_ile-3.911fb770.js",
     "src": "virtual_ile_posts_laravel-openai-database-queries_ile-3",
     "isEntry": true,
     "imports": [
@@ -961,7 +1059,7 @@
     ]
   },
   "virtual_ile_posts_laravel-polymorph-onetomany-relation_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-polymorph-onetomany-relation_ile-3.461f9024.js",
+    "file": "assets/virtual_ile_posts_laravel-polymorph-onetomany-relation_ile-3.ca675891.js",
     "src": "virtual_ile_posts_laravel-polymorph-onetomany-relation_ile-3",
     "isEntry": true,
     "imports": [
@@ -1010,7 +1108,7 @@
     ]
   },
   "virtual_ile_posts_laravel-rate-limit_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-rate-limit_ile-3.2ef32e1e.js",
+    "file": "assets/virtual_ile_posts_laravel-rate-limit_ile-3.84f9ef68.js",
     "src": "virtual_ile_posts_laravel-rate-limit_ile-3",
     "isEntry": true,
     "imports": [
@@ -1059,7 +1157,7 @@
     ]
   },
   "virtual_ile_posts_laravel-relation-count_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-relation-count_ile-3.c449280b.js",
+    "file": "assets/virtual_ile_posts_laravel-relation-count_ile-3.d0776a7d.js",
     "src": "virtual_ile_posts_laravel-relation-count_ile-3",
     "isEntry": true,
     "imports": [
@@ -1108,7 +1206,7 @@
     ]
   },
   "virtual_ile_posts_laravel-request-lifecylce_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-request-lifecylce_ile-3.6eab11c0.js",
+    "file": "assets/virtual_ile_posts_laravel-request-lifecylce_ile-3.764199f2.js",
     "src": "virtual_ile_posts_laravel-request-lifecylce_ile-3",
     "isEntry": true,
     "imports": [
@@ -1157,7 +1255,7 @@
     ]
   },
   "virtual_ile_posts_laravel-scout-index_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-scout-index_ile-3.b710510b.js",
+    "file": "assets/virtual_ile_posts_laravel-scout-index_ile-3.a76b8ca8.js",
     "src": "virtual_ile_posts_laravel-scout-index_ile-3",
     "isEntry": true,
     "imports": [
@@ -1206,7 +1304,7 @@
     ]
   },
   "virtual_ile_posts_laravel-socialite_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-socialite_ile-3.93d39996.js",
+    "file": "assets/virtual_ile_posts_laravel-socialite_ile-3.603e9f9c.js",
     "src": "virtual_ile_posts_laravel-socialite_ile-3",
     "isEntry": true,
     "imports": [
@@ -1255,7 +1353,7 @@
     ]
   },
   "virtual_ile_posts_laravel-task-scheduling-hooks_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-task-scheduling-hooks_ile-3.9382f46c.js",
+    "file": "assets/virtual_ile_posts_laravel-task-scheduling-hooks_ile-3.5c5e5d5a.js",
     "src": "virtual_ile_posts_laravel-task-scheduling-hooks_ile-3",
     "isEntry": true,
     "imports": [
@@ -1304,7 +1402,7 @@
     ]
   },
   "virtual_ile_posts_learning-html-beginner_ile-3": {
-    "file": "assets/virtual_ile_posts_learning-html-beginner_ile-3.b60adfed.js",
+    "file": "assets/virtual_ile_posts_learning-html-beginner_ile-3.1c21f3e2.js",
     "src": "virtual_ile_posts_learning-html-beginner_ile-3",
     "isEntry": true,
     "imports": [
@@ -1353,7 +1451,7 @@
     ]
   },
   "virtual_ile_posts_livewire-ping_ile-3": {
-    "file": "assets/virtual_ile_posts_livewire-ping_ile-3.a14dc76e.js",
+    "file": "assets/virtual_ile_posts_livewire-ping_ile-3.58215029.js",
     "src": "virtual_ile_posts_livewire-ping_ile-3",
     "isEntry": true,
     "imports": [
@@ -1402,7 +1500,7 @@
     ]
   },
   "virtual_ile_posts_locatorjs-devtool-plugin_ile-3": {
-    "file": "assets/virtual_ile_posts_locatorjs-devtool-plugin_ile-3.345e659b.js",
+    "file": "assets/virtual_ile_posts_locatorjs-devtool-plugin_ile-3.36d689b5.js",
     "src": "virtual_ile_posts_locatorjs-devtool-plugin_ile-3",
     "isEntry": true,
     "imports": [
@@ -1451,7 +1549,7 @@
     ]
   },
   "virtual_ile_posts_programming-languages-pt1_ile-3": {
-    "file": "assets/virtual_ile_posts_programming-languages-pt1_ile-3.f9a815ec.js",
+    "file": "assets/virtual_ile_posts_programming-languages-pt1_ile-3.bcbefd30.js",
     "src": "virtual_ile_posts_programming-languages-pt1_ile-3",
     "isEntry": true,
     "imports": [
@@ -1500,7 +1598,7 @@
     ]
   },
   "virtual_ile_posts_programming-languages-pt2_ile-3": {
-    "file": "assets/virtual_ile_posts_programming-languages-pt2_ile-3.47c8ae2f.js",
+    "file": "assets/virtual_ile_posts_programming-languages-pt2_ile-3.a5ed94a3.js",
     "src": "virtual_ile_posts_programming-languages-pt2_ile-3",
     "isEntry": true,
     "imports": [
@@ -1549,7 +1647,7 @@
     ]
   },
   "virtual_ile_posts_the-moe-article_ile-3": {
-    "file": "assets/virtual_ile_posts_the-moe-article_ile-3.52f961b3.js",
+    "file": "assets/virtual_ile_posts_the-moe-article_ile-3.167ff336.js",
     "src": "virtual_ile_posts_the-moe-article_ile-3",
     "isEntry": true,
     "imports": [
