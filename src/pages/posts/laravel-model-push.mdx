@@ -1,0 +1,63 @@
+---
+title: Laravel's push() Method for Saving Models and Relationships
+linkTitle: Laravel push()
+description: the push() method in the Illuminate\Database\Eloquent\Model class provides a powerful way to save a model and all of its relationships in a single operation.
+date: 2023-09-13
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_model_push.png"
+---
+
+<p align="center">
+  <img
+    style="width:100%"
+    src="~/assets/laravel_model_push.png"
+    alt="Moe Dayraki-Laravel push"
+  />
+</p>
+
+In Laravel, the push() method in the Illuminate\Database\Eloquent\Model class provides a powerful way to save a model and all of its relationships in a single operation. This method not only simplifies the process of saving related data but also ensures data integrity and consistency. In this article, we will delve into the details of the push() method and explore its various use cases.
+
+## Saving a Model
+```php 
+$user = new User;
+$user->name = 'John Doe';
+$user->email = 'johndoe@example.com';
+$user->save();
+// Using push() method 
+$user->push();
+```
+In this example, we create a new `User` model instance, set its attributes, and then save it using the `save()` method. However, with the `push()` method, we can achieve the same result in a more concise manner.
+ The `push()` method will save the model to the database and return a boolean value indicating whether the operation was successful or not.
+
+## Saving Relationships 
+```php 
+$user = User::find(1);
+$role = new Role;
+$role->name = 'Admin';
+$user->roles()->save($role);
+// Using push() method to save the model and its relationships
+$user->push();
+```
+In this example, we retrieve a `User` model with an ID of 1. We then create a new `Role` model instance and associate it with the user using the `save()` method on the` roles()` relationship.
+Finally, by calling the` push()` method on the user model, we save both the user and the associated role to the database in a single operation.
+
+## Saving Multiple Relationships 
+```php 
+$user = User::find(1);
+$role1 = new Role;
+$role1->name = 'Admin';
+$user->roles()->save($role1);
+$role2 = new Role;
+$role2->name = 'Editor';
+$user->roles()->save($role2);
+// Using push() method to save the model and its relationships
+$user->push();
+```
+In this example, we extend the previous example by saving multiple roles for a user. By calling the `save()` method on the `roles()` relationship multiple times and then using the `push()` method on the user model, we can save all the relationships in a single operation. This ensures that the data is saved atomically, maintaining data integrity.
+
+## Let's Remember
+The `push()` method in Laravel's `Illuminate\Database\Eloquent\Model` class is a powerful tool for effortlessly saving models and their relationships. By using this method, you can simplify your code, improve efficiency, and ensure data consistency. Whether you need to save a single model or multiple related models, the push() method provides a convenient and reliable solution.
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)
