@@ -1,0 +1,55 @@
+---
+title: Laravel's setTouchedRelations() Method for Updating Related Models on Save
+linkTitle: Laravel setTouchedRelations()
+description: the setTouchedRelations() method in the Illuminate\Database\Eloquent\Model class offers a powerful way to specify which relationships should be marked as "touched" when saving a model.
+date: 2023-09-14
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_model_settouchedrelations.png"
+---
+
+<p align="center">
+  <img
+    style="width:100%"
+    src="~/assets/laravel_model_settouchedrelations.png"
+    alt="Moe Dayraki-Laravel push"
+  />
+</p>
+
+In Laravel, the setTouchedRelations() method in the Illuminate\Database\Eloquent\Model class offers a powerful way to specify which relationships should be marked as "touched" when saving a model. By using this method, you can effortlessly update the updated_at timestamp of related models along with the main model. In this article, we will explore the details of the setTouchedRelations() method and its practical usage scenarios.
+
+## Updating Related Models on Save 
+```php 
+class User extends Illuminate\Database\Eloquent\Model
+{ 
+  public function posts() { 
+    return $this->hasMany(Post::class); 
+  } 
+}
+
+$user = User::find(1); $user->setTouchedRelations(['posts']); $user->save();
+```
+In this example, we retrieve a `User` model instance with an ID of 1. By calling the `setTouchedRelations()` method and passing in`['posts']`, we specify that the `posts` relationship should be marked as "touched" when saving the user model. As a result, when we call the `save()` method on the user model, the` updated_attimestamp` of the related `Post` models will also be updated.
+
+## Updating Multiple Related Models
+```php
+class User extends Illuminate\Database\Eloquent\Model 
+{ 
+  public function posts() {
+     return $this->hasMany(Post::class); 
+  }
+  public function comments()
+  {
+      return $this->hasMany(Comment::class);
+  }
+}
+
+$user = User::find(1); $user->setTouchedRelations(['posts', 'comments']); $user->save();
+```
+In this example, we extend the previous example by including the `comments` relationship in the `setTouchedRelations()` method. By passing in `['posts', 'comments']`, we ensure that both the `posts` and `comments` relationships are marked as "touched" when saving the user model. Consequently, the `updated_at` timestamps of the related `Post` and `Comment` models will be updated accordingly.
+
+## Let's Remember
+The `setTouchedRelations()` method in Laravel's `Illuminate\Database\Eloquent\Model` class provides a convenient way to update the timestamps of related models when saving a model. By leveraging this method, you can effortlessly ensure data consistency and track the last time a relationship was updated. Whether you need to update a single related model or multiple related models, the `setTouchedRelations()` method offers a flexible solution. Give it a try and simplify your code while keeping your data up to date!
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)
