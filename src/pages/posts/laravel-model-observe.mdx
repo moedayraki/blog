@@ -1,0 +1,64 @@
+---
+title: Understanding Laravel's observe Method in Models
+linkTitle: Laravel observe()
+description:  the observe method allows you to register observers with your models
+date: 2023-09-18
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_model_observe.png"
+---
+
+<p align="center">
+  <img
+    style="width:100%"
+    src="~/assets/laravel_model_observe.png"
+    alt="Moe Dayraki-Laravel observe"
+  />
+</p>
+
+In Laravel's Eloquent ORM, the `observe` method allows you to register observers with your models. Observers are classes that listen for specific events triggered by the model, such as creating, updating, or deleting records. This article will explore the `observe` method and its usage in Laravel's Eloquent models. 
+
+## What is the `observe` method? 
+The `observe` method is a static method defined in the `Illuminate/Eloquent/Model` class. It provides a convenient way to register observers for your models. By registering observers, you can perform additional actions or logic in response to specific events triggered by the model.
+ Syntax: The syntax for the observe method is as follows: 
+ ```php
+ Model::observe($classes); 
+ ```
+ The `$classes` parameter can accept an object, an array of objects, or a string representing the observer class or classes.
+ 
+## Single Observer
+To register a single observer class with a model, you can pass the observer class name as a string to the observe method. 
+For example:
+```php 
+<?php
+
+namespace App\Observers;
+
+use App\Models\User;
+
+class UserObserver { // Observer methods for User model events }
+
+User::observe(UserObserver::class);
+```
+In the above example, the `UserObserver` class is registered as an observer for the User model. 
+
+## Multiple Observers
+You can also register multiple observer classes by passing an array of observer class names to the observe method. 
+```php
+<?php
+
+namespace App\Observers;
+
+use App\Models\User; use App\Observers\SomeOtherObserver;
+
+class UserObserver { // Observer methods for User model events }
+
+User::observe([UserObserver::class, SomeOtherObserver::class]);
+```
+In this example, both UserObserver and SomeOtherObserver classes are registered as observers for the User model. 
+
+## Let's Remember
+The observe method in Laravel's Eloquent models provides a flexible way to register observers and perform additional logic in response to model events. By leveraging observers, you can easily separate concerns and keep your codebase organized. Whether it's auditing changes, sending notifications, or performing other actions, the observe method empowers you to enhance the behavior of your Laravel models.
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github/moedayraki) or [Twitter](https://twitter/MohammedDayraki)
