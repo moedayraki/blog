@@ -1,0 +1,76 @@
+---
+title: The 'level' Method; Laravel's Custom Notifications
+linkTitle: Laravel level()
+description:  the level method in notification messages stands out as a powerful tool for crafting custom notification levels
+date: 2023-09-21
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_notification_level.png"
+---
+
+<p align="center">
+  <img
+    style="width:100%"
+    src="~/assets/laravel_notification_level.png"
+    alt="Moe Dayraki-Laravel level"
+  />
+</p>
+
+Laravel's notification system is renowned for its flexibility and ease of use. Among its many features, the level method in notification messages stands out as a powerful tool for crafting custom notification levels. In this article, we will dive deep into the level method, exploring its capabilities and demonstrating how it can be harnessed to create personalized notification experiences. 
+
+## The Knowledge
+In Laravel, notifications can be categorized into different levels, such as "success," "error," "info," or any custom levels you define. The level method is used within notification message classes, specifically in classes that extend Illuminate\Notifications\Messages\MailMessage or similar message classes.
+
+```php
+$this level(string $level)
+```
+### Parameters:
+`string $level`: The level you want to assign to the notification. This can be one of the predefined levels like "success" or a custom level.
+
+### Return Value:
+`$this`: The level method returns the current message instance, allowing for method chaining.
+
+## Usage
+### Categorizing Notifications
+Imagine you are building an e-commerce application, and you want to categorize order-related notifications based on their urgency. You can use the level method to differentiate between "normal" and "urgent" notifications.
+```php
+use Illuminate\Notifications\Notification;
+use Illuminate\Notifications\Messages\MailMessage;
+
+class OrderShipped extends Notification
+{
+    public function toMail($notifiable)
+    {
+        return (new MailMessage)
+            ->line('Your order has been shipped!')
+            ->action('Track Your Order', url('/'))
+            ->level('urgent'); // Set the notification level to "urgent"
+    }
+}
+```
+In this example, we've assigned a custom level, "urgent," to the OrderShipped notification. Later, you can style or handle "urgent" notifications differently in your application.
+
+### Customizing Email Styles
+The level method isn't just for categorization; it can also influence the visual presentation of notifications. Suppose you want to style success notifications in green and error notifications in red:
+```php
+use Illuminate\Notifications\Notification;
+use Illuminate\Notifications\Messages\MailMessage;
+
+class PaymentReceived extends Notification
+{
+    public function toMail($notifiable)
+    {
+        return (new MailMessage)
+            ->line('Payment received successfully.')
+            ->action('View Invoice', url('/invoice'))
+            ->level('success'); // Set the notification level to "success"
+    }
+}
+```
+With the level method set to "success," you can apply a custom CSS style to success notifications, making them visually distinct from other types of notifications.
+
+## Let's Remember
+The Laravel `level` method is a versatile tool for customizing and categorizing your application's notifications. Whether you want to assign custom levels to notifications or style them differently based on their levels, the `level` method empowers you to create a tailored notification experience for your users. Leveraging this feature effectively can enhance user engagement and make your application more informative and user-friendly.
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github.com/moedayraki) or [Twitter](https://twitter.com/MohammedDayraki)
