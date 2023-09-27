@@ -1,74 +1,64 @@
 ---
-title: The 'level' Method; Laravel's Custom Notifications
-linkTitle: Laravel level()
-description:  the level method in notification messages stands out as a powerful tool for crafting custom notification levels
-date: 2023-09-21
-image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_notification_level.png"
+title: The 'linesif' Method; Laravel's Custom Notifications
+linkTitle: Laravel linesif()
+description:  we'll explore an exciting aspect of Laravel's notification system by delving into the SimpleMessages class, specifically focusing on the linesIf method. 
+date: 2023-09-26
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_notification_linesif.png"
 ---
 
 <p align="center">
   <img
     style="width:100%"
-    src="~/assets/laravel_notification_level.png"
-    alt="Moe Dayraki-Laravel level"
+    src="~/assets/laravel_notification_linesif.png"
+    alt="Moe Dayraki-Laravel linesif"
   />
 </p>
+Laravel's robust ecosystem empowers developers to create elegant and efficient solutions for web applications. Among its many features, Laravel offers a powerful notification system that simplifies the process of sending messages via various channels such as email, SMS, and Slack. In this article, we'll explore an exciting aspect of Laravel's notification system by delving into the SimpleMessages class, specifically focusing on the `linesIf` method. We will discuss how this method can enhance your notification messages by allowing you to conditionally include content based on specific conditions.
 
-Laravel's notification system is renowned for its flexibility and ease of use. Among its many features, the level method in notification messages stands out as a powerful tool for crafting custom notification levels. In this article, we will dive deep into the level method, exploring its capabilities and demonstrating how it can be harnessed to create personalized notification experiences. 
+## Understanding Laravel Notifications
+Before we dive into the `SimpleMessages` class, let's briefly review the concept of notifications in Laravel. Notifications are a way to inform users or system administrators about events or updates in your application. Laravel's notification system provides a convenient way to send messages through different channels while maintaining consistency in your code.
 
-## The Knowledge
-In Laravel, notifications can be categorized into different levels, such as "success," "error," "info," or any custom levels you define. The level method is used within notification message classes, specifically in classes that extend Illuminate\Notifications\Messages\MailMessage or similar message classes.
+## The Power of SimpleMessages
+The SimpleMessages class is an integral part of Laravel's notification system, offering developers a simple yet powerful way to construct notification messages. The SimpleMessages class provides various methods to add content to your messages. However, one method stands out when it comes to flexibility: `linesIf`.
 
+The `linesIf` method allows you to add lines of text to a notification message conditionally. This means you can dynamically customize the content of your notification messages based on specific conditions in your application logic. Let's explore a few examples to see how this method can be utilized effectively.
+
+## Personalized Greetings
+Imagine you're building a social networking platform, and you want to send welcome messages to new users. You can use the `linesIf` method to include a personalized greeting based on the user's name:
 ```php
-$this level(string $level)
+use Illuminate\Notifications\Messages\SimpleMessage;
+
+$message = new SimpleMessage();
+$isNewUser = true; // Condition indicating a new user
+$userName = "John Doe";
+
+$message->linesIf($isNewUser, ["Hello, $userName! Welcome to our community."]);
+
+// Continue building your notification
+$message->line("We're excited to have you on board.");
 ```
-### Parameters:
-`string $level`: The level you want to assign to the notification. This can be one of the predefined levels like "success" or a custom level.
+In this example, the personalized greeting is added to the notification message only if the $isNewUser condition is true.
 
-### Return Value:
-`$this`: The level method returns the current message instance, allowing for method chaining.
-
-## Usage
-### Categorizing Notifications
-Imagine you are building an e-commerce application, and you want to categorize order-related notifications based on their urgency. You can use the level method to differentiate between "normal" and "urgent" notifications.
+##  Including Additional Details
+Suppose you're developing an e-commerce platform, and you want to notify customers about their recent orders. You can use the `linesIf` method to include order details conditionally:
 ```php
-use Illuminate\Notifications\Notification;
-use Illuminate\Notifications\Messages\MailMessage;
+use Illuminate\Notifications\Messages\SimpleMessage;
 
-class OrderShipped extends Notification
-{
-    public function toMail($notifiable)
-    {
-        return (new MailMessage)
-            ->line('Your order has been shipped!')
-            ->action('Track Your Order', url('/'))
-            ->level('urgent'); // Set the notification level to "urgent"
-    }
-}
+$message = new SimpleMessage();
+$hasRecentOrder = true; // Condition indicating a recent order
+$orderDetails = ["Order ID: 12345", "Total Amount: $100"];
+
+$message->linesIf($hasRecentOrder, $orderDetails);
+
+// Continue building your notification
+$message->line("Thank you for shopping with us!");
 ```
-In this example, we've assigned a custom level, "urgent," to the OrderShipped notification. Later, you can style or handle "urgent" notifications differently in your application.
-
-### Customizing Email Styles
-The level method isn't just for categorization; it can also influence the visual presentation of notifications. Suppose you want to style success notifications in green and error notifications in red:
-```php
-use Illuminate\Notifications\Notification;
-use Illuminate\Notifications\Messages\MailMessage;
-
-class PaymentReceived extends Notification
-{
-    public function toMail($notifiable)
-    {
-        return (new MailMessage)
-            ->line('Payment received successfully.')
-            ->action('View Invoice', url('/invoice'))
-            ->level('success'); // Set the notification level to "success"
-    }
-}
-```
-With the level method set to "success," you can apply a custom CSS style to success notifications, making them visually distinct from other types of notifications.
+In this scenario, the order details are added to the notification message only if the $hasRecentOrder condition is true.
 
 ## Let's Remember
-The Laravel `level` method is a versatile tool for customizing and categorizing your application's notifications. Whether you want to assign custom levels to notifications or style them differently based on their levels, the `level` method empowers you to create a tailored notification experience for your users. Leveraging this feature effectively can enhance user engagement and make your application more informative and user-friendly.
+Laravel's notification system, with its `SimpleMessages` class and the `linesIf` method, offers developers a versatile tool for creating dynamic and context-aware notification messages. By using this method, you can tailor your notifications to provide a more personalized and informative experience for your users. Whether you're welcoming new users or sharing important updates, the `linesIf` method empowers you to add conditional content seamlessly.
+
+Incorporating this feature into your Laravel applications can lead to more engaging and user-centric notifications, enhancing the overall user experience. As you explore Laravel's notification system further, keep in mind the `SimpleMessages` class and its `linesIf` method as valuable tools in your development toolbox.
 
 and voila!
 Happy coding!
