@@ -1,0 +1,66 @@
+---
+title: The 'formatLine' Method; Laravel's Custom Notifications
+linkTitle: Laravel formatLine()
+description:  In this article, we'll delve into the details of formatLine() method and explore how it can be used creatively to format notification messages effectively.
+date: 2023-10-01
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_notification_formatLine.png"
+---
+
+<p align="center">
+  <img
+    style="width:100%"
+    src="~/assets/laravel_notification_formatLine.png"
+    alt="Moe Dayraki-Laravel formatLine"
+  />
+</p>
+Laravel is a popular PHP framework known for its elegant and developer-friendly features. One such feature is the `formatLine` method within the Illuminate\Notifications\Messages\SimpleMessage class. In this article, we'll delve into the details of this method and explore how it can be used creatively to format notification messages effectively.
+
+## The `formatLine` Method:
+The `formatLine` method plays a crucial role in shaping the content of notification messages before they are dispatched to users. It allows developers to format lines of text within notifications, making them visually appealing and informative. This method accepts various types of input, including `Htmlable`, `string`, and `array`, and returns a formatted output.
+
+## Usage
+### Simple Text Formatting
+Suppose you want to send a basic notification with some text formatting. Here's how you can use `formatLine` to achieve this:
+```php
+use Illuminate\Notifications\Messages\SimpleMessage;
+
+$message = new SimpleMessage();
+$message->formatLine("Hello,")->bold()->formatLine("World!")->italic();
+
+// Result: "<strong>Hello,</strong> <em>World!</em>"
+```
+we first create a new SimpleMessage object and apply HTML formatting using methods like bold and italic. The `formatLine` method is used to format individual lines of text within the message.
+
+### Complex HTML Content
+Sometimes, you may need to include complex HTML content in your notifications. The `formatLine` method can handle this too:
+```php
+use Illuminate\Notifications\Messages\SimpleMessage;
+
+$htmlContent = '<p><strong>Important Update:</strong> Our website will be down for maintenance on <em>October 10th</em>.</p>';
+
+$message = new SimpleMessage();
+$message->formatLine($htmlContent);
+
+// Result: Displays the HTML content within the notification.
+```
+we pass a block of HTML content as a string to the `formatLine` method, and it will be included as-is in the notification message.
+
+## Different Methods for Styling
+- `bold()`
+- `italic()`
+- `lineBreak()`
+- `underline()`
+- `strikethrough()`
+- `fontSize($size)`
+- `fontColor($color)`
+- `backgroundColor($color)`
+- `link($url)`
+- `hide()`
+
+## Let's Remember
+The formatLine method in Laravel 10's SimpleMessage class empowers developers to create elegant and customized notification messages. Whether you need simple text formatting, dynamic content, or complex HTML structures, this method offers versatility and convenience. By mastering this method, you can enhance the user experience and make your notifications both informative and visually appealing. 
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github.com/moedayraki) or [Twitter](https://twitter.com/MohammedDayraki)
