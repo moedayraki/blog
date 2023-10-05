@@ -1,0 +1,88 @@
+---
+title: Enhancing User Security with Laravel's CurrentDeviceLogout Event
+linkTitle: Laravel CurrentDeviceLogout()
+description:  we'll explore how to leverage this event to enhance user security using CurrentDeviceLogout
+date: 2023-10-04
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_auth_currentdevicelogout.png"
+---
+
+<p align="center">
+  <img
+    style="width:100%"
+    src="~/assets/laravel_auth_currentdevicelogout.png"
+    alt="Moe Dayraki-Laravel currentDeviceLogout"
+  />
+</p>
+
+In today's digital landscape, user security is of paramount importance. Ensuring that user accounts remain protected from unauthorized access is a critical concern for developers. Laravel, the popular PHP web application framework, offers a powerful authentication system that includes a feature known as the CurrentDeviceLogout event. In this article, we'll explore how to leverage this event to enhance user security in your Laravel applications.
+
+## Understanding CurrentDeviceLogout
+The CurrentDeviceLogout event in Laravel's authentication system is designed to handle user logout events when a user decides to log out from their current device. It is particularly useful in scenarios where you want to grant users the ability to manage their active sessions or when you need to add an extra layer of security by allowing users to invalidate their current session.
+
+## How CurrentDeviceLogout Works
+To get a better understanding of how CurrentDeviceLogout works, let's dive into some code examples.
+
+### Triggering the Event
+```
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Auth;
+
+public function logoutCurrentDevice()
+{
+    // Get the currently authenticated user
+    $user = Auth::user();
+
+    // Trigger the CurrentDeviceLogout event
+    Event::dispatch(new CurrentDeviceLogout($user));
+
+    // Perform the logout logic
+    Auth::logout();
+
+    // Redirect the user to the logout page
+    return redirect('/logout');
+}
+```
+When a user initiates a logout action, we first retrieve the currently authenticated user using Laravel's Auth facade. We then dispatch the CurrentDeviceLogout event, passing in the user as a parameter. This event signifies that the user wishes to log out from their current device.
+
+### Creating a Listener
+To respond to the CurrentDeviceLogout event, you can create a listener. Use the following Artisan command to generate a listener class:
+```
+php artisan make:listener CurrentDeviceLogoutListener
+```
+Once the listener class is generated, you can define the logic that should be executed when the event is fired. For instance, you might want to log the event, notify the user of the logout, or perform any other relevant actions to enhance security.
+
+###  Logging the Event
+```
+namespace App\Listeners;
+
+use Illuminate\Auth\Events\CurrentDeviceLogout;
+
+class CurrentDeviceLogoutListener
+{
+    public function handle(CurrentDeviceLogout $event)
+    {
+        $user = $event->user;
+
+        // Log the event
+        activity()
+            ->performedOn($user)
+            ->log("User {$user->name} logged out from their current device.");
+    }
+}
+```
+The handle method of the CurrentDeviceLogoutListener logs the event using Laravel's activity logging system. You can adapt this logic to suit your application's requirements, such as sending notifications or invalidating tokens.
+
+## Use Cases for CurrentDeviceLogout
+Now that we've covered the basics, let's explore some real-world use cases for the CurrentDeviceLogout event:
+
+1- Multi-device Authentication: Users often access applications from multiple devices. Allowing them to log out from their current device enhances security by giving users control over their active sessions.
+2- Enhanced Security: If a user suspects that their account has been compromised, they can quickly log out from all devices by utilizing the CurrentDeviceLogout event, thereby safeguarding their account.
+3- Activity Logging: By creating listeners for the event, you can keep a record of when and from which devices users are logging out. This can be invaluable for security audits and investigations.
+
+## Let's Remember
+Laravel's CurrentDeviceLogout event is a powerful tool for enhancing user security in your applications. By allowing users to log out from their current device and creating custom listeners, you can take control of session management, improve user experience, and bolster the overall security of your Laravel-based web applications. Consider incorporating this feature into your authentication system to provide users with greater control over their account security.
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github.com/moedayraki) or [Twitter](https://twitter.com/MohammedDayraki)
