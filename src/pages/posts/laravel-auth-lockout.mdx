@@ -1,0 +1,71 @@
+---
+title: Unlocking the Power of Laravel's Lockout Event for Enhanced Security
+linkTitle: Laravel lockout
+description:  the "Lockout" event is fired when a user attempts too many login failures, which is a common security measure to thwart brute force attacks
+date: 2023-10-18
+image: "https://raw.githubusercontent.com/moedayraki/blog/main/src/assets/laravel_auth_lockout.png"
+---
+
+<p align="center">
+  <img
+    style="width:100%"
+    src="~/assets/laravel_auth_lockout.png"
+    alt="Moe Dayraki-Laravel lockout"
+  />
+</p>
+
+As a Laravel developer, you're already aware of the framework's robust security features. One such feature is the "Lockout" event, a crucial component of Laravel's built-in authentication system. This event is fired when a user attempts too many login failures, which is a common security measure to thwart brute force attacks. In this article, we'll delve into the Laravel Illuminate\Auth\Events\Lockout event, exploring its properties, methods, and practical use cases.
+
+## Understanding Laravel's Lockout Event
+The Illuminate\Auth\Events\Lockout class is an essential part of Laravel's security mechanism. It is designed to handle situations where a user has surpassed the allowable number of login attempts within a specified time frame. This event can be a game-changer in your application's security, helping you take appropriate action when a user encounters repeated login failures.
+
+## Properties of the Lockout Event
+The Lockout event class has one key property:
+`$request`: This property holds the "throttled" request, representing the HTTP request that triggered the lockout event. It carries valuable information about the user and the circumstances leading to the lockout.
+
+## Methods for Handling Lockout Events
+The Lockout event class provides a constructor with the following method:
+`__construct(Request $request)`: This method creates a new instance of the Lockout event. It accepts a single parameter, which is the Request object representing the HTTP request that led to the lockout event.
+
+## Practical Use Cases
+Now, let's explore how you can harness the power of the Lockout event in your Laravel application:
+- Custom Notifications:
+One common usage of the Lockout event is to send custom notifications to users. When a user is temporarily locked out, you can notify them about the lockout through email or SMS, providing information about what they can do to regain access to their account.
+```
+// In app/Providers/EventServiceProvider.php
+protected $listen = [
+    // ...
+    'Illuminate\Auth\Events\Lockout' => [
+        'App\Listeners\SendLockoutNotification',
+    ],
+];
+```
+- Logging and Monitoring:
+You can use the Lockout event to log lockout attempts and monitor potential security threats. By logging these events, you can keep track of IP addresses and user accounts that are under attack, helping you to take appropriate security measures.
+```
+  // In app/Listeners/SendLockoutNotification.php
+public function handle(Lockout $event)
+{
+    // Log the lockout event
+    Log::info('User locked out due to too many login attempts.', ['request' => $event->request]);
+}
+```
+- Custom User Experience:
+In certain situations, you might want to provide a custom user experience during a lockout. For example, you can display a friendly message to the user, guiding them on how to proceed or when they can attempt to log in again.
+```
+// In app/Http/Controllers/Auth/LoginController.php
+protected function sendLockoutResponse(Request $request)
+{
+    return redirect()
+        ->route('login')
+        ->with('message', 'Too many login attempts. Please try again in 30 minutes.');
+}
+```
+
+## Let's Remember
+Laravel's Lockout event is a powerful tool for enhancing the security of your applications. By leveraging this event, you can provide a more secure and user-friendly experience for your application's users, as well as monitor and respond to potential security threats effectively. As a Laravel developer, mastering the Lockout event can be a crucial step in building secure and resilient web applications.
+
+and voila!
+Happy coding!
+
+If you find my content useful, please follow me on [Github](https://github.com/moedayraki) or [Twitter](https://twitter.com/MohammedDayraki)
