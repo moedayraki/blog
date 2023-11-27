@@ -1,10 +1,10 @@
 {
   "src/components/DarkModeSwitch.vue": {
-    "file": "assets/DarkModeSwitch.c9160916.js",
+    "file": "assets/DarkModeSwitch.adcaf311.js",
     "src": "src/components/DarkModeSwitch.vue",
     "isEntry": true,
     "imports": [
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -33,12 +33,12 @@
     "isEntry": true
   },
   "virtual_ile_404_ile-1": {
-    "file": "assets/virtual_ile_404_ile-1.cb3f2f4e.js",
+    "file": "assets/virtual_ile_404_ile-1.db28f9ac.js",
     "src": "virtual_ile_404_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -68,12 +68,12 @@
     ]
   },
   "virtual_ile_index_ile-1": {
-    "file": "assets/virtual_ile_index_ile-1.5a95268a.js",
+    "file": "assets/virtual_ile_index_ile-1.54c22176.js",
     "src": "virtual_ile_index_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -103,12 +103,12 @@
     ]
   },
   "virtual_ile_posts_10_ile-1": {
-    "file": "assets/virtual_ile_posts_10_ile-1.16b5ba57.js",
+    "file": "assets/virtual_ile_posts_10_ile-1.8b9e6f8a.js",
     "src": "virtual_ile_posts_10_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -128,7 +128,7 @@
     ]
   },
   "virtual_ile_posts_10_ile-3": {
-    "file": "assets/virtual_ile_posts_10_ile-3.cdf1a0b3.js",
+    "file": "assets/virtual_ile_posts_10_ile-3.1c12b14f.js",
     "src": "virtual_ile_posts_10_ile-3",
     "isEntry": true,
     "imports": [
@@ -152,12 +152,12 @@
     ]
   },
   "virtual_ile_posts_11_ile-1": {
-    "file": "assets/virtual_ile_posts_11_ile-1.73343f25.js",
+    "file": "assets/virtual_ile_posts_11_ile-1.d6cb6306.js",
     "src": "virtual_ile_posts_11_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -177,7 +177,7 @@
     ]
   },
   "virtual_ile_posts_11_ile-3": {
-    "file": "assets/virtual_ile_posts_11_ile-3.d036334d.js",
+    "file": "assets/virtual_ile_posts_11_ile-3.8cf3b37a.js",
     "src": "virtual_ile_posts_11_ile-3",
     "isEntry": true,
     "imports": [
@@ -201,12 +201,12 @@
     ]
   },
   "virtual_ile_posts_12_ile-1": {
-    "file": "assets/virtual_ile_posts_12_ile-1.a3b111f6.js",
+    "file": "assets/virtual_ile_posts_12_ile-1.a744e376.js",
     "src": "virtual_ile_posts_12_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -226,7 +226,7 @@
     ]
   },
   "virtual_ile_posts_12_ile-3": {
-    "file": "assets/virtual_ile_posts_12_ile-3.ea2bf767.js",
+    "file": "assets/virtual_ile_posts_12_ile-3.eba37670.js",
     "src": "virtual_ile_posts_12_ile-3",
     "isEntry": true,
     "imports": [
@@ -250,12 +250,12 @@
     ]
   },
   "virtual_ile_posts_13_ile-1": {
-    "file": "assets/virtual_ile_posts_13_ile-1.49b58e11.js",
+    "file": "assets/virtual_ile_posts_13_ile-1.4fc83d74.js",
     "src": "virtual_ile_posts_13_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -275,7 +275,7 @@
     ]
   },
   "virtual_ile_posts_13_ile-3": {
-    "file": "assets/virtual_ile_posts_13_ile-3.0d2b97d6.js",
+    "file": "assets/virtual_ile_posts_13_ile-3.296022e5.js",
     "src": "virtual_ile_posts_13_ile-3",
     "isEntry": true,
     "imports": [
@@ -299,12 +299,12 @@
     ]
   },
   "virtual_ile_posts_14_ile-1": {
-    "file": "assets/virtual_ile_posts_14_ile-1.2445f515.js",
+    "file": "assets/virtual_ile_posts_14_ile-1.6b031f8e.js",
     "src": "virtual_ile_posts_14_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -324,7 +324,7 @@
     ]
   },
   "virtual_ile_posts_14_ile-3": {
-    "file": "assets/virtual_ile_posts_14_ile-3.dd93f536.js",
+    "file": "assets/virtual_ile_posts_14_ile-3.a3a105e2.js",
     "src": "virtual_ile_posts_14_ile-3",
     "isEntry": true,
     "imports": [
@@ -348,12 +348,12 @@
     ]
   },
   "virtual_ile_posts_15_ile-1": {
-    "file": "assets/virtual_ile_posts_15_ile-1.690c6986.js",
+    "file": "assets/virtual_ile_posts_15_ile-1.3850790c.js",
     "src": "virtual_ile_posts_15_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -373,7 +373,7 @@
     ]
   },
   "virtual_ile_posts_15_ile-3": {
-    "file": "assets/virtual_ile_posts_15_ile-3.a13d8ada.js",
+    "file": "assets/virtual_ile_posts_15_ile-3.cf711858.js",
     "src": "virtual_ile_posts_15_ile-3",
     "isEntry": true,
     "imports": [
@@ -397,12 +397,12 @@
     ]
   },
   "virtual_ile_posts_1_ile-1": {
-    "file": "assets/virtual_ile_posts_1_ile-1.0688a3d8.js",
+    "file": "assets/virtual_ile_posts_1_ile-1.33768aff.js",
     "src": "virtual_ile_posts_1_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -422,7 +422,7 @@
     ]
   },
   "virtual_ile_posts_1_ile-3": {
-    "file": "assets/virtual_ile_posts_1_ile-3.84a8c075.js",
+    "file": "assets/virtual_ile_posts_1_ile-3.f9d041d0.js",
     "src": "virtual_ile_posts_1_ile-3",
     "isEntry": true,
     "imports": [
@@ -446,12 +446,12 @@
     ]
   },
   "virtual_ile_posts_2_ile-1": {
-    "file": "assets/virtual_ile_posts_2_ile-1.4ed7b779.js",
+    "file": "assets/virtual_ile_posts_2_ile-1.5fe89e11.js",
     "src": "virtual_ile_posts_2_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -471,7 +471,7 @@
     ]
   },
   "virtual_ile_posts_2_ile-3": {
-    "file": "assets/virtual_ile_posts_2_ile-3.6ecdfc91.js",
+    "file": "assets/virtual_ile_posts_2_ile-3.ada8bc04.js",
     "src": "virtual_ile_posts_2_ile-3",
     "isEntry": true,
     "imports": [
@@ -495,12 +495,12 @@
     ]
   },
   "virtual_ile_posts_3_ile-1": {
-    "file": "assets/virtual_ile_posts_3_ile-1.a649014d.js",
+    "file": "assets/virtual_ile_posts_3_ile-1.4c567b73.js",
     "src": "virtual_ile_posts_3_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -520,7 +520,7 @@
     ]
   },
   "virtual_ile_posts_3_ile-3": {
-    "file": "assets/virtual_ile_posts_3_ile-3.f338e310.js",
+    "file": "assets/virtual_ile_posts_3_ile-3.f03c1937.js",
     "src": "virtual_ile_posts_3_ile-3",
     "isEntry": true,
     "imports": [
@@ -544,12 +544,12 @@
     ]
   },
   "virtual_ile_posts_4_ile-1": {
-    "file": "assets/virtual_ile_posts_4_ile-1.d68ed0a7.js",
+    "file": "assets/virtual_ile_posts_4_ile-1.9b68a715.js",
     "src": "virtual_ile_posts_4_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -569,7 +569,7 @@
     ]
   },
   "virtual_ile_posts_4_ile-3": {
-    "file": "assets/virtual_ile_posts_4_ile-3.a70cd4ba.js",
+    "file": "assets/virtual_ile_posts_4_ile-3.fe81311f.js",
     "src": "virtual_ile_posts_4_ile-3",
     "isEntry": true,
     "imports": [
@@ -593,12 +593,12 @@
     ]
   },
   "virtual_ile_posts_5_ile-1": {
-    "file": "assets/virtual_ile_posts_5_ile-1.5bb2385e.js",
+    "file": "assets/virtual_ile_posts_5_ile-1.20291323.js",
     "src": "virtual_ile_posts_5_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -618,7 +618,7 @@
     ]
   },
   "virtual_ile_posts_5_ile-3": {
-    "file": "assets/virtual_ile_posts_5_ile-3.4d008b59.js",
+    "file": "assets/virtual_ile_posts_5_ile-3.844cd199.js",
     "src": "virtual_ile_posts_5_ile-3",
     "isEntry": true,
     "imports": [
@@ -642,12 +642,12 @@
     ]
   },
   "virtual_ile_posts_6_ile-1": {
-    "file": "assets/virtual_ile_posts_6_ile-1.ace24fc1.js",
+    "file": "assets/virtual_ile_posts_6_ile-1.da3f0262.js",
     "src": "virtual_ile_posts_6_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -667,7 +667,7 @@
     ]
   },
   "virtual_ile_posts_6_ile-3": {
-    "file": "assets/virtual_ile_posts_6_ile-3.e4b7d697.js",
+    "file": "assets/virtual_ile_posts_6_ile-3.de4d7d6a.js",
     "src": "virtual_ile_posts_6_ile-3",
     "isEntry": true,
     "imports": [
@@ -691,12 +691,12 @@
     ]
   },
   "virtual_ile_posts_7_ile-1": {
-    "file": "assets/virtual_ile_posts_7_ile-1.c75af65a.js",
+    "file": "assets/virtual_ile_posts_7_ile-1.251dbd8e.js",
     "src": "virtual_ile_posts_7_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -716,7 +716,7 @@
     ]
   },
   "virtual_ile_posts_7_ile-3": {
-    "file": "assets/virtual_ile_posts_7_ile-3.a29dba8f.js",
+    "file": "assets/virtual_ile_posts_7_ile-3.9c8a2d41.js",
     "src": "virtual_ile_posts_7_ile-3",
     "isEntry": true,
     "imports": [
@@ -740,12 +740,12 @@
     ]
   },
   "virtual_ile_posts_8_ile-1": {
-    "file": "assets/virtual_ile_posts_8_ile-1.a81a838a.js",
+    "file": "assets/virtual_ile_posts_8_ile-1.1eb78e0f.js",
     "src": "virtual_ile_posts_8_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -765,7 +765,7 @@
     ]
   },
   "virtual_ile_posts_8_ile-3": {
-    "file": "assets/virtual_ile_posts_8_ile-3.a2568c80.js",
+    "file": "assets/virtual_ile_posts_8_ile-3.27c20252.js",
     "src": "virtual_ile_posts_8_ile-3",
     "isEntry": true,
     "imports": [
@@ -789,12 +789,12 @@
     ]
   },
   "virtual_ile_posts_9_ile-1": {
-    "file": "assets/virtual_ile_posts_9_ile-1.f93c64f4.js",
+    "file": "assets/virtual_ile_posts_9_ile-1.cb14ed22.js",
     "src": "virtual_ile_posts_9_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -814,7 +814,7 @@
     ]
   },
   "virtual_ile_posts_9_ile-3": {
-    "file": "assets/virtual_ile_posts_9_ile-3.0d172939.js",
+    "file": "assets/virtual_ile_posts_9_ile-3.92342e4a.js",
     "src": "virtual_ile_posts_9_ile-3",
     "isEntry": true,
     "imports": [
@@ -838,12 +838,12 @@
     ]
   },
   "virtual_ile_posts_apple-sept-2022_ile-1": {
-    "file": "assets/virtual_ile_posts_apple-sept-2022_ile-1.9723fa5b.js",
+    "file": "assets/virtual_ile_posts_apple-sept-2022_ile-1.88ff5bda.js",
     "src": "virtual_ile_posts_apple-sept-2022_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -863,7 +863,7 @@
     ]
   },
   "virtual_ile_posts_apple-sept-2022_ile-3": {
-    "file": "assets/virtual_ile_posts_apple-sept-2022_ile-3.3834529f.js",
+    "file": "assets/virtual_ile_posts_apple-sept-2022_ile-3.6f78022d.js",
     "src": "virtual_ile_posts_apple-sept-2022_ile-3",
     "isEntry": true,
     "imports": [
@@ -887,12 +887,12 @@
     ]
   },
   "virtual_ile_posts_binary-system_ile-1": {
-    "file": "assets/virtual_ile_posts_binary-system_ile-1.1c84ffa8.js",
+    "file": "assets/virtual_ile_posts_binary-system_ile-1.18cb6cb5.js",
     "src": "virtual_ile_posts_binary-system_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -912,7 +912,7 @@
     ]
   },
   "virtual_ile_posts_binary-system_ile-3": {
-    "file": "assets/virtual_ile_posts_binary-system_ile-3.b666c7c7.js",
+    "file": "assets/virtual_ile_posts_binary-system_ile-3.9b7db8d7.js",
     "src": "virtual_ile_posts_binary-system_ile-3",
     "isEntry": true,
     "imports": [
@@ -936,12 +936,12 @@
     ]
   },
   "virtual_ile_posts_install-laravel-vuejs_ile-1": {
-    "file": "assets/virtual_ile_posts_install-laravel-vuejs_ile-1.170618a6.js",
+    "file": "assets/virtual_ile_posts_install-laravel-vuejs_ile-1.9bddf186.js",
     "src": "virtual_ile_posts_install-laravel-vuejs_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -961,7 +961,7 @@
     ]
   },
   "virtual_ile_posts_install-laravel-vuejs_ile-3": {
-    "file": "assets/virtual_ile_posts_install-laravel-vuejs_ile-3.82a61079.js",
+    "file": "assets/virtual_ile_posts_install-laravel-vuejs_ile-3.8d8c2ba7.js",
     "src": "virtual_ile_posts_install-laravel-vuejs_ile-3",
     "isEntry": true,
     "imports": [
@@ -985,12 +985,12 @@
     ]
   },
   "virtual_ile_posts_laravel-auth-currentdevicelogout_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-auth-currentdevicelogout_ile-1.c14193f6.js",
+    "file": "assets/virtual_ile_posts_laravel-auth-currentdevicelogout_ile-1.3cea9488.js",
     "src": "virtual_ile_posts_laravel-auth-currentdevicelogout_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1010,7 +1010,7 @@
     ]
   },
   "virtual_ile_posts_laravel-auth-currentdevicelogout_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-auth-currentdevicelogout_ile-3.8fcfa153.js",
+    "file": "assets/virtual_ile_posts_laravel-auth-currentdevicelogout_ile-3.f2595012.js",
     "src": "virtual_ile_posts_laravel-auth-currentdevicelogout_ile-3",
     "isEntry": true,
     "imports": [
@@ -1034,12 +1034,12 @@
     ]
   },
   "virtual_ile_posts_laravel-auth-lockout_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-auth-lockout_ile-1.07a52298.js",
+    "file": "assets/virtual_ile_posts_laravel-auth-lockout_ile-1.2eddb68e.js",
     "src": "virtual_ile_posts_laravel-auth-lockout_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1059,7 +1059,7 @@
     ]
   },
   "virtual_ile_posts_laravel-auth-lockout_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-auth-lockout_ile-3.b9e48136.js",
+    "file": "assets/virtual_ile_posts_laravel-auth-lockout_ile-3.351f3901.js",
     "src": "virtual_ile_posts_laravel-auth-lockout_ile-3",
     "isEntry": true,
     "imports": [
@@ -1083,12 +1083,12 @@
     ]
   },
   "virtual_ile_posts_laravel-error-pages_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-error-pages_ile-1.27c41f74.js",
+    "file": "assets/virtual_ile_posts_laravel-error-pages_ile-1.229141c0.js",
     "src": "virtual_ile_posts_laravel-error-pages_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1108,7 +1108,7 @@
     ]
   },
   "virtual_ile_posts_laravel-error-pages_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-error-pages_ile-3.ca4bae51.js",
+    "file": "assets/virtual_ile_posts_laravel-error-pages_ile-3.51d76458.js",
     "src": "virtual_ile_posts_laravel-error-pages_ile-3",
     "isEntry": true,
     "imports": [
@@ -1132,12 +1132,12 @@
     ]
   },
   "virtual_ile_posts_laravel-foreach-loop_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-foreach-loop_ile-1.8b38de1d.js",
+    "file": "assets/virtual_ile_posts_laravel-foreach-loop_ile-1.5407bd5d.js",
     "src": "virtual_ile_posts_laravel-foreach-loop_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1157,7 +1157,7 @@
     ]
   },
   "virtual_ile_posts_laravel-foreach-loop_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-foreach-loop_ile-3.8b5f2f8f.js",
+    "file": "assets/virtual_ile_posts_laravel-foreach-loop_ile-3.125b3503.js",
     "src": "virtual_ile_posts_laravel-foreach-loop_ile-3",
     "isEntry": true,
     "imports": [
@@ -1181,12 +1181,12 @@
     ]
   },
   "virtual_ile_posts_laravel-model-getdirty_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-model-getdirty_ile-1.fd574158.js",
+    "file": "assets/virtual_ile_posts_laravel-model-getdirty_ile-1.a4263652.js",
     "src": "virtual_ile_posts_laravel-model-getdirty_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1206,7 +1206,7 @@
     ]
   },
   "virtual_ile_posts_laravel-model-getdirty_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-model-getdirty_ile-3.c93ad9db.js",
+    "file": "assets/virtual_ile_posts_laravel-model-getdirty_ile-3.da6cd6d7.js",
     "src": "virtual_ile_posts_laravel-model-getdirty_ile-3",
     "isEntry": true,
     "imports": [
@@ -1230,12 +1230,12 @@
     ]
   },
   "virtual_ile_posts_laravel-model-observe_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-model-observe_ile-1.2d172c44.js",
+    "file": "assets/virtual_ile_posts_laravel-model-observe_ile-1.fc4886aa.js",
     "src": "virtual_ile_posts_laravel-model-observe_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1255,7 +1255,7 @@
     ]
   },
   "virtual_ile_posts_laravel-model-observe_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-model-observe_ile-3.fa6f7fbc.js",
+    "file": "assets/virtual_ile_posts_laravel-model-observe_ile-3.245c7513.js",
     "src": "virtual_ile_posts_laravel-model-observe_ile-3",
     "isEntry": true,
     "imports": [
@@ -1279,12 +1279,12 @@
     ]
   },
   "virtual_ile_posts_laravel-model-push_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-model-push_ile-1.da90aa63.js",
+    "file": "assets/virtual_ile_posts_laravel-model-push_ile-1.e72c77e8.js",
     "src": "virtual_ile_posts_laravel-model-push_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1304,7 +1304,7 @@
     ]
   },
   "virtual_ile_posts_laravel-model-push_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-model-push_ile-3.9c31fbf8.js",
+    "file": "assets/virtual_ile_posts_laravel-model-push_ile-3.df66105f.js",
     "src": "virtual_ile_posts_laravel-model-push_ile-3",
     "isEntry": true,
     "imports": [
@@ -1328,12 +1328,12 @@
     ]
   },
   "virtual_ile_posts_laravel-model-relationstoarray_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-model-relationstoarray_ile-1.fd5c771f.js",
+    "file": "assets/virtual_ile_posts_laravel-model-relationstoarray_ile-1.f79cd838.js",
     "src": "virtual_ile_posts_laravel-model-relationstoarray_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1353,7 +1353,7 @@
     ]
   },
   "virtual_ile_posts_laravel-model-relationstoarray_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-model-relationstoarray_ile-3.0b15e5d7.js",
+    "file": "assets/virtual_ile_posts_laravel-model-relationstoarray_ile-3.822a4f45.js",
     "src": "virtual_ile_posts_laravel-model-relationstoarray_ile-3",
     "isEntry": true,
     "imports": [
@@ -1377,12 +1377,12 @@
     ]
   },
   "virtual_ile_posts_laravel-model-settouchedrelations_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-model-settouchedrelations_ile-1.54816b3e.js",
+    "file": "assets/virtual_ile_posts_laravel-model-settouchedrelations_ile-1.51a62eb7.js",
     "src": "virtual_ile_posts_laravel-model-settouchedrelations_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1402,7 +1402,7 @@
     ]
   },
   "virtual_ile_posts_laravel-model-settouchedrelations_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-model-settouchedrelations_ile-3.f486ff34.js",
+    "file": "assets/virtual_ile_posts_laravel-model-settouchedrelations_ile-3.3e4a064e.js",
     "src": "virtual_ile_posts_laravel-model-settouchedrelations_ile-3",
     "isEntry": true,
     "imports": [
@@ -1426,12 +1426,12 @@
     ]
   },
   "virtual_ile_posts_laravel-notification-formatline_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-notification-formatline_ile-1.d8c824a8.js",
+    "file": "assets/virtual_ile_posts_laravel-notification-formatline_ile-1.1f5cc10c.js",
     "src": "virtual_ile_posts_laravel-notification-formatline_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1451,7 +1451,7 @@
     ]
   },
   "virtual_ile_posts_laravel-notification-formatline_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-notification-formatline_ile-3.0d02b49e.js",
+    "file": "assets/virtual_ile_posts_laravel-notification-formatline_ile-3.0973112c.js",
     "src": "virtual_ile_posts_laravel-notification-formatline_ile-3",
     "isEntry": true,
     "imports": [
@@ -1475,12 +1475,12 @@
     ]
   },
   "virtual_ile_posts_laravel-notification-level_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-notification-level_ile-1.8c4b2d65.js",
+    "file": "assets/virtual_ile_posts_laravel-notification-level_ile-1.f4264830.js",
     "src": "virtual_ile_posts_laravel-notification-level_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1500,7 +1500,7 @@
     ]
   },
   "virtual_ile_posts_laravel-notification-level_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-notification-level_ile-3.543994fa.js",
+    "file": "assets/virtual_ile_posts_laravel-notification-level_ile-3.06c90c4c.js",
     "src": "virtual_ile_posts_laravel-notification-level_ile-3",
     "isEntry": true,
     "imports": [
@@ -1524,12 +1524,12 @@
     ]
   },
   "virtual_ile_posts_laravel-openai-database-queries_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-openai-database-queries_ile-1.222451e8.js",
+    "file": "assets/virtual_ile_posts_laravel-openai-database-queries_ile-1.eab970b5.js",
     "src": "virtual_ile_posts_laravel-openai-database-queries_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1549,7 +1549,7 @@
     ]
   },
   "virtual_ile_posts_laravel-openai-database-queries_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-openai-database-queries_ile-3.f1fc59e3.js",
+    "file": "assets/virtual_ile_posts_laravel-openai-database-queries_ile-3.2b78718f.js",
     "src": "virtual_ile_posts_laravel-openai-database-queries_ile-3",
     "isEntry": true,
     "imports": [
@@ -1573,12 +1573,12 @@
     ]
   },
   "virtual_ile_posts_laravel-polymorph-onetomany-relation_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-polymorph-onetomany-relation_ile-1.c8aadb51.js",
+    "file": "assets/virtual_ile_posts_laravel-polymorph-onetomany-relation_ile-1.430a4bba.js",
     "src": "virtual_ile_posts_laravel-polymorph-onetomany-relation_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1598,7 +1598,7 @@
     ]
   },
   "virtual_ile_posts_laravel-polymorph-onetomany-relation_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-polymorph-onetomany-relation_ile-3.da4bf807.js",
+    "file": "assets/virtual_ile_posts_laravel-polymorph-onetomany-relation_ile-3.7a9606f2.js",
     "src": "virtual_ile_posts_laravel-polymorph-onetomany-relation_ile-3",
     "isEntry": true,
     "imports": [
@@ -1622,12 +1622,12 @@
     ]
   },
   "virtual_ile_posts_laravel-rate-limit_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-rate-limit_ile-1.043963f3.js",
+    "file": "assets/virtual_ile_posts_laravel-rate-limit_ile-1.44e24184.js",
     "src": "virtual_ile_posts_laravel-rate-limit_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1647,7 +1647,7 @@
     ]
   },
   "virtual_ile_posts_laravel-rate-limit_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-rate-limit_ile-3.9357fc89.js",
+    "file": "assets/virtual_ile_posts_laravel-rate-limit_ile-3.a7f3daa6.js",
     "src": "virtual_ile_posts_laravel-rate-limit_ile-3",
     "isEntry": true,
     "imports": [
@@ -1671,12 +1671,12 @@
     ]
   },
   "virtual_ile_posts_laravel-relation-count_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-relation-count_ile-1.9e73623c.js",
+    "file": "assets/virtual_ile_posts_laravel-relation-count_ile-1.dee4f915.js",
     "src": "virtual_ile_posts_laravel-relation-count_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1696,7 +1696,7 @@
     ]
   },
   "virtual_ile_posts_laravel-relation-count_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-relation-count_ile-3.559b1ab8.js",
+    "file": "assets/virtual_ile_posts_laravel-relation-count_ile-3.3f54ce98.js",
     "src": "virtual_ile_posts_laravel-relation-count_ile-3",
     "isEntry": true,
     "imports": [
@@ -1720,12 +1720,12 @@
     ]
   },
   "virtual_ile_posts_laravel-request-lifecylce_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-request-lifecylce_ile-1.0bad3542.js",
+    "file": "assets/virtual_ile_posts_laravel-request-lifecylce_ile-1.e7bdd347.js",
     "src": "virtual_ile_posts_laravel-request-lifecylce_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1745,7 +1745,7 @@
     ]
   },
   "virtual_ile_posts_laravel-request-lifecylce_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-request-lifecylce_ile-3.0e756b07.js",
+    "file": "assets/virtual_ile_posts_laravel-request-lifecylce_ile-3.03458fd3.js",
     "src": "virtual_ile_posts_laravel-request-lifecylce_ile-3",
     "isEntry": true,
     "imports": [
@@ -1769,12 +1769,12 @@
     ]
   },
   "virtual_ile_posts_laravel-schema-getcolumntype_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-schema-getcolumntype_ile-1.26d2ac11.js",
+    "file": "assets/virtual_ile_posts_laravel-schema-getcolumntype_ile-1.4153265c.js",
     "src": "virtual_ile_posts_laravel-schema-getcolumntype_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1794,7 +1794,7 @@
     ]
   },
   "virtual_ile_posts_laravel-schema-getcolumntype_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-schema-getcolumntype_ile-3.57ded45e.js",
+    "file": "assets/virtual_ile_posts_laravel-schema-getcolumntype_ile-3.8ce8dc1a.js",
     "src": "virtual_ile_posts_laravel-schema-getcolumntype_ile-3",
     "isEntry": true,
     "imports": [
@@ -1818,12 +1818,12 @@
     ]
   },
   "virtual_ile_posts_laravel-scout-index_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-scout-index_ile-1.3721be58.js",
+    "file": "assets/virtual_ile_posts_laravel-scout-index_ile-1.2a2f01c8.js",
     "src": "virtual_ile_posts_laravel-scout-index_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1843,7 +1843,7 @@
     ]
   },
   "virtual_ile_posts_laravel-scout-index_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-scout-index_ile-3.47a9cda5.js",
+    "file": "assets/virtual_ile_posts_laravel-scout-index_ile-3.b7e266a6.js",
     "src": "virtual_ile_posts_laravel-scout-index_ile-3",
     "isEntry": true,
     "imports": [
@@ -1867,12 +1867,12 @@
     ]
   },
   "virtual_ile_posts_laravel-socialite_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-socialite_ile-1.c37b73f8.js",
+    "file": "assets/virtual_ile_posts_laravel-socialite_ile-1.546040b2.js",
     "src": "virtual_ile_posts_laravel-socialite_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1892,7 +1892,7 @@
     ]
   },
   "virtual_ile_posts_laravel-socialite_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-socialite_ile-3.adb4c0b9.js",
+    "file": "assets/virtual_ile_posts_laravel-socialite_ile-3.8b4ef357.js",
     "src": "virtual_ile_posts_laravel-socialite_ile-3",
     "isEntry": true,
     "imports": [
@@ -1916,12 +1916,12 @@
     ]
   },
   "virtual_ile_posts_laravel-task-scheduling-hooks_ile-1": {
-    "file": "assets/virtual_ile_posts_laravel-task-scheduling-hooks_ile-1.60fd8f14.js",
+    "file": "assets/virtual_ile_posts_laravel-task-scheduling-hooks_ile-1.d62cd601.js",
     "src": "virtual_ile_posts_laravel-task-scheduling-hooks_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1941,7 +1941,7 @@
     ]
   },
   "virtual_ile_posts_laravel-task-scheduling-hooks_ile-3": {
-    "file": "assets/virtual_ile_posts_laravel-task-scheduling-hooks_ile-3.4f376942.js",
+    "file": "assets/virtual_ile_posts_laravel-task-scheduling-hooks_ile-3.5f829dff.js",
     "src": "virtual_ile_posts_laravel-task-scheduling-hooks_ile-3",
     "isEntry": true,
     "imports": [
@@ -1965,12 +1965,12 @@
     ]
   },
   "virtual_ile_posts_learning-html-beginner_ile-1": {
-    "file": "assets/virtual_ile_posts_learning-html-beginner_ile-1.94cb4fdf.js",
+    "file": "assets/virtual_ile_posts_learning-html-beginner_ile-1.177d6b77.js",
     "src": "virtual_ile_posts_learning-html-beginner_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -1990,7 +1990,7 @@
     ]
   },
   "virtual_ile_posts_learning-html-beginner_ile-3": {
-    "file": "assets/virtual_ile_posts_learning-html-beginner_ile-3.14f0daf4.js",
+    "file": "assets/virtual_ile_posts_learning-html-beginner_ile-3.1431921a.js",
     "src": "virtual_ile_posts_learning-html-beginner_ile-3",
     "isEntry": true,
     "imports": [
@@ -2014,12 +2014,12 @@
     ]
   },
   "virtual_ile_posts_livewire-ping_ile-1": {
-    "file": "assets/virtual_ile_posts_livewire-ping_ile-1.5afc3f0c.js",
+    "file": "assets/virtual_ile_posts_livewire-ping_ile-1.86dc8163.js",
     "src": "virtual_ile_posts_livewire-ping_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -2039,7 +2039,7 @@
     ]
   },
   "virtual_ile_posts_livewire-ping_ile-3": {
-    "file": "assets/virtual_ile_posts_livewire-ping_ile-3.351b9ce5.js",
+    "file": "assets/virtual_ile_posts_livewire-ping_ile-3.0db1eb3b.js",
     "src": "virtual_ile_posts_livewire-ping_ile-3",
     "isEntry": true,
     "imports": [
@@ -2063,12 +2063,12 @@
     ]
   },
   "virtual_ile_posts_locatorjs-devtool-plugin_ile-1": {
-    "file": "assets/virtual_ile_posts_locatorjs-devtool-plugin_ile-1.ab5948e8.js",
+    "file": "assets/virtual_ile_posts_locatorjs-devtool-plugin_ile-1.2b22accc.js",
     "src": "virtual_ile_posts_locatorjs-devtool-plugin_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -2088,7 +2088,7 @@
     ]
   },
   "virtual_ile_posts_locatorjs-devtool-plugin_ile-3": {
-    "file": "assets/virtual_ile_posts_locatorjs-devtool-plugin_ile-3.ad3d8fa3.js",
+    "file": "assets/virtual_ile_posts_locatorjs-devtool-plugin_ile-3.97da6fcf.js",
     "src": "virtual_ile_posts_locatorjs-devtool-plugin_ile-3",
     "isEntry": true,
     "imports": [
@@ -2112,12 +2112,12 @@
     ]
   },
   "virtual_ile_posts_programming-languages-pt1_ile-1": {
-    "file": "assets/virtual_ile_posts_programming-languages-pt1_ile-1.762133c1.js",
+    "file": "assets/virtual_ile_posts_programming-languages-pt1_ile-1.bf211076.js",
     "src": "virtual_ile_posts_programming-languages-pt1_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -2137,7 +2137,7 @@
     ]
   },
   "virtual_ile_posts_programming-languages-pt1_ile-3": {
-    "file": "assets/virtual_ile_posts_programming-languages-pt1_ile-3.95a7b351.js",
+    "file": "assets/virtual_ile_posts_programming-languages-pt1_ile-3.c8fba015.js",
     "src": "virtual_ile_posts_programming-languages-pt1_ile-3",
     "isEntry": true,
     "imports": [
@@ -2161,12 +2161,12 @@
     ]
   },
   "virtual_ile_posts_programming-languages-pt2_ile-1": {
-    "file": "assets/virtual_ile_posts_programming-languages-pt2_ile-1.349c3c99.js",
+    "file": "assets/virtual_ile_posts_programming-languages-pt2_ile-1.cb3334c3.js",
     "src": "virtual_ile_posts_programming-languages-pt2_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -2186,7 +2186,7 @@
     ]
   },
   "virtual_ile_posts_programming-languages-pt2_ile-3": {
-    "file": "assets/virtual_ile_posts_programming-languages-pt2_ile-3.12c4bfcf.js",
+    "file": "assets/virtual_ile_posts_programming-languages-pt2_ile-3.7e442cda.js",
     "src": "virtual_ile_posts_programming-languages-pt2_ile-3",
     "isEntry": true,
     "imports": [
@@ -2210,12 +2210,12 @@
     ]
   },
   "virtual_ile_posts_the-moe-article_ile-1": {
-    "file": "assets/virtual_ile_posts_the-moe-article_ile-1.f851dfbc.js",
+    "file": "assets/virtual_ile_posts_the-moe-article_ile-1.1430e861.js",
     "src": "virtual_ile_posts_the-moe-article_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -2235,7 +2235,7 @@
     ]
   },
   "virtual_ile_posts_the-moe-article_ile-3": {
-    "file": "assets/virtual_ile_posts_the-moe-article_ile-3.397869fd.js",
+    "file": "assets/virtual_ile_posts_the-moe-article_ile-3.521cfad9.js",
     "src": "virtual_ile_posts_the-moe-article_ile-3",
     "isEntry": true,
     "imports": [
@@ -2259,12 +2259,12 @@
     ]
   },
   "virtual_ile_posts_unit-testing-modularity-isolation_ile-1": {
-    "file": "assets/virtual_ile_posts_unit-testing-modularity-isolation_ile-1.1394a405.js",
+    "file": "assets/virtual_ile_posts_unit-testing-modularity-isolation_ile-1.691c2137.js",
     "src": "virtual_ile_posts_unit-testing-modularity-isolation_ile-1",
     "isEntry": true,
     "imports": [
       "_iles.f716fb2f.js",
-      "_DarkModeSwitch.b90b895b.js",
+      "_DarkModeSwitch.df14a28e.js",
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
     ]
@@ -2284,7 +2284,7 @@
     ]
   },
   "virtual_ile_posts_unit-testing-modularity-isolation_ile-3": {
-    "file": "assets/virtual_ile_posts_unit-testing-modularity-isolation_ile-3.5fe9a68d.js",
+    "file": "assets/virtual_ile_posts_unit-testing-modularity-isolation_ile-3.a29710ed.js",
     "src": "virtual_ile_posts_unit-testing-modularity-isolation_ile-3",
     "isEntry": true,
     "imports": [
@@ -2325,8 +2325,8 @@
   "_vite.c01fc5e5.js": {
     "file": "assets/vite.c01fc5e5.js"
   },
-  "_DarkModeSwitch.b90b895b.js": {
-    "file": "assets/DarkModeSwitch.b90b895b.js",
+  "_DarkModeSwitch.df14a28e.js": {
+    "file": "assets/DarkModeSwitch.df14a28e.js",
     "imports": [
       "_vendor-vue.8c901f8e.js",
       "_vite.c01fc5e5.js"
