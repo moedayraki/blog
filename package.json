@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@iconify-json/bx": "^1.1.8",
-    "@iconify-json/carbon": "^1.1.25",
+    "@iconify-json/carbon": "^1.1.27",
     "@islands/excerpt": "^0.9.0",
     "@islands/feed": "^0.8.0",
     "@islands/headings": "^0.8.2",
