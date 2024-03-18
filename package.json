@@ -39,7 +39,7 @@
     "windicss": "^3.5.6"
   },
   "dependencies": {
-    "@docsearch/css": "^3.3.3",
+    "@docsearch/css": "^3.6.0",
     "@iconify-json/heroicons-outline": "^1.1.10",
     "@mussi/docsearch": "^3.1.2-beta.0",
     "cross-spawn": "^7.0.3",
