@@ -32,7 +32,7 @@
     "postcss-nesting": "^12.1.2",
     "rehype-external-links": "^3.0.0",
     "typescript": "^5.4",
-    "vite-plugin-inspect": "^0.8.3",
+    "vite-plugin-inspect": "^0.8.4",
     "vite-plugin-windicss": "^1.9.3",
     "vitest": "*",
     "vue-tsc": "^2.0",
