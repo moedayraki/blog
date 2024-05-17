@@ -32,6 +32,7 @@ declare module '@vue/runtime-core' {
     IconCarbonArrowRight: typeof import('~icons/carbon/arrow-right')['default']
     IconCarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
     IconCarbonLogoTwitter: typeof import('~icons/carbon/logo-twitter')['default']
+    IconCarbonLogoX: typeof import('~icons/carbon/logo-x')['default']
     IconCarbonPen: typeof import('~icons/carbon/pen')['default']
     IconHeroiconsOutlineMenuAlt2: typeof import('~icons/heroicons-outline/menu-alt2')['default']
     Iles: typeof import('./src/components/Iles.vue')['default']
